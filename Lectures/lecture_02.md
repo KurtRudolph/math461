@@ -59,4 +59,4 @@ His calculation: \[ 4 \times \frac{ 1}{ 6} = \frac{ 2}{ 3}\]
 An immortal plays a game in which his chance of winning is \[ \frac{ 1}{ 3} \].
 If he plays once per day what is the probability he eventually wins?
 
-\[ p( win) = \sum\limits_{k = 0}^\infi \frac{ 1}{ 3} {2 \choose 3}^k = 1 \]
+\[ p( win) = \sum\limits_{k = 0}^\infty \frac{ 1}{ 3} {2 \choose 3}^k = 1 \]
