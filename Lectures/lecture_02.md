@@ -38,3 +38,16 @@ Read 1.1 - 1.5
 Accurate facts about odds in gambling known around 17th centry
 
 "theorems from axioms" about 1930 (kolmogovov)
+
+
+### ex
+
+Chevalrer de Mere c.1654
+
+__his bet__: I can get a 6 on a six sided dice in four tosses of a die.
+
+His calculation: \[ 4 \times \frac{ 1}{ 6} = \frac{ 2}{ 3}
+
+\[prob( Win) + prob( Loose) = 1 \]
+
+\[p + \frac{ 5}{ 6}^4 = 1\]
