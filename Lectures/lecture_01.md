@@ -1,4 +1,4 @@
-# Mon Jun 11 2012
+#  Mon Jun 11 09:03:12 CDT 2012
 
 ### Homework
 Read 1.1 - 1.5
