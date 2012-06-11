@@ -46,8 +46,10 @@ Chevalrer de Mere c.1654
 
 __his bet__: I can get a 6 on a six sided dice in four tosses of a die.
 
-His calculation: \[ 4 \times \frac{ 1}{ 6} = \frac{ 2}{ 3}
+His calculation: \[ 4 \times \frac{ 1}{ 6} = \frac{ 2}{ 3}\]
 
 \[prob( Win) + prob( Loose) = 1 \]
 
 \[p + \frac{ 5}{ 6}^4 = 1\]
+
+\[ p = 1 - \frac{ 5}{ 6}^4 = 1 - \cdots \]
