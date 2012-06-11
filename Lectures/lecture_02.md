@@ -19,8 +19,7 @@ Read 1.1 - 1.5
 ### Prop. 
 \[ {n \choose k} + { n \choose k+1} = {n+1 \choose k+1}\]
 
-\[ \frac{ n!}{ k!( n-k)!} + \frac{ n!}{ (k+1)!(n-k-1)!}
-
-\[ \frac{ n!}{k!(n-k-1)!} \left( \frac{ 1}{ n-k} + \frac{ 1}{ k+1} \right)\]
+\[ \frac{ n!}{ k!( n-k)!} + \frac{ n!}{ (k+1)!(n-k-1)!} 
+= \frac{ n!}{k!(n-k-1)!} \left( \frac{ 1}{ n-k} + \frac{ 1}{ k+1} \right)\]
 
 \[ \frac{ (n+1)!}{ (k+1)!(n-k)! } = {n+1 \choose k+1}\]
