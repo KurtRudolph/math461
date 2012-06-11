@@ -1,5 +1,8 @@
 # Mon Jun 11 2012
 
+### Homework
+Read 1.1 - 1.5
+
 ### Review 
 
 \[ d = rt \]
@@ -49,3 +52,6 @@ k
 5\\
 7
 \end{array}} \right) = \frac{ 5!}{ 7! (-2)!} = 0\]
+
+#### something from calc
+\[\mathop {\lim }\limits_{x \to \infty } {\left( {1 + \frac{x}{n}} \right)^n} = \sum\limits_{k = 0}^\infty  {\frac{{{x^k}}}{{k!}} = {e^x}} \]
