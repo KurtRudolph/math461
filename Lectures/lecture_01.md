@@ -1,6 +1,6 @@
 # Mon Jun 11 2012
 
-## Review 
+### Review 
 
 \[ d = rt \]
 
@@ -30,4 +30,22 @@ let \[b = x, a= 0\]
 
 \[f^k (x) = n(n - 1)(n - 2) \cdots (n - k + 1)(1 + x)^{n - k}\]
 
+
+### Binomial Expansion
 \[(1+ x)^n = \sum\limits_{k = 0}^\infty {\frac{ n(n- 1) \cdots (n - k + 1)}{ k!} x^k \], if it converges. 
+
+## Binomial Theorem
+\[(1+ x)^n = \sum\limits_{k = 0}^\infty {\frac{ n!}{ k! (n-k)!} x^k \]
+
+### \[n\] choose \[k\]
+\[\left( {\begin{array}{*{20}{c}}
+n\\
+k
+\end{array}} \right) = \frac{{n!}}{{k!\left( {n - k} \right)!}}\]
+
+#### ex
+
+\[\left( {\begin{array}{*{20}{c}}
+5\\
+7
+\end{array}} \right} = \frac{ 5!}{ 7! (-2)!} = 0\]
