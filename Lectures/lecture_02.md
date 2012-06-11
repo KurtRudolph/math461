@@ -53,3 +53,8 @@ His calculation: \[ 4 \times \frac{ 1}{ 6} = \frac{ 2}{ 3}\]
 \[p + \frac{ 5}{ 6}^4 = 1\]
 
 \[ p = 1 - \frac{ 5}{ 6}^4 = 1 - \cdots \]
+
+### ex
+
+An immortal plays a game in which his chance of winning is \[ \frac{ 1}{ 3} \].
+If he plays once per day what is the probability he eventually wins?
