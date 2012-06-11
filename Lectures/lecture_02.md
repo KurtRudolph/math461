@@ -60,3 +60,9 @@ An immortal plays a game in which his chance of winning is \[ \frac{ 1}{ 3} \].
 If he plays once per day what is the probability he eventually wins?
 
 \[ p( win) = \sum\limits_{k = 0}^\infty \frac{ 1}{ 3} {2 \choose 3}^k = 1 \]
+
+### something else
+
+\[ (1 + x)^{-1} = 1 - x + x^2 - x^3 +x^4 - x^5 \cdots \]
+
+\[ (1 - x)^{-1} = \frac{ 1}{ 1 - x} = 1 + x + x^2 + x^3 + x^4 + \cdots \]  **Memorize**
