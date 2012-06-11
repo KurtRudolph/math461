@@ -23,3 +23,18 @@ Read 1.1 - 1.5
 = \frac{ n!}{k!(n-k-1)!} \left( \frac{ 1}{ n-k} + \frac{ 1}{ k+1} \right)\]
 
 \[ \frac{ (n+1)!}{ (k+1)!(n-k)! } = {n+1 \choose k+1}\]
+
+### History
+
+#### Geometry
+2600 years ago: many facts
+
+"theorems from axioms"
+
+2300 years ago (Euclid).
+
+#### Probability
+
+Accurate facts about odds in gambling known around 17th centry
+
+"theorems from axioms" about 1930 (kolmogovov)
