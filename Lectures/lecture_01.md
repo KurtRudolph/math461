@@ -48,4 +48,4 @@ k
 \[\left( {\begin{array}{*{20}{c}}
 5\\
 7
-\end{array}} \right} = \frac{ 5!}{ 7! (-2)!} = 0\]
+\end{array}} \right) = \frac{ 5!}{ 7! (-2)!} = 0\]
