@@ -1,1 +1,1 @@
-Welcome to the Math461 wiki!
+[Homepage](http://www.math.illinois.edu/Courses/math461-summer12.html)
