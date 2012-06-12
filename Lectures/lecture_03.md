@@ -33,7 +33,7 @@ NOTE: \[k!\] is the number of permutation of \[k\] objects.
 
 ## Integral of Euler
 
-# \[ E(n) = \int\limits_0^\infty{ x^n e^{\frac{-x}{2}} dx} = - \int{ x^n d(e^{-x}} \]
+\[ E(n) = \int\limits_0^\infty{ x^n e^{\frac{-x}{2}} dx} = - \int{ x^n d(e^{-x}} \]
 
 \[ = - \left( e^{-x} x^{-x} - \int { e^{-x n x{n-1} dx\]
 
