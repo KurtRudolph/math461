@@ -44,3 +44,8 @@ NOTE: need to figureout latex bar
 
 
 \[ E(n) = n E( n-1) \\ = n (n-1) E( n -2) \\ = n(n - 1)(n - 2)E( n - 3) \]
+
+## Class questions
+
+* Possible ways to make a full house.
+  * \[ \frac{ 13 * 4 * 12 * {4 \choose 2}}{ {52 \choose 5}} \]
