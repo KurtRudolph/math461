@@ -35,7 +35,7 @@ NOTE: \[k!\] is the number of permutation of \[k\] objects.
 
 \[ E(n) = \int\limits_0^\infty{ x^n e^{\frac{-x}{2}} dx} = - \int{ x^n d(e^{-x})} \]
 
-\[ = - \left( e^{-x} x^{-x} - \int { e^{-x} n x{n-1} dx} \right)\]
+\[ = - \left( e^{-x} x^{-x} - \int { e^{-x} n x{n-1} dx} \right) \]
 
 NOTE: need to figureout latex bar
 \[ = \bar\limits_0^{ \infty} {- e^{-x} x^n } + \int\limits_0^{\infty}{ e^{-x}n x^{n-1} dx}\]
