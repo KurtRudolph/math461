@@ -49,3 +49,5 @@ NOTE: need to figureout latex bar
 
 * Possible ways to make a full house.
   * \[ \frac{ 13 * 4 * 12 * {4 \choose 2}}{ {52 \choose 5}} \]
+* 3 of a kind but **not** better.
+  * \[ \frac{ {13 \choose 1}*  4 *  4 \choose 3} * 4 * 4}{ {52 \choose 5}} \]
