@@ -39,3 +39,8 @@ NOTE: \[k!\] is the number of permutation of \[k\] objects.
 
 NOTE: need to figureout latex bar
 \[ = \bar\limits_0^{ \infty} {- e^{-x} x^n } + \int\limits_0^{\infty}{ e^{-x}n x^{n-1} dx}\]
+
+\[ = n \int\limits_0^{ \infty}{ x^{ n-1} e^{ -x} dx} \]
+
+
+\[ E(n) = n E( n-1) \\ = n (n-1) E( n -2) \\ = n(n - 1)(n - 2)E( n - 3) \]
