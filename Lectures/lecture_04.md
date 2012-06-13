@@ -22,9 +22,9 @@ Facts from set Theory
 \[ A \left( B \cup C \right) = AB \cup AC\]
 \[ A \cup \left( B \cap C \right) = \left( A \cup B \right) \cap \left( A \cup C \right)\]
 
-\[ left( \bigcup\limits_{ i\in I}{ A_i} \right) = \left( \bigcap\limits_{ i \in I}{ A_i^c \right) \]
+\[ \left( \bigcup\limits_{ i\in I}{ A_i} \right) = \left( \bigcap\limits_{ i \in I}{ A_i^c \right) \]
 
-\[ left( A \cup B \right)^c = A^c \cap B^c \]
+\[ \left( A \cup B \right)^c = A^c \cap B^c \]
 
 * A probability theory is a triple
   * \[ \left( S, \{ E_i \}, P \right) \]
