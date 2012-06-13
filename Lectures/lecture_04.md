@@ -35,3 +35,14 @@ Friday, Read axiomatics and assorted examples in chapter 2 and do p.50 # 3, 8, 1
   * PF: \[ P( A \cup B) = P( A \cup BA^c) = P( A) + P( B A^c)  \]
       * \[ P( A) + P( B A^c) = P( A) + P( B) - P( AB) \]
   * \[ P( B) = P( BA \cup BA^c) = P(AB) + P( BA^c) \]
+
+## Somethign else
+* \[ P( A \cup (B \cup C)) 
+  \\ = P( A) + P( B \cup C) - P( AB \cup AC) 
+  \\ = P( A) + P( B) + P( C) - P( BC) - P( AB \cup AC)
+  \\ = P( A) + P( B) + P( C) - P( BC) - \left( P( AB) + P(AC) - P( ABC)\right) 
+
+## prop.
+* \[ P( \emptyset) = 0 \]
+  * PF: \[ P( S) = P( S \cup \emptyset) \\ = P( S) + P( \emptyset)\]
+        * \therefore P( \emptyset) = 0
