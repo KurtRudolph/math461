@@ -25,3 +25,10 @@ Facts from set Theory
 \[ left( \bigcup\limits_{ i\in I}{ A_i} \right) = \left( \bigcap\limits_{ i \in I}{ A_i^c \right) \]
 
 \[ left( A \cup B \right)^c = A^c \cap B^c \]
+
+* A probability theory is a triple
+  * \[ \left( S, \{ E_i \}, P \right \]
+  * satisfying 3 axioms:
+      * A.1 \[ 0 \le P(E) \le 1 \]
+      * A.2 \[ P(S) = 1 \]
+      * A.3 \[ P\left( \bigcup\limits_{ i = 1}^{ \infty}{ E_i} \right) = \sum\limits_{ i = 1}{ \infty}{ P\left( E_i \right) }\] whenever \[ E_i \cap E_2 = \emtyset \forall i \notequal j\]
