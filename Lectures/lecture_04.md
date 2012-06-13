@@ -44,4 +44,4 @@ Friday, Read axiomatics and assorted examples in chapter 2 and do p.50 # 3, 8, 1
 ## prop.
 * \[ P( \emptyset) = 0 \]
   * PF: \[ P( S) = P( S \cup \emptyset) \\ = P( S) + P( \emptyset)\]
-        * \therefore P( \emptyset) = 0
+        * \[ \therefore P( \emptyset) = 0 \]
