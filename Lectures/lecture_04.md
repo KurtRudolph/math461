@@ -14,10 +14,14 @@
 
 ## Axromatic Probability 
 
-* \[ { A \bigcup B}: \forall x \in S s.t. x \in A or x \in B \]
+* \[ { A \cup B}: \forall x \in S s.t. x \in A or x \in B \]
 
 Facts from set Theory 
 
 \[ A \cap \left( B \cup C \right) = \left( A \cap B \right) \cup \left( A \cap B \right)\]
 \[ A \left( B \cup C \right) = AB \cup AC\]
 \[ A \cup \left( B \cap C \right) = \left( A \cup B \right) \cap \left( A \cup C \right)\]
+
+\[ left( \bigcup\limits_{ i\in I}{ A_i} \right) = \left( \bigcap\limits_{ i \in I}{ A_i^c \right) \]
+
+\[ left( A \cup B \right)^c = A^c \cap B^c \]
