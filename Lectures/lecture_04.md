@@ -37,8 +37,7 @@ Friday, Read axiomatics and assorted examples in chapter 2 and do p.50 # 3, 8, 1
   * \[ P( B) = P( BA \cup BA^c) = P(AB) + P( BA^c) \]
 
 ## Somethign else
-* \[ P( A \cup (B \cup C)) 
-  \\ = P( A) + P( B \cup C) - P( AB \cup AC) 
+* \[ P( A \cup (B \cup C)) \\ = P( A) + P( B \cup C) - P( AB \cup AC) 
   \\ = P( A) + P( B) + P( C) - P( BC) - P( AB \cup AC)
   \\ = P( A) + P( B) + P( C) - P( BC) - \left( P( AB) + P(AC) - P( ABC)\right) \]
 
