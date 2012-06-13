@@ -27,7 +27,7 @@ Facts from set Theory
 \[ left( A \cup B \right)^c = A^c \cap B^c \]
 
 * A probability theory is a triple
-  * \[ \left( S, \{ E_i \}, P \right \]
+  * \[ \left( S, \{ E_i \}, P \right) \]
   * satisfying 3 axioms:
       * A.1 \[ 0 \le P(E) \le 1 \]
       * A.2 \[ P(S) = 1 \]
