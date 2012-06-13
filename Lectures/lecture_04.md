@@ -10,3 +10,8 @@
   * \[ (x_1 + x_2 + x_3)^n = \sum\limits_{ n_1 + n_2 + n_3 = n,  n_i \ge 0}{ \frac{ n!}{ n_1! n_2! n_3!} x_1^{n_1} x_2^{n_2} x_3^{n_3} } \]
 * Multinomial Theorem
   * \[ \left( \sum\limits_{ i = 1}^I{ x_i} \right)^n = \sum\limits_{ n_1 + \cdots n_I = n, n_i \ge 0}{ \frac{ n!}{ n_1! n_2! \cdots n_I!} x_1^{n_1} \cdots x_I^{n_I} \]
+
+
+## Axromatic Probability 
+
+* \[ { A \bigcup B}: \forall x \exist S s.t. x \exit A or x \exist B \]
