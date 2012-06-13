@@ -14,4 +14,4 @@
 
 ## Axromatic Probability 
 
-* \[ { A \bigcup B}: \forall x \exist S s.t. x \exit A or x \exist B \]
+* \[ { A \bigcup B}: \forall x \in S s.t. x \in A or x \in B \]
