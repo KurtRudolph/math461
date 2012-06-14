@@ -2,20 +2,19 @@
 * Due: Friday, June 15th 9:00AM
 * Read: axiomatics and assorted examples in chapter 2
 * Problems: 
-  * pg50 
-      * 3
-      * 8
-      * 15c
-      * 16abc
-      * 25
-      * 36
-  * p.57
-      * 13
+  * 3
+  * 8
+  * 15c
+  * 16abc
+  * 25
+  * 36
+* Theoretical Problems:
+  * 13
 
 * Let: 
   * \[A^c\] be the outcome of events not contained in the space \[A\]
 
-## pg50_03
+## ch2_p03
 
 Two dice are thrown. Let \[E\] be the event that the sum of the 
 dice is odd, let \[F\] be the event that at least one of the dice 
@@ -45,7 +44,7 @@ the events \[EF, E \cup F, FG, EF^c, EFG\].
   * The expression implies that one dice land on a \[1\] and the other on a \[4\],
     a space of two possible outcomes.
 
-## pg50_08
+## ch2_p08
 Suppose that \[A\] and \[B\] are mutually exclusive events for which \[P(A) = .3\] 
 and \[P(B) = .5\]. What is the probability that
 * either \[A\] or \[B\] occurs?
@@ -56,7 +55,7 @@ and \[P(B) = .5\]. What is the probability that
 * Both A and B occur?
   * \[P( A \cap B = P(A) + P(B) - P(A \cup B) = 0 \]
 
-## pg51_15c
+## ch2_p15c
 If it is assumed that all \[52\] poker hands are \[52 \choose 5\]
 equally likely, what is the probability of being dealt two pairs?
 (This occurs when the cards have denominations \[a, a, b, c, d,\] 
@@ -65,10 +64,20 @@ where \[a, b, c, d\] are all distinct.)
 * \[ \frac{ {13 \choose 1}{4 \choose 2}{12 \choose 1}{4 \choose 1}}
     { {2 \choose 1}} {11 \choose 1}{4 \choose 1} \]
 
-## pg51_16abc
+## ch2_p16abc
 Poker dice is played by simultaneously rolling 5
 dice. Show that
 * (a) \[P{no two alike} = .0926\]
   * \[ \frac{ {6 \choose 1}{5 \choose 1}{4 \choose 1}{3 \choose 1}{2 \choose 1}}{ {6 \choose 5}} \]
 * (b) \[P{one pair} = .4630\]
 * (c) \[P{two pair} = .2315\]
+
+## ch2__25
+A pair of dice is rolled until a sum of either \[5\] or \[7\] appears. Find the probability 
+that a \[5\] occurs first. Hint: Let \[E_n\] denote the event that a \[5\] occurs on
+the first \[n -1\] roll and no \[5\] or \[7\] occurs on the first \[n − 1\]
+rolls. Compute \[P(E_n )\] and argue that \[ \sum\limits_{n = 1}^{infty}{ P(E_n )}\] is
+the desired probability.
+
+
+## ch2_36
