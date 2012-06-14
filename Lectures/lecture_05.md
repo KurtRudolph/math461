@@ -1,4 +1,6 @@
 # Thu Jun 14 09:04:38 CDT 2012
+## homework
+add p.57
 
 ## Recall
 \[ (1 + x)^n = \sum\limits_{k = 0}^{n} { n \choose k} x^k \]
@@ -46,3 +48,16 @@
   * \[ \sum\limits_{ s + t = r}{ {n \choose s}{m \choose t}} = {n \choose 0}{m \choose r} + {n \choose 1}{m \choose r - 1} + \cdots + {n \choose r}{m \choose 0}\]
 
 \[ n2^{n-1} = \sum\limits_{k = 1}^{n}{ {n \choose k} k} \]
+
+## "Mixed up hats" example
+
+What \[ B \] probability that _at least_ one person gets his own hat?
+
+Hats: \[ 1,2,3, \dots , n\]
+
+Persons: \[ 1, 2, 3, \dots, n\]
+
+\[ n =\] number of persons
+
+Let \[ E_i \] be the vent that person \[ i \] gets own hat.
+want \[ P( E_1 \cup E_2 \cup \cdots \cup E_n) = \sum{ P(A_i)} - \sum{ P( A_i A_j) } \sum{ P( A_i A_j A_k) } = \sum\limits_{i=1}^{n}{ \frac{ (n-1)!}{ n!}} - \sum{ \frac{ (n-2}!}{ n!}} + \sum{ \frac{ (n-3)!}{ n!}}\]
