@@ -52,7 +52,7 @@ and \[P(B) = .5\]. What is the probability that
   * \[P( A \cup B) = P(A) + P(B) = .8 \]
       * Keep in mind they are mutually exclusive.
 * A occurs but B does not?
-  * \[P( A\ B = P(A) + P(B) - P(B) = P(A) = .30\]
+  * \[P( A // B = P(A) + P(B) - P(B) = P(A) = .30\]
 * Both A and B occur?
   * \[P( A \cap B = P(A) + P(B) - P(A \cup B) = 0 \]
 
