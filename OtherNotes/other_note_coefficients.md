@@ -1,15 +1,15 @@
 # Binomial Coefficient
 
-* \[{n \choose k} = \frac{ n!}{ k!(n-k)!}\] for \[ 0 \le k \le n\]
+* \[{n \choose r} = \frac{ n!}{ r!(n - r)!}\] for \[ 0 \le r \le n\]
   * Factorial Formula
 
 It is the polynomial expansion of the binomial power \[(1 + x)^n\]
 
-\[{n \choose k}\] represents the number of possible combinations of \[n\] objects taken \[k\] at a time.
+\[{n \choose r}\] represents the number of possible combinations of \[n\] objects taken \[r\] at a time.
 
 ## Combinitorial identieis
 
-\[{n \choose k} = { n - 1 \choose k - 1} + {n - 1 \choose k}\]
+\[{n \choose r} = { n - 1 \choose r - 1} + {n - 1 \choose r}\]
 
 ## The Binomial Theoremo
 
@@ -18,3 +18,11 @@ It is the polynomial expansion of the binomial power \[(1 + x)^n\]
 
 ## Other resources
 * [Wikipedia](http://en.wikipedia.org/wiki/Binomial_coefficient)
+
+# Multinomial Coefficient
+
+
+* Let 
+  * \[n_1 + n_2 + \cdots + n_r = n\]
+* Then
+  * \[{n \choose n_1, n_2, \dots, n_r} = \frac{ n!}{ n_1!n_2! \cdots n_r!}\]
