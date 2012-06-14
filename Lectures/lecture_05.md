@@ -40,4 +40,4 @@
 
 \[ (1+ x)^{n + m} = \sum\limits_{k = 0}^{n + m}{ {n + m \choose k} x^k}\]
 
-\[ (1+ x)^{n + m} = (1 + x)^n(1 + x)^m = \sum{ {n \choose s} x^s \cdot \sum{ {m \choose t} x^t} = \sum\limits_{s = 0}^{n}{ \sum\limits_{t = 0}^{m}{ {n \choose s}{m \choose t}x^{s + t}\]
+\[ (1+ x)^{n + m} = (1 + x)^n(1 + x)^m = \sum{ {n \choose s} x^s \cdot \sum{ {m \choose t} x^t} = \sum\limits_{s = 0}^{n}{ \sum\limits_{t = 0}^{m}{ {n \choose s}{m \choose t}x^{s + t}}}\]
