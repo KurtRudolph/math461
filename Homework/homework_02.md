@@ -35,4 +35,6 @@ the events \[EF, E \cup F, FG, EF^c, EFG\].
     the sum of the dice is \[5\],  The combination of the two statements require
     that the the second dice land on a \[4\].
 * \[EF^c\]
-  * 
+  * The expression defines the space where one of the dice lands on a one and the
+    sum of the dice is even. Th combination of the expressions implies that the 
+    second dice must be an odd value.
