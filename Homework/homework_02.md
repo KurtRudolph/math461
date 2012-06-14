@@ -52,7 +52,7 @@ and \[P(B) = .5\]. What is the probability that
   * \[P( A \cup B) = P(A) + P(B) = .8 \]
       * Keep in mind they are mutually exclusive.
 * A occurs but B does not?
-  * \[P( A\\B = P(A) + P(B) - P(B) = P(A) = .30\]
+  * \[P( A\ B = P(A) + P(B) - P(B) = P(A) = .30\]
 * Both A and B occur?
   * \[P( A \cap B = P(A) + P(B) - P(A \cup B) = 0 \]
 
@@ -62,4 +62,13 @@ equally likely, what is the probability of being dealt two pairs?
 (This occurs when the cards have denominations \[a, a, b, c, d,\] 
 where \[a, b, c, d\] are all distinct.)
 
-* \[ \frac{ {13 \choose 1}{4 \choose 2}{12 \choose 1}{4 \choose 1}}{ {2 \choose 1}} {11 \choose 1}{4 \choose 1} \]
+* \[ \frac{ {13 \choose 1}{4 \choose 2}{12 \choose 1}{4 \choose 1}}
+    { {2 \choose 1}} {11 \choose 1}{4 \choose 1} \]
+
+## pg51_16abc
+Poker dice is played by simultaneously rolling 5
+dice. Show that
+* (a) \[P{no two alike} = .0926\]
+  * \[ P
+* (b) \[P{one pair} = .4630\]
+* (c) \[P{two pair} = .2315\]
