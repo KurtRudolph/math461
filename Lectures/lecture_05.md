@@ -28,5 +28,16 @@
 
 \[ = \sum\limits_{k = 0}{ m}{m \choose k}(-1)^k = (1 + (-1))^m = 0^m = 0\]
 
+## Something important
 
 \[ \sum\limits_{ k= 0}^n{ {n \choose k} k^2} = 2^{k-2} n(n + 1)\]
+
+* can be proven with calculus or with combintorial logic.
+
+## Something Else
+
+\[ {n + m \choose r} = {n \choose 0}{m \choose r} + {n \choose 1}{m \choose r - 1} + {n \choose 2}{m \choose r - 2} + \cdots + {n \choose r}{m \choose 0}\]
+
+\[ (1+ x)^{n + m} = \sum\limits_{k = 0}^{n + m}{ {n + m \choose k} x^k}\]
+
+\[ (1+ x)^{n + m} = (1 + x)^n(1 + x)^m = \sum{ {n \choose s} x^s \cdot \sum{ {m \choose t} x^t} = \sum\limits_{s = 0}^{n}{ \sum\limits_{t = 0}^{m}{ {n \choose s}{m \choose t}x^{s + t}\]
