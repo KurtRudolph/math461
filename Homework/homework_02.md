@@ -62,4 +62,4 @@ equally likely, what is the probability of being dealt two pairs?
 (This occurs when the cards have denominations \[a, a, b, c, d,\] 
 where \[a, b, c, d\] are all distinct.)
 
-* \[ \frac{ {13 \choose 1}{4 \choose 2}{12 \choose 1}{4 \choose 1}}{ {52 \choose 5}} \]
+* \[ \frac{ {13 \choose 1}{4 \choose 2}{12 \choose 1}{4 \choose 1}}{ {2 \choose 1}} {11 \choose 1}{4 \choose 1} \]
