@@ -26,3 +26,4 @@ It is the polynomial expansion of the binomial power \[(1 + x)^n\]
   * \[n_1 + n_2 + \cdots + n_r = n\]
 * Then
   * \[{n \choose n_1, n_2, \dots, n_r} = \frac{ n!}{ n_1!n_2! \cdots n_r!}\]
+      * The number of possible divisions of \[n\] distinct objects into \[r\] distinct groups of respective sizes \[n1, n2 \dots, nr\] .
