@@ -12,19 +12,27 @@
   * p.57
       * 13
 
+* Let: 
+  * \[A^c\] be the outcome of events not contained in the space \[A\]
+
 ## pg50_03
 
 Two dice are thrown. Let \[E\] be the event that the sum of the 
 dice is odd, let \[F\] be the event that at least one of the dice 
-lands on 1, and let \[G\] be the event that the sum is \[5\]. Describe 
+lands on \[1\], and let \[G\] be the event that the sum is \[5\]. Describe 
 the events \[EF, E \cup F, FG, EF^c, EFG\].
 
 * \[EF\]
-  * The expression defines the space where one die laned on a 1 and the other 
+  * The expression defines the space where one die laned on a \[1\] and the other 
     die langed on an even number.
 * \[E \cup F\]
   * The expression defines the space where 
     * The sum of the dice is odd
-    * One of the dice lands on 1
+    * One of the dice lands on \[1\]
     * Both the proceeding bullets are true
-* \[
+* \[ FG \]
+  * The expression defins the space where one of the dice lands on a \[1\] and 
+    the sum of the dice is \[5\],  The combination of the two statements require
+    that the the second dice land on a \[4\].
+* \[EF^c\]
+  * 
