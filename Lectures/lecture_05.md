@@ -36,8 +36,11 @@
 
 ## Something Else
 
-\[ {n + m \choose r} = {n \choose 0}{m \choose r} + {n \choose 1}{m \choose r - 1} + {n \choose 2}{m \choose r - 2} + \cdots + {n \choose r}{m \choose 0}\]
-
-\[ (1+ x)^{n + m} = \sum\limits_{k = 0}^{n + m}{ {n + m \choose k} x^k}\]
-
-\[ (1+ x)^{n + m} = (1 + x)^n(1 + x)^m = \sum{ {n \choose s} x^s \cdot \sum{ {m \choose t} x^t} = \sum\limits_{s = 0}^{n}{ \sum\limits_{t = 0}^{m}{ {n \choose s}{m \choose t}x^{s + t}}}\]
+* Equation 1)
+  * \[ {n + m \choose r} = {n \choose 0}{m \choose r} + {n \choose 1}{m \choose r - 1} + {n \choose 2}{m \choose r - 2} + \cdots + {n \choose r}{m \choose 0}\]
+  * \[ {n + m \choose r}\]
+* Equation 2)
+  * \[ (1+ x)^{n + m} = \sum\limits_{k = 0}^{n + m}{ {n + m \choose k} x^k}\]
+  * \[ (1+ x)^{n + m} = (1 + x)^n(1 + x)^m = \sum{ {n \choose s} x^s \cdot \sum{ {m \choose t} x^t} = \sum\limits_{s = 0}^{n}{ \sum\limits_{t = 0}^{m}{ {n \choose s}{m \choose t}x^{s + t}}}\]
+  * get
+  * \[ \sum\limits_{ s + t = r}{ {n \choose s}{m \choose t}} = {n \choose 0}{m \choose r} + {n \choose 1}{m \choose r - 1} + \cdots + {n \choose r}{m \choose 0}\]
