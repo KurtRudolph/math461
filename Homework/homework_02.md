@@ -81,5 +81,19 @@ the first \[n -1\] roll and no \[5\] or \[7\] occurs on the first \[n − 1\]
 rolls. Compute \[P(E_n )\] and argue that \[ \sum\limits_{n = 1}^{\infty}{ P(E_n )}\] is
 the desired probability.
 
+* Combinations that make a 5
+  * 1, 4
+  * 2, 3
+  * 3, 2
+  * 4, 1
+* Combinations that maek a 7
+  * 1,6
+  * 2,5
+  * 3,4
+  * 4,3
+  * 2,5
+  * 6,1
+* Total possible combinations on for a pair of die
+  * \[ {6 \choose 1}{6 \choose 1}\]
 
 ## ch2_36
