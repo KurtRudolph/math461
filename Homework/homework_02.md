@@ -42,4 +42,24 @@ the events \[EF, E \cup F, FG, EF^c, EFG\].
   * The expression defines the space where the _sum_ of the dice is \[odd\] 
     and at least one of dice land on a \[1\]
     and sum of the dice is \[5\]
-    
+  * The expression implies that one dice land on a \[1\] and the other on a \[4\],
+    a space of two possible outcomes.
+
+## pg50_08
+Suppose that \[A\] and \[B\] are mutually exclusive events for which \[P(A) = .3\] 
+and \[P(B) = .5\]. What is the probability that
+* either \[A\] or \[B\] occurs?
+  * \[P( A \cup B) = P(A) + P(B) = .8 \]
+      * Keep in mind they are mutually exclusive.
+* A occurs but B does not?
+  * \[P( A\\B = P(A) + P(B) - P(B) = P(A) = .30\]
+* Both A and B occur?
+  * \[P( A \cap B = P(A) + P(B) - P(A \cup B) = 0 \]
+
+## pg51_15c
+If it is assumed that all \[52\] poker hands are \[52 \choose 5\]
+equally likely, what is the probability of being dealt two pairs?
+(This occurs when the cards have denominations \[a, a, b, c, d,\] 
+where \[a, b, c, d\] are all distinct.)
+
+* \[ \frac{ {13 \choose 1}{4 \choose 2}{12 \choose 1}{4 \choose 1}}{ {52 \choose 5}} \]
