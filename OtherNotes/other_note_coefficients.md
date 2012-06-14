@@ -11,7 +11,7 @@ It is the polynomial expansion of the binomial power \[(1 + x)^n\]
 
 \[{n \choose r} = { n - 1 \choose r - 1} + {n - 1 \choose r}\]
 
-## The Binomial Theoremo
+## The Binomial Thereom
 
 \[(x + y)^n = \sum\limits_{k = 0}^n{ {n \choose k} x^k y^{n - k}\]
 
@@ -26,4 +26,5 @@ It is the polynomial expansion of the binomial power \[(1 + x)^n\]
   * \[n_1 + n_2 + \cdots + n_r = n\]
 * Then
   * \[{n \choose n_1, n_2, \dots, n_r} = \frac{ n!}{ n_1!n_2! \cdots n_r!}\]
-      * The number of possible divisions of \[n\] distinct objects into \[r\] distinct groups of respective sizes \[n1, n2 \dots, nr\] .
+      * The number of possible divisions of \[n\] distinct objects into \[r\] distinct groups of respective sizes \[n_1, n_2 \dots, n_r\].
+
