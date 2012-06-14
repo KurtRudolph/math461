@@ -74,9 +74,11 @@ dice. Show that
 
 ## ch2__25
 A pair of dice is rolled until a sum of either \[5\] or \[7\] appears. Find the probability 
-that a \[5\] occurs first. Hint: Let \[E_n\] denote the event that a \[5\] occurs on
+that a \[5\] occurs first. 
+
+Hint: Let \[E_n\] denote the event that a \[5\] occurs on
 the first \[n -1\] roll and no \[5\] or \[7\] occurs on the first \[n − 1\]
-rolls. Compute \[P(E_n )\] and argue that \[ \sum\limits_{n = 1}^{infty}{ P(E_n )}\] is
+rolls. Compute \[P(E_n )\] and argue that \[ \sum\limits_{n = 1}^{\infty}{ P(E_n )}\] is
 the desired probability.
 
 
