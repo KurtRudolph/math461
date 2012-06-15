@@ -101,7 +101,9 @@ Two cards are chosen at random from a deck of \[52\]
 playing cards. What is the probability that they
 
 * (a) are both aces?
+  * \[\frac{ {13 \choose 1}{4 \choose 1}{13 \choose 1}{3 \choose 1}}{ {52 \choose 2}}\]
 * (b) have the same value?
+  * \[\frac{ {4 \choose 1}{3 \choose 1}}{ {52 \choose 2}}\]
 
 ## ch2_t13
 Prove that \[P(EF^c) = P(E) − P(EF)\]
