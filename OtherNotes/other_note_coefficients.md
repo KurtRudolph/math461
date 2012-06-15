@@ -7,11 +7,11 @@ It is the polynomial expansion of the binomial power \[(1 + x)^n\]
 
 \[{n \choose r}\] represents the number of possible combinations of \[n\] objects taken \[r\] at a time.
 
-## Combinitorial identieis
+## Combinatorial identities
 
 \[{n \choose r} = { n - 1 \choose r - 1} + {n - 1 \choose r}\]
 
-## The Binomial Thereom
+## The Binomial Theorem
 
 \[(x + y)^n = \sum\limits_{k = 0}^n{ {n \choose k} x^k y^{n - k}\]
 
