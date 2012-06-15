@@ -72,7 +72,7 @@ dice. Show that
 * (b) \[P{one pair} = .4630\]
 * (c) \[P{two pair} = .2315\]
 
-## ch2__25
+## ch2__p25
 A pair of dice is rolled until a sum of either \[5\] or \[7\] appears. Find the probability 
 that a \[5\] occurs first. 
 
@@ -96,4 +96,13 @@ the desired probability.
 * Total possible combinations on for a pair of die
   * \[ {6 \choose 1}{6 \choose 1}\]
 
-## ch2_36
+## ch2_p36
+Two cards are chosen at random from a deck of \[52\]
+playing cards. What is the probability that they
+
+* (a) are both aces?
+* (b) have the same value?
+
+## ch2_t13
+Prove that \[P(EF^c) = P(E) − P(EF)\]
+
