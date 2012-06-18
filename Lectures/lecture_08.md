@@ -53,3 +53,5 @@ Theorem \[P( F_j|E) = \frac{ P( E F_j)}{ P( E)}\]
 ### Disjoint
 [[/images/disjoint_sets.png]]
 
+
+### Office hours 10:30 to 11:25
