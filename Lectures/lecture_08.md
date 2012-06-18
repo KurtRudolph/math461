@@ -7,4 +7,4 @@ gets exactly one ace.
 
 \[P( E_1) = \frac{ {4 \choose 1} {48 \choose 12}}{ {52 \choose 13}\]
 
-\[P( E_2|E_1) = \frac{ {3 \choose 1} {36 \choose 12}}{ {52 \choose 13}}, dots\]
+\[P( E_2|E_1) = \frac{ {3 \choose 1} {36 \choose 12}}{ {52 \choose 13}}, \dots\]
