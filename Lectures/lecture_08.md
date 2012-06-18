@@ -31,4 +31,5 @@ Multiple choice exam, each question has \[m\] answer choices.
 
 \[K:\] understans the answwer and the issue.
 
-\[P( K|C) = \frac{ P( K C)}{ P( C)} = \frac{ P( K)}{ P( C)} = \frac{ P}{ P( C|K) P( K) + P( C|K^c) P( K^c)} = \frac{ P}{ 1 \cdot p + \frac{ 1}{ m} (1 - p)} = \frac{ m p}{ 1- p + m p} = \frac{ m p}{ 1 + (m - 1) p}\]
+\[P( K|C) = \frac{ P( K C)}{ P( C)} = \frac{ P( K)}{ P( C)} = \frac{ P}{ P( C|K) P( K) + P( C|K^c) P( K^c)}\] 
+\[= \frac{ P}{ 1 \cdot p + \frac{ 1}{ m} (1 - p)} = \frac{ m p}{ 1- p + m p} = \frac{ m p}{ 1 + (m - 1) p}\]
