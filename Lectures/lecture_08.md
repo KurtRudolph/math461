@@ -19,3 +19,16 @@ gets exactly one ace.
 \[P( E) = P( EF) + P(EF^c)\]
 
 \[P( E) = P( E|F) P(F) + P( E|F^c)P(F^c) = P( E|F) P( F) + P( E|F^c)(1 - P( F))\]
+
+## Ex
+Multiple choice exam, each question has \[m\] answer choices.
+
+\[p = \] prob student understans the material.
+
+\[1 -p = \] prob the student does not understand the material. 
+
+\[C:\] event "correct answer"
+
+\[K:\] understans the answwer and the issue.
+
+\[P( K|C) = \frac{ P( K C)}{ P( C)} = \frac{ P( K)}{ P( C)} = \frac{ P}{ P( C|K) P( K) + P( C|K^c) P( K^c)} = \frac{ P}{ 1 \cdot p + \frac{ 1}{ m} (1 - p)} = \frac{ m p}{ 1- p + m p} = \frac{ m p}{ 1 + (m - 1) p}\]
