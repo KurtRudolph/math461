@@ -15,3 +15,7 @@ gets exactly one ace.
 \[E = E F \cup E F^c\]
 
 \[EF \cap EF^c = EFEF^c = \emptyset\]
+
+\[P( E) = P( EF) + P(EF^c)\]
+
+\[P( E) = P( E|F) P(F) + P( E|F^c)P(F^c) = P( E|F) P( F) + P( E|F^c)(1 - P( F))\]
