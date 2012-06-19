@@ -39,3 +39,9 @@ following three axioms:
   * This equation follows axiom 3 by defining \[E_i\] as the null event for all 
     values of \[i\] greater than \[n\].
   * Equivalent to Axiom 4 when the sample space is finite.
+
+## 2.4 Some Simple propositions
+* \[P( E^c) = 1 - P( E)\]
+  * Poposition 4.1
+  * The probability an event does not occur.
+* Given \[E \subset F\] then \[P( E) \le P( F)\]
