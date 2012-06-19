@@ -20,5 +20,5 @@ following three axioms:
       * \[ P( S) = 1\]
   * Axiom 3
       * For any sequence of mutually exclusive events \[E_1, E_2, \dots where \[E_i E_j = \emptyset\] when \[i \notequal j\], then
-          * \[P\left( \bigcup\limits_{ i = 1}^{ infty}{ E_i}\right) 
+          * \[P\left( \bigcup\limits_{ i = 1}^{ \infty}{ E_i}\right) 
             = \sum\limits_{i = 1}^{\infty}{ P( E_i)}\]
