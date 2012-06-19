@@ -36,3 +36,5 @@ following three axioms:
     * This implies that \[P( \emtyset) = 0\], that is the null event has probability 0 of occuring.
 * \[P\left( \bigcup\limits_{1}^{n}{ E_i}\right) = \sum\limits_{i = 1}^{n}{ P( E_i)}\]
   * For any sequence of mutually exclusive events \[E_1, E_2, \dots, E_n\]
+  * This equation follows axiom 3 by defining \[E_i\] as the null event for all 
+    values of \[i\] greater than \[n\].
