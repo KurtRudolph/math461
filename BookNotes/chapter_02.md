@@ -2,7 +2,7 @@
 
 ## 2.3 Axioms of Probability
 * Let
-  * \[S\] be the sample spcae.
+  * \(S\) be the sample spcae.
   * \[E\] an event of the sampele space, \[E \in S\].
   * \[n( E)\] number of time the event \[E\] has occured in the sample space \[S\].
 * Then
