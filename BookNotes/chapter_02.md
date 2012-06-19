@@ -48,4 +48,4 @@ following three axioms:
   * proposition 4.2
 * \[P( E \cup F) = P( E) + P( F) - P( EF)\]
   * Proposition 4.3
-* \[P( E_1 \cup E_2 \cup \cdots \cup E_n) = \sum\limits_{i = 1}^{n}{ P( E_i) - \sum\limits_{ i_1 \lt; i_2}{ P( E_{i_1} E_{i_2) + \cdots\]
+* \[P( E_1 \cup E_2 \cup \cdots \cup E_n) = \sum\limits_{i = 1}^{n}{ P( E_i)} - \sum\limits_{ i_1 \lt; i_2}{ P( E_{i_1} E_{i_2)} + \cdots\]
