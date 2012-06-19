@@ -33,7 +33,7 @@ following three axioms:
     * Consider a sequence of events \[E_1, E_2, \dots,\] where \[E_1 = S\], 
       and \[E_i = \emptyset\] for \[i> 1\].  Then, because the events are mutually 
       exclusive and \[S = \bigcap\limits_{i = 1}^{\infty}{ E_i}\].
-    * This implies that \[P( \emtyset) = 0\], that is the null event has probability 0 of occuring.
+    * This implies that \[P( \emptyset) = 0\], that is the null event has probability 0 of occuring.
 * \[P\left( \bigcup\limits_{i = 1}^{n}{ E_i}\right) = \sum\limits_{i = 1}^{n}{ P( E_i)}\]
   * For any sequence of mutually exclusive events \[E_1, E_2, \dots, E_n\]
   * This equation follows axiom 3 by defining \[E_i\] as the null event for all 
