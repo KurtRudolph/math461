@@ -12,5 +12,6 @@
 10:30 AM to 11:25 Am 
 
 # Applied of Bayes' Formula
-
 Dowed Aircraft 
+
+see pg 75 of the text
