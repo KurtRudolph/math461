@@ -38,3 +38,4 @@ following three axioms:
   * For any sequence of mutually exclusive events \[E_1, E_2, \dots, E_n\]
   * This equation follows axiom 3 by defining \[E_i\] as the null event for all 
     values of \[i\] greater than \[n\].
+  * Equivalent to Axiom 4 when the sample space is finite.
