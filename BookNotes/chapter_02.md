@@ -1,3 +1,3 @@
 # Chapter 2
 
-\[P( E) = \lim\limits_{x \to \infty } \]
+\[P( E) = \mathop{ \lim }\limits_{x \to \infty } \]
