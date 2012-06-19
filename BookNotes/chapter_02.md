@@ -54,4 +54,4 @@ following three axioms:
   + (-1)^{r + 1} \sum\limits_{i_1 < i_2 < \cdots < i_r}{ P( E_{i_1} E_{i_2} \cdots E_{i_r}}
   + \cdots + (-1)^{n + 1} P(E_1 E_2 \cdots E_n)\]
 
-\( i < s\)
+$ i < s$
