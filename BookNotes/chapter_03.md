@@ -8,3 +8,10 @@
 
 
 * Given \[P( F) > 0\], then \[P( E|F) = \frac{ P( EF)}{ P( F)}\]
+
+
+
+
+## Other Notes
+
+* A point both in \[E\] and in \[F\] denoted \[EF\]
