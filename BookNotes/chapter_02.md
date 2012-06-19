@@ -31,7 +31,7 @@ following three axioms:
   = P( S) + \sum\limits_{i = 2}^{ \infty}{ P( \emptyset )\]
     * From Axiom 3
     * Consider a sequence of events \[E_1, E_2, \dots,\] where \[E_1 = S\], 
-      and E_i = \emptyset for \[i> 1\].  Then, because the events are mutually 
+      and \[E_i = \emptyset\] for \[i> 1\].  Then, because the events are mutually 
       exclusive and \[S = \bigcap\limits_{i = 1}^{\infty}{ E_i}\].
     * This implies that \[P( \emtyset) = 0\], that is the null event has probability 0 of occuring.
 * \[P\left( \bigcup\limits_{1}^{n}{ E_i}\right) = \sum\limits_{i = 1}^{n}{ P( E_i)}\]
