@@ -4,6 +4,8 @@
 
 Show that \[\sum\limits_{n = 1}^{\infty}{ \frac{ 1}{ n(n + 1)} = 1\]
 
+* \[\sum\limits_{n = 1}^{\infty}{ \frac{ 1}{ n(n + 1)} = \sum\limits_{n = 1}^{\infty}{ \left(\frac{ 1}{ n} = \frac{ 1}{ n+1}\right) = 1\]
+  * telescoping series
 
 ## Another proof
 If \[0 < a_i < 1\], show that 
