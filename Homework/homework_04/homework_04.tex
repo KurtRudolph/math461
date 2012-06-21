@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{hw_style}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+
+% Homework Specific Information
+\newcommand{\hmwkTitle}{Homework \#4}
+\newcommand{\hmwkDueDate}{Friday, June 22 9:00AM }
+\newcommand{\hmwkAuthorName}{Kurt Rudolph}%Name:
+\newcommand{\hmwkNetID}{rudolph9}%your netid
+\newcommand{\hmwkNotes}{}%I worked with...
+
+\newcommand{\hmwkSubTitle}{}
+\newcommand{\hmwkClass}{Math 461}
+\newcommand{\hmwkClassTime}{}
+\newcommand{\hmwkClassInstructor}{Kenneth B. Stolarsky}
+
+\begin{document}
+\begin{spacing}{1.1}
+\maketitle
+
+%=============================p.012 problem18=========================% 
+\newpage
+\begin{homeworkProblem}
+  A total of 46 percent of the voters in a certain city classify 
+  themselves as Independents, whereas 30 percent classify themselves 
+  as Liberals and 24 percent say that they are Conservatives. In a 
+  recent local election, 35 percent of the Independents, 62 percent 
+  of the Liberals, and 58 percent of the Conservatives voted. A voter 
+  is chosen at random. 
+
+  Let
+  \begin{itemize}
+    \item $I$ be the group of Independent voters.
+    \item $L$ be the group of Liberal voters.
+    \item $R$ be the group of Republican voters.
+    \item $V$ be the group of voters who actually voted.
+  \end{itemize}
+  Given
+  \begin{itemize}
+    \item $P( I) = .46$ 
+    \item $P( L) = .30$ 
+    \item $P( R) = .24$
+    \item $P( V|I) = .35$
+    \item $P( V|L) = .62$
+    \item $P( V|R) = .58$
+  \end{itemize}
+  Then let
+    \[P( V) = P( I) P( V|I) + P( L) P( V|L) + P( R) P( V|R) = .4862\]
+
+  Given that this person voted in the local election, what is the 
+  probability that he or she is
+  \begin{enumerate}[(a)]
+    \item an Independent?
+      \begin{homeworkSection}{Solution}
+         \[P( I|V) = \frac{ P( I) P( V|I)}{ P(V)} = .331139\]
+      \end{homeworkSection}
+    \item a Liberal?
+      \begin{homeworkSection}{Solution}
+         \[P( L|V) = \frac{ P( L)( V|L)}{ P(V)} = .382559\]
+      \end{homeworkSection}
+    \item a Conservative?
+      \begin{homeworkSection}{Solution}
+         \[P( R|V) = \frac{ P( R)( V|R)}{ P(V)} = .286302\]
+      \end{homeworkSection}
+    \item What fraction of voters participated in thelocal election?
+      \begin{homeworkSection}{Solution}
+         \[P( V) = .4862\]
+      \end{homeworkSection}
+  \end{enumerate}
+\end{homeworkProblem}
+%=============================p.105 42==========================% 
+\newpage
+\begin{homeworkProblem}
+  Three cooks, $A$, $B$, and $C$, bake a special kind of cake, and with 
+  respective probabilities $.02$, $.03$, and $.05$, it fails to rise. 
+  In the restaurant where they work, $A$ bakes $50$ percent of these cakes, 
+  $B$ $30$ percent, and $C$ $20$ percent. What proportion of ''failures'' 
+  is caused by $A$?
+  \begin{homeworkSection}{Solution}
+     Let
+    \begin{itemize}
+      \item $A$ be the group of cakes the first cook bakes
+      \item $B$ be the group of cakes the second cook bakes
+      \item $C$ be the group of cakes the third cook bakes
+      \item $F$ be the group of cakes which fail
+    \end{itemize}
+    Given
+    \begin{itemize}
+      \item $P( A) = .5$
+      \item $P( B) = .3$
+      \item $P( C) = .2$
+      \item $P( F|A) = .02$
+      \item $P( F|B) = .03$
+      \item $P( F|C) = .05$
+    \end{itemize}
+    Then
+      \[P( F) = P( A)P( F|A) + P( B)P( F|B) + P( C)P( F|C) = .029\]
+      \[P( A|F)= \frac{ P( A)P( F|A)}{ P( F)} = 0.344\]
+  \end{homeworkSection}
+\end{homeworkProblem}
+\end{spacing}
+\end{document}
+
+\begin{comment}%==========================================================
+%=============================Problemi==========================% 
+\newpage
+\begin{homeworkProblem}
+  
+  \begin{homeworkSection}{Solution}
+    
+  \end{homeworkSection}
+\end{homeworkProblem}
+%=============================Problemi==========================% 
+\begin{homeworkProblem}
+  
+  \begin{enumerate}[(a)]
+    \item 
+      \begin{homeworkSection}{Solution}
+    
+      \end{homeworkSection}
+  \end{enumerate}
+\end{homeworkProblem}
+\end{comment}
