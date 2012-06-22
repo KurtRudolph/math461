@@ -180,7 +180,7 @@
         Why is this problem phrased ``if and only if at least''?  The if and only if seems unnecicary if \emph{at least} is included.
       \end{homeworkSection}
 \end{homeworkProblem}
-%=============================Problemi==========================% 
+%=============================p.109 76==========================% 
 \newpage
 \begin{homeworkProblem}
   {\bf Chapter 3, Problem 76}\\
@@ -188,7 +188,27 @@
   Show that if independent trials of this experiment are performed, 
   then $E$ will occur before $F$ with probability $\frac{ P( E)}{P( E) + P( F)}.$
   \begin{homeworkSection}{Solution}
+    Since
+      \[P( E^c) = P( F)\]
+    Therefore
+      \[\frac{ P( E)}{ P( E) + P( F)} = \frac{ P( E)}{ 1 - P( F) + P( F)} = \frac{ P( E)}{ 1} = P( E)\]
     
+  \end{homeworkSection}
+\end{homeworkProblem}
+%=============================p.111 4==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 3, Theoretical Exercise 4}\\
+  A ball is in anyone of $n$ boxes and is in the $i$th box with 
+  probability $P_i$. If the ball is in box $i$, a search of that 
+  box will uncover it with probability $\alpha_i$. Show that the 
+  conditional probability that the ball is in box $j$, given that 
+  a search of box $i$ did not uncover it, is \\
+  If $j \neq i$
+    \[\frac{ P_j}{ 1 - \alpha_i P_i}\]
+  If $j = i$
+    \[\frac{ (1 - \alpha_i) P_i}{ 1 - \alpha_i P_i}\]
+  \begin{homeworkSection}{Solution}
     
   \end{homeworkSection}
 \end{homeworkProblem}
