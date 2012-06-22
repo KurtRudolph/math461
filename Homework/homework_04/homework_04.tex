@@ -195,6 +195,32 @@
     
   \end{homeworkSection}
 \end{homeworkProblem}
+\begin{comment}
+If $E$ and $F$ are mutually exclusive events in an experiment, 
+then $P( E \cup F) = P( E) + P( F)$. We desire to compute the probability that $E$ occurs
+before $F$ , which we will denote by $p$. To compute $p$ we condition on the
+three mutually exclusive events $E$, $F$ , or $(E \cup F )^c$. This last event
+are all the outcomes not in $E$ or $F$. Letting the event $A$ be the event
+that $E$ occurs before $F$, we have that
+\[p = P( A|E) P( E) + P( A|F) P(F ) + P( A|(E \cup F )^c) P( (E \cup F )^c)\] . 
+
+\[P( A|E) = 1\]
+\[P( A|F) = 0\] 
+\[P( A|(E \cup F)^c) = p\], 
+
+since if neither E or F happen the next
+experiment will have $E$ before $F$ (and thus event $A$ with probability $p$).
+Thus we have that 
+
+\[p = P( E) + p P( (E \cup F)^c)\]
+\[= P( E) + p (1 − P( E \cup F))\]
+\[= P( E) + p (1 − P( E) − P( F))\]
+
+Solving for $p$ gives 
+\[p = \frac{ P( E)}{ P( E) + P( F)\]
+as we were to show. 
+
+\end{comment}
 %=============================p.111 4==========================% 
 \newpage
 \begin{homeworkProblem}
