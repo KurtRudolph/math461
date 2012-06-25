@@ -11,5 +11,5 @@ end
 task :update do
   `git add .`
   `git commit -m "update"`
-  `git push math461.wiki math461/wiki:master`
+  `git push`
 end
