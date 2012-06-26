@@ -97,7 +97,7 @@
   the randomly selected student. One of the 4 bus drivers is also 
   randomly selected. Let $Y$ denote the number of students on her bus.
   \begin{homeworkSection}{Definitions}
-    Given
+    Formulas
       \begin{itemize}
         \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$
       \end{itemize}
@@ -182,6 +182,7 @@
 %=============================p.175 37==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 4, Problem 37}\\
   Find $Var( X)$ and $Var( Y)$ for $X$ and $Y$ as given in Problem 21.
   \begin{homeworkSection}{Definitions}
     Given
@@ -215,6 +216,45 @@
     \[Var( Y) = \left((|bd_1|) P( bd_1)^2 + (|bd_2|) P( bd_2)^2 + (|bd_3|) P( bd_3)^2 + (|bd_4|) P( bd_4^2)\right)\]
        \[- \left((|bd_1|) P( bd_1) + (|bd_2|) P( bd_2) + (|bd_3|) P( bd_3) + (|bd_4|) P( bd_4)\right)^2\]
   \end{homeworkSection}
+\end{homeworkProblem}
+
+%=============================p.135 38==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Problem 38}\\
+  If $E[ X] = 1$ and $Var( X) = 5$, find 
+  \begin{homeworkSection}{Definitions}
+    Formulas
+      \begin{itemize}
+        \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$
+        \item $Var( X) = E[ (X - E[ X])^2] = E[ X^2] - (E[ X])^2$
+      \end{itemize}
+  \end{homeworkSection}
+  \begin{homeworkSection}{Pre-Work}
+    Formulas
+      \[5 (E[ X]) = Vaar( X)\]
+      \[5 (E[ X]) = E[ X^2] - (E[ X])^2\]
+      \[5 = E[ X^2] - (E[ X])\]
+      \[E[ X^2] = 6\]
+  \end{homeworkSection}
+  \begin{enumerate}[(a)]
+    \item $E[ (2 + X)^2]$
+      \begin{homeworkSection}{Solution}
+        \[E[ (2 + X)^2] = E[ X^2 + 4X + 4] = E[ X^2] + 4 (E[ X]) + E[ 4] \]
+        How to find the expectation of four??
+      \end{homeworkSection}
+    \item $Var( 4 + 3X)$
+      \begin{homeworkSection}{Solution}
+        \[Var( 4 + 3X) = E[ (4 + 3x)^2] + (E[ 4 + 3X])^2\]
+        \[= E[ 9 X^2 + 6 X + 16] + (E[ 4] + 3 E[ X])^2\]
+        \[= 9 E[ X^2] + 6 E[ X] + E[ 16] + (E[ 4] + 3 E[ X])^2\]
+        \[= 56 + 6 + E[ 16] + (E[ 4] + 3)^2\]
+
+        Somehow the solution manual is just stating that 
+        \[Var( 4 + 3X) = Var( 3X) = 9 Var( X) = 45\]
+
+      \end{homeworkSection}
+  \end{enumerate}
 \end{homeworkProblem}
 \end{spacing}
 \end{document}
