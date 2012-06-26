@@ -25,13 +25,14 @@
 %=============================p.107 66==========================% 
 \newpage
 \begin{homeworkProblem}
-The probability of the closing of the $i$th relay in the circuits 
-shown in Figure 3.4 is given by $p_i, i = 1, 2, 3, 4, 5$. If all 
-relays function independently, what is the probability that a 
-current flows between $A$ and $B$ for the respective circuits?
-Hint for (b): Condition on whether relay 3 closes.
+{\bf Chapter 3, Problem 66}\\
+  The probability of the closing of the $i$th relay in the circuits 
+  shown in Figure 3.4 is given by $p_i, i = 1, 2, 3, 4, 5$. If all 
+  relays function independently, what is the probability that a 
+  current flows between $A$ and $B$ for the respective circuits?
+  Hint for (b): Condition on whether relay 3 closes.
 
-\includegraphics{p108_66}
+  \includegraphics{p108_66}
   \begin{enumerate}[(a)]
     \item
       \begin{homeworkSection}{Solution}
@@ -43,9 +44,11 @@ Hint for (b): Condition on whether relay 3 closes.
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
+
 %=============================p.173 5==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 4, Problem 5}\\
   Let $X$ represent the difference between the number of heads
   and the number of tails obtained when a coin is tossed $n$ times. 
   What are the possible values of $X$?
@@ -57,11 +60,13 @@ Hint for (b): Condition on whether relay 3 closes.
 
   \end{homeworkSection}
 \end{homeworkProblem}
+
 %=============================p.173 6==========================% 
 \newpage
 \begin{homeworkProblem}
-In Problem 5, for $n = 3$, if the coin is assumed fair, what are 
-the probabilities associated with the values that $X$ can take on?
+  {\bf Chapter 4, Problem 6}\\
+  In Problem 5, for $n = 3$, if the coin is assumed fair, what are 
+  the probabilities associated with the values that $X$ can take on?
   \begin{homeworkSection}{Solution}
     Following our proof from problem 5, we find $X_i$ where 
     $0 \le i \le n$.
@@ -80,19 +85,18 @@ the probabilities associated with the values that $X$ can take on?
     \end{itemize}
   \end{homeworkSection}
 \end{homeworkProblem}
+
 %=============================p.175 21==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 4, Problem 21}\\
   Four buses carrying 148 students from the same school arrive at 
   a football stadium. The buses carry, respectively, 40, 33, 25, 
   and 50 students. One of the students is randomly selected. 
   Let $X$ denote the number of students that were on the bus carrying 
   the randomly selected student. One of the 4 bus drivers is also 
   randomly selected. Let $Y$ denote the number of students on her bus.
-
-
   \begin{homeworkSection}{Definitions}
-
     Given
       \begin{itemize}
         \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$
@@ -118,54 +122,99 @@ the probabilities associated with the values that $X$ can take on?
       \end{itemize}
   \end{homeworkSection}
   \begin{enumerate}[(a)]
-    \item Which of $E[ |X|]$ or $E[ |Y|]$ do you think is larger? Why?
+    \item Which of $E[ X]$ or $E[ Y]$ do you think is larger? Why?
       \begin{homeworkSection}{Solution}
-        I believe $E[ |X|] < E[ |Y|]$.  My reason follows that since the 
+        I believe $E[ X] < E[ Y]$.  My reason follows that since the 
         probability a student will be selected from a bus carrying more students 
         over a bus carrying less students.  
         Since the probability that a bus driver will be selected carry a bus with a large
         number of students is equal to a bus driver being selected from a bus carrying
         a small number of students.
       \end{homeworkSection}
-    \item Compute $E[ |X|]$ and $E[ |Y|]$?
+    \item Compute $E[ X]$ and $E[ Y]$?
       \begin{homeworkSection}{Solution}
         \begin{itemize}
-          \item $E[ |X|] = (|b_1|) P( b_1) + (|b_2|) P( b_2) + (|b_3|) P( b_3) + (|b_4|) P( b_4)$
-          \item $E[ |Y|] = (|bd_1|) P( bd_1) + (|bd_2|) P( bd_2) + (|bd_3|) P( bd_3) + (|bd_4|) P( bd_4)$
+          \item $E[ X] = (|b_1|) P( b_1) + (|b_2|) P( b_2) + (|b_3|) P( b_3) + (|b_4|) P( b_4)$
+          \item $E[ Y] = (|bd_1|) P( bd_1) + (|bd_2|) P( bd_2) + (|bd_3|) P( bd_3) + (|bd_4|) P( bd_4)$
         \end{itemize}
-
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
+
 %=============================p.176 35==========================% 
 \newpage
 \begin{homeworkProblem}
-
+  {\bf Chapter 4, Problem 35}\\
   A box contains 5 red and 5 blue marbles. Two marbles are withdrawn 
   randomly. If they are the same color, then you win \$1.10; if they 
   are different colors, then you win -\$1.00. (That is, you lose \$1.00.) 
   Calculate the following
-
   \begin{homeworkSection}{Definitions}
+    Given
+      \begin{itemize}
+        \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$
+        \item $Var( X) = E[ (X - E[ X])^2] = E[ X^2] - (E[ X])^2$
+      \end{itemize}
     Let
       \begin{itemize}
         \item $M$ be the set of marbles within the box.
-        \item $m_a, m_b \in M$ be the two marbles drawn.
-        \item $C( m_i)$ denote the color of the marble $i$
+        \item $m_a, m_b \in M$ denote the two marbles drawn.
+        \item $c_1, c_2 \in M$ denote the two two possible colors of the marbles.
+        \item $S$ denote the event the marbles are the same color
+        \item $D$ denote the event the marbles are different
+        \item $X$ denote $S \cup D$
       \end{itemize}
   \end{homeworkSection}
-
   \begin{enumerate}[(a)]
     \item the expected value of the amount you win;
       \begin{homeworkSection}{Solution}
-        \[E[ |\$|]\]
+        \[P( S) = P( m_a: c_1, m_b:c_1) + P( m_a:c_2, m_b:c_2) = \frac{ 4}{ 9}\]
+        \[P( D) = P( m_a: c_1, m_b:c_2) + P( m_a:c_2, m_b:c_1) = \frac{ 5}{ 9}\]
+        \[E[ X] = (1.1) P( S) - (1.0) P( D) = -\frac{ 1}{ 15}\]
       \end{homeworkSection}
     \item the variance of the amount you win.
       \begin{homeworkSection}{Solution}
-
+        \[Var( X) = E[ X^2] - (E[ X])^2 = \frac{ 49}{ 45}\]
       \end{homeworkSection}
   \end{enumerate}
+\end{homeworkProblem}
 
+%=============================p.175 37==========================% 
+\newpage
+\begin{homeworkProblem}
+  Find $Var( X)$ and $Var( Y)$ for $X$ and $Y$ as given in Problem 21.
+  \begin{homeworkSection}{Definitions}
+    Given
+      \begin{itemize}
+        \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$
+        \item $Var( X) = E[ (X - E[ X])^2] = E[ X^2] - (E[ X])^2$
+      \end{itemize}
+    Let
+      \begin{itemize}
+        \item $S$ be the set of students, where $|S| = 148$
+        \item $s_i \in S$, where $1 \le i \le 148$
+        \item $B$ be set of buses, where $|B| = 4$
+        \item $b_i \in B$, where $1 \le i \le 4$
+        \item $|b_i|$ denote the number of students on bus $i$
+          \begin{itemize}
+            \item $|b_1| = 40$
+            \item $|b_2| = 33$
+            \item $|b_3| = 25$
+            \item $|b_4| = 50$
+          \end{itemize}
+        \item $BD$ be the set of bus drivers where $1 \le i \le 4$
+        \item $s_X$ be the randomly selected student.
+        \item $bd_Y$ be the randomly selected bus driver.
+        \item $b_X$ be the bus which the randomly selected student is on.
+        \item $b_Y$ be the bus the randomly selected bus driver drives.
+      \end{itemize}
+  \end{homeworkSection}
+  \begin{homeworkSection}{Solution}
+    \[Var( X) =  \left((|b_1|) P( b_1)^2 + (|b_2|) P( b_2)^2 + (|b_3|) P( b_3)^2 + (|b_4|) P( b_4)^2\right)\]
+        \[- \left((|b_1|) P( b_1) + (|b_2|) P( b_2) + (|b_3|) P( b_3) + (|b_4|) P( b_4)\right)^2\]
+    \[Var( Y) = \left((|bd_1|) P( bd_1)^2 + (|bd_2|) P( bd_2)^2 + (|bd_3|) P( bd_3)^2 + (|bd_4|) P( bd_4^2)\right)\]
+       \[- \left((|bd_1|) P( bd_1) + (|bd_2|) P( bd_2) + (|bd_3|) P( bd_3) + (|bd_4|) P( bd_4)\right)^2\]
+  \end{homeworkSection}
 \end{homeworkProblem}
 \end{spacing}
 \end{document}
