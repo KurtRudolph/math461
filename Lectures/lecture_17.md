@@ -37,7 +37,7 @@ A guess
 
 
 Exponentiate
-\[n! \approx e^{n \log n + \frac{ 1}{ 2} \log n - n} = \frac{ n^n \sqrt{ n}}{ e^n}
+\[n! \approx e^{n \log n + \frac{ 1}{ 2} \log n - n} = \frac{ n^n \sqrt{ n}}{ e^n}\]
 
 Let 
 \[d_n = \log n! - \left(n + \frac{ 1}{ 2} \log n + n \]
@@ -70,6 +70,9 @@ so
 \[d_n - d_{n + 1} = 1 +  \frac{ 1}{ 3 (2 n + 1)^3} + \frac{ 1}{ 5 (2 n + 1)^5} + \cdots - 1 > 0\]
 
 so \[ d_n - d_{n + 1} > 0 \Rightarrow d_n\] is decreasing
+
+
+\[d_n - d_{n + 1} < \]
 
 
 ##  Binomial Coefficient
