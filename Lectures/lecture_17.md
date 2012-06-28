@@ -37,16 +37,18 @@ A guess
 
 
 Exponentiate
+
 \[n! \approx e^{n \log n + \frac{ 1}{ 2} \log n - n} = \frac{ n^n \sqrt{ n}}{ e^n}\]
 
 Let 
-\[d_n = \log n! - \left(n + \frac{ 1}{ 2} \log n + n \]
+
+\[d_n = \log n! - \left(n + \frac{ 1}{ 2}\right) \log n + n \]
 
 \[d_{n + 1} = \log( n + 1)! - \left( n + \frac{ 3}{ 2}\right) \log( n + 1) + n + 1\]
 
 Consider
 
-\[d_n = d_{n + 1} = \left(n + \frac{ 1}{ 2} \log \frac{ n + 1}{ n} - 1\]
+\[d_n = d_{n + 1} = \left(n + \frac{ 1}{ 2}\right) \log \frac{ n + 1}{ n} - 1\]
 
 
 Recall
