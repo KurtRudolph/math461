@@ -80,15 +80,14 @@ so \[ d_n - d_{n + 1} > 0 \Rightarrow d_n\] is decreasing
 
 ### Definition
 
-We say \[f( n)\] is asymtotic to \[g( n)\], denoted by \[f( n)  ~ g( n)\]
+We say \[f( n)\] is asymtotic to \[g( n)\], denoted by \[f( n)  \sim g( n)\]
 
 if 
-
-\[ \lim_{n \rightarrow \infty \frac{ f( n)}{ g( n)} = 1\]
+\[ \lim\limits_{n \rightarrow \infty \frac{ f( n)}{ g( n)} = 1\]
 
 Stirling formula
 
-\[ n! ~ \frac{ n^n}{ e^n}\sqrt{ 2 \pi n}\]
+\[ n! \sim \frac{ n^n}{ e^n}\sqrt{ 2 \pi n}\]
 
 ##  Binomial Coefficient
 
