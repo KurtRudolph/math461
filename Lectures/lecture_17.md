@@ -74,8 +74,21 @@ so
 so \[ d_n - d_{n + 1} > 0 \Rightarrow d_n\] is decreasing
 
 
-\[d_n - d_{n + 1} < \]
+\[d_n - d_{n + 1} < ...\]
 
+
+
+### Definition
+
+We say \[f( n)\] is asymtotic to \[g( n)\], denoted by \[f( n)  ~ g( n)\]
+
+if 
+
+\[ \lim_{n \rightarrow \infty \frac{ f( n)}{ g( n)} = 1\]
+
+Stirling formula
+
+\[ n! ~ \frac{ n^n}{ e^n}\sqrt{ 2 \pi n}\]
 
 ##  Binomial Coefficient
 
