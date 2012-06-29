@@ -23,6 +23,7 @@
 %=============================p.180 #4==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 4, Theoretical Exercise 4}
   For a nonnegative integer-valued random variable $N$, show that
   \[E[ N] = \sum\limits_{i = 1}^{\infty}{ P\{ N \le i\}}\]
 
@@ -33,30 +34,270 @@
     \begin{itemize}
       \item $F( x) = P\{ X \le x\}$ is the \emph{distribution function} of $X$
       \item $p( x) = P\{ X = x\}$ is the \emph{probability mass function} of $X$
-      \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$
+      \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$ is the 
+      \emph{expected value} of $X$
     \end{itemize}
   \end{homeworkSection}
   \begin{homeworkSection}{Solution}
-    
-  
+    Let $X = N$ be our random variable
+
+    Since 
+    \[E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}\]
+    \[p( x) = P\{ X = x\}\]
+    \[\sum\limits_{i = 1}^{\infty}{ P\{ X \le i\}} 
+    = \sum\limits_{i = 1}^{ \infty}{ \sum\limits_{k = i}^{\infty}{P\{ X = k\}}}\]
+    We find 
+    \[\sum\limits_{i = 1}^{\infty}{ P\{ X \le i\}} 
+    = \sum\limits_{i = 1}^{ \infty}{ \sum\limits_{k = i}^{\infty}{P\{ X = k\}}}
+    = \sum\limits_{i = 1}^{ \infty}{ \sum\limits_{k = i}^{\infty}{ p( k)}}\]
+    By out outer summation, $p( x)$ will be summed $x$ times, therefore
+    \[\sum\limits_{i = 1}^{\infty}{ P\{ X \le i\}} 
+    = \sum\limits_{i = 1}^{ \infty}{ \sum\limits_{k = i}^{\infty}{P\{ X = k\}}}
+    = \sum\limits_{i = 1}^{ \infty}{ \sum\limits_{k = i}^{\infty}{ p( k)}}
+    = \sum\limits_{k:p( k) > 0}{ k p( k)} = E[ X]\]
 
   \end{homeworkSection}
 \end{homeworkProblem}
 %============================p.180 #10===========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 4, Theoretical Exercise 10}\\
   Let $X$ be a binomial random variable with parameters $n$ and $p$. Show that 
+  \[E\left[\frac{ 1}{ X + 1}\right] = \frac{ 1 - (1 - p)^{n + 1}}{ (n + 1)p}\]
+  \begin{homeworkSection}{Defintions}
+    \begin{itemize}
+      \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$ is the 
+      \emph{expected value} of $X$
+      \item $p( i) = {n \choose i} p^i (1 - p)^{n - i}, i = 0, \dots, n$ is the
+      probability mass function of a binomial random variable with perameters $n$
+      \item $E[ X] = n p$ is the \emph{expected value} of a \emph{binomial}
+      where $X \sim B( n, p)$
+    \end{itemize}
+  \end{homeworkSection}
   \begin{homeworkSection}{Solution}
+    Following the definition of expectation we find
+    \[E \left[\frac{ 1}{ X + 1}\right] 
+    = \sum\limits_{x:p(x) > 0}{ \left(\frac{ 1}{ x + 1}\right) p( x)}\]
+    Since $X \sim B( n, p)$ we find
+    \[\sum\limits_{x:p(x) > 0}{ \left(\frac{ 1}{ x + 1}\right) p( x)} 
+    = \sum\limits_{i = 0}^{n}{ \left(\frac{ 1}{ i + 1}\right) {n \choose i} p^i (1 - p)^{n - i}}\]
+    We find from ${n \choose k} = \frac{ n}{ k} {n - 1 \choose k - 1}$
+    that ${n + 1\choose k + 1} = \frac{ n + 1}{ k + 1} {n \choose k}$
+    hence
+    
+    \[\sum\limits_{i = 0}^{n}{ \left(\frac{ 1}{ i + 1}\right) {n \choose i} p^i (1 - p)^{n - i}}
+    = \sum\limits_{i = 0}^{n}{ \left(\frac{ 1}{ n + 1}\right) \left(\frac{ n + 1}{ i + 1}\right) {n \choose i} p^i (1 - p)^{n - i}}\]
+    \[= \left(\frac{ 1}{ n + 1}\right) \sum\limits_{i = 0}^{n}{ {n + 1 \choose i + 1} p^i (1 - p)^{n - i}}\]
+    \[= \left(\frac{ 1}{ p (n + 1)}\right) \sum\limits_{i = 0}^{n}{ {n + 1 \choose i + 1} p^{i + 1} (1 - p)^{n - i}}\]
+    \[= \frac{ 1}{ p (n + 1)} (1 - (1 - p)^{n + 1})\]
+    \[= \frac{ 1 - (1 - p)^{n + 1}}{ (n + 1)p}\]
+  \end{homeworkSection}
+\end{homeworkProblem}
+
+%=============================p.180 16==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Theoretical Exercise 16}\\
+  Let $X$ be a \emph{Poisson} random variable with parameter $\lambda$. 
+  Show that $P\{ X = i\}$ increases monotonically and then decreases 
+  monotonically as $i$ increases, reaching its maximum when $i$ is the 
+  largest integer not exceeding $\lambda$.
+
+  \emph{Hint:} Consider $\frac{ P\{ X = i\}}{ P\{ X = i - 1\}}$.
+  \begin{homeworkSection}{Defintions}
+    \begin{itemize}
+      \item $p( i) = \frac{ e^{-\lambda} \lambda^i}{ i!}$ where 
+        $i \ge 0$ is a \emph{Poisson} random variable with peramter $\lambda$ 
+      \item $E[ X] = Var( X) = \lambda$ for a \emph{Poisson} random variable.
+    \end{itemize}
+  \end{homeworkSection}
+ \begin{homeworkSection}{Solution}
+    \[\frac{ P\{ X = i\}}{ P\{ X = i - 1\}} 
+    = \frac{ \left(\frac{ e^{-\lambda} \lambda^i}{ i!}\right)}
+          { \left(\frac{ e^{-\lambda} \lambda^{i - 1}}{ (i - 1)!}\right)}
+    = \frac{ \lambda}{ i}\]
+    hence when $i < \lambda$ $p( i)$ is increasing, when $ i < \lambda$ $p( i)$ is decreasing.
+    Therefore, since $p( i)$ is a \emph{Poisson} distrobution where $E( x) = Var( x) = \lambda$,
+    $p( i)$ is monotonically increasing and decreasing.
+  \end{homeworkSection}
+\end{homeworkProblem}
+
+%=============================p.180 17b==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Theoretical Exercise 17b}\\
+  Let $X$ be a Poisson random variable with parameter $\lambda$.
+  Verify the formula
+  \[P[ X \text{ is even}] = \frac{ 1}{ 2} \left[1 + e^{-2 \lambda}\right]\]
+  directly by making use of the expansion of $e^{-\lambda} + e^{\lambda}$.
+ \begin{homeworkSection}{Solution}
+    Let $E$ be the event our \emph{Poisson} random variable is even.\\
+    Since
+    \[P( X) = \sum\limits_{i = 0}^{\infty}{ \frac{ e^{-\lambda} \lambda^{i}}{ i!}}\]
+    it follows that
+    \[P( E) = \sum\limits_{i = 0}^{\infty}{ \frac{e^{-\lambda} \lambda^{2 i}}{ (2 i)!}}\]
+    making use of the expansion of $e^{-\lambda} + e^{\lambda}$ we see that 
+    \[\cosh( \lambda) = \frac{ e^{-\lambda} + e^{\lambda}}{ 2}\]
+    hence
+    \[P( E) = \sum\limits_{i = 0}^{\infty}{ \frac{e^{-\lambda} \lambda^{2 i}}{ (2 i)!}}
+    = e^{-\lambda} \sum\limits_{i = 0}^{\infty}{ \frac{ \lambda^{2 i}}{ (2 i)!}}
+    = e^{-\lambda} \left(\frac{ e^{-\lambda} + e^{\lambda}}{ 2}\right) = \frac{ 1 + e^{-2 \lambda}}{ 2}\]
+  \end{homeworkSection}
+\end{homeworkProblem}
+
+%=============================p.181 19==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Theoretical Exercise 19}\\
+  Show that $X$ is a Poisson random variable with
+  parameter $\lambda$, then
+  \[E[ X^n] = \lambda E[ (X + 1)^{n - 1}]\]
+
+  Now use this result to compute $E[ X^3]$.
+  
+ \begin{homeworkSection}{Solution}
+    \[E[ X^3] = \lambda E[ (X + 1)^2]\] 
+    \[= \lambda E[ X^2 + 2X + 1]\] 
+    \[= \lambda^2 (E[ X + 1] + E[ 2x] + E[ 1])\]
+    \[= \lambda^2( \lambda + 2) = \lambda^3 + 2 \lambda^2\]
     
   \end{homeworkSection}
 \end{homeworkProblem}
 
-  
+%=============================p.177 51 ==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Exercise 51}\\
+  The expected number of typographical errors on a page of a certain 
+  magazine is $0.2$. What is the probability that the next page you 
+  read contains {\bf (a)} 0 and {\bf (b)} 2 or more typographical 
+  errors? Explain your reasoning!
+ 
+  \begin{enumerate}[(a)] 
+    \item 0
+      \begin{homeworkSection}{Solution}
+        \[1 - P{ X \ge 1} = 1 - .2 = .8\]
+        Were calculating the probability there are exactly zero errors.
+      \end{homeworkSection}
+    \item 2
+      \begin{homeworkSection}{Solution}
+      \[ P\{ X \ge 2\} = (P\{ X \ge 1\}) (P\{ X \ge 1\}) = (.2)(.2) = .04\]
+      Treating the errors as independent we find that it is simply $P\{ X \ge 1\}^2$
+      \end{homeworkSection}
+  \end{enumerate}
+\end{homeworkProblem}
+
+%=============================p.177 57==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Exercise 57}\\
+  Suppose that the number of accidents occurring on a highway each day 
+  is a Poisson random variable with parameter $\lambda = 3$.
+ 
+  \begin{homeworkSection}{Defintions}
+    \begin{itemize}
+      \item $p( i) = \frac{ e^{-\lambda} \lambda^i}{ i!}$ where 
+        $i \ge 0$ is a \emph{Poisson} random variable with peramter $\lambda$ 
+      \item $E[ X] = Var( X) = \lambda$ for a \emph{Poisson} random variable.
+    \end{itemize}
+  \end{homeworkSection}
+  \begin{enumerate}[(a)]
+    \item Find the probability that 3 or more accidents occur today.
+      \begin{homeworkSection}{Solution}
+        \[P\{ X \ge 3 \} = 1 - P\{ X = 0\} = P\{ X = 1\} - P\{ X = 2\}\]
+        \[= 1 - e^{-\lambda} - \lambda e^{-\lambda} - \frac{ e^{-\lambda} \lambda^2}{ 2} = .5768\]
+      \end{homeworkSection}
+    \item Repeat part (a) under the assumption that at least 1 accident 
+      occurs today.
+      \begin{homeworkSection}{Solution}
+        \[P\{ X \ge 3 | X \ge 1\} = \frac{ P\{ X \ge 3\}}{ P\{ X \ge 1}\}\]
+        Since
+        \[P\{X \ge 1\} = 1 - e^{-\lambda} = .95\]
+        \[P\{ X \ge 3 | X \ge 1\} = \frac{ .5768}{ .95} = .607\]
+      \end{homeworkSection}
+  \end{enumerate}
+\end{homeworkProblem}
+
+%=============================p.177 58ab==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Exercise 58ab}\\
+  Compare the Poisson approximation with the correct binomial probability 
+  for the following cases:
+ 
+  \begin{homeworkSection}{Defintions}
+    \begin{itemize}
+      \item $E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x)}$ is the 
+      \emph{expected value} of $X$
+      \item $p( i) = {n \choose i} p^i (1 - p)^{n - i}, i = 0, \dots, n$ is the
+      probability mass function of a binomial random variable with perameters $n$
+      \item $E[ X] = n p$ is the \emph{expected value} of a \emph{binomial}
+      where $X \sim B( n, p)$
+      \item $p( i) = \frac{ e^{-\lambda} \lambda^i}{ i!}$ where 
+        $i \ge 0$ is a \emph{Poisson} random variable with peramter $\lambda$ 
+      \item $E[ X] = Var( X) = \lambda$ for a \emph{Poisson} random variable.
+    \end{itemize}
+  \end{homeworkSection}
+  I do not believe I understand what to use as $\lambda$
+  \begin{enumerate}[(a)]
+    \item $P[ X = 2]$ when $n = 8, p = 0.1$
+      \begin{homeworkSection}{Solution}
+        Possion, let $\lambda = np = .8$
+         \[p(2) = \frac{ e^{-\lambda} \lambda^2}{ 2} = .143785\]
+        Binomial
+        \[P(2) = {8 \choose 2} p^2 (1 - p)^6 = .148803\]
+        Comparison
+        \[\frac{ |.148803 -.143785|}{ .148803} = .03 = 3\%\]
+      \end{homeworkSection}
+    \item $P[ X = 9]$ when $n = 10, p = 0.95$
+      \begin{homeworkSection}{Solution}
+        Possion, let $\lambda = np = 9.5$
+         \[p(9) = \frac{ e^{-\lambda} \lambda^9}{ 9!} = .130003\]
+        Binomial
+        \[P(9) = {10 \choose 9} p^9 (1 - p)^1 = .3151\]
+        Comparison
+        \[\frac{|.3151 -.130003|}{.3151} = .587 = 58\%\]
+      \end{homeworkSection}
+  \end{enumerate}
+\end{homeworkProblem}
+
+%=============================p.177 59==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 4, Exercise 59}\\
+  If you buy a lottery ticket in 50 lotteries, in each of which your 
+  chance of winning a prize is $\frac{ 1}{ 100}$ , what
+  is the (approximate) probability that you will win
+  a prize.
+  \begin{homeworkSection}{Defintions}
+    \begin{itemize}
+      \item $p( i) = \frac{ e^{-\lambda} \lambda^i}{ i!}$ where 
+        $i \ge 0$ is a \emph{Poisson} random variable with peramter $\lambda$ 
+      \item $E[ X] = Var( X) = \lambda$ for a \emph{Poisson} random variable.
+    \end{itemize}
+  \end{homeworkSection}
+  \begin{enumerate}[(a)]
+    \item at least once?
+      \begin{homeworkSection}{Solution}
+        \[p(1) = .3935\]
+      \end{homeworkSection}
+    \item exactly once?
+      \begin{homeworkSection}{Solution}
+        \[p( 1) - p( 2) = .3033\]
+      \end{homeworkSection}
+    \item at least twice?
+      \begin{homeworkSection}{Solution}
+        \[p(2) = .0902\]
+      \end{homeworkSection}
+  \end{enumerate}
+\end{homeworkProblem}
 \end{spacing}
 \end{document}
 
 \begin{comment}%==========================================================
+
 %=============================Problemi==========================% 
+\newpage
 \begin{homeworkProblem}
   
  \begin{homeworkSection}{Solution}
