@@ -26,3 +26,4 @@ discrete with possible values \[1, 2, 3, \dots\] we
 say \[X\] is geometric r.v. with parameter \[p\].
 
 Note \[\sum\limits_{n = 1}^{\infty}{ (1 - p)^{n - 1}} p = p \frac{ 1}{ 1 - (1 - p)} = 1\]
+
