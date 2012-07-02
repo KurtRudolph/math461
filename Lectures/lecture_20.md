@@ -4,7 +4,7 @@
 * Combinatorics including 
   * dice
   * card hands
-*
+* 
   * _Binomial Expansion_
   * Geometric Series
   * exp. series
