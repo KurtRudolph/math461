@@ -5,7 +5,7 @@
   * dice
   * card hands
 *
-  * Binomial Expansion
+  * _Binomial Expansion_
   * Geometric Series
   * exp. series
   * log series
