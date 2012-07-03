@@ -63,6 +63,23 @@ non-overlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 ### Union
 \[P(A \cup B) = P( A) + P( B) - P( AB)\]
 
+## Chapter 3: Conditional Probability and Independence
+### Conditional Prob
+\[E\] given \[F\] has occurred is denoted
+
+\[P( E|F) = \frac{ P( EF)}{ P( F)}\]
+
+### Multiplication rule
+\[P( E_1 E_2 \cdots E_n) = P( E_1) P( E_2|E_1) \cdots P( E_n|E_1 \cdots E_{n - 1})\]
+
+### Identity
+\[P( E) = P( E|F)P(F) + P( E|F^c)P( F^c)\]
+
+### Bayes Formula
+
+\[P( F_j | E ) = \frac{ P( E|F_j)P( F_j)}{ \sum\limits_{i = 1}^{n}{ P( E|F_i) P( F_i)}\]
+
+
 # Problems
 
 ## Chapter 1: Combinatorial Analysis
@@ -71,7 +88,7 @@ non-overlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 \[20\] workers are to be assigned to \[20\] different jobs, 
 one to each job. How many different assignments are possible?
 
-* \[ 20!\]
+* \[20!\]
   * \[20\] unique jobs and \[20\] unique workers 
 
 ### Problem 7
@@ -149,4 +166,17 @@ Poker dice is played by simultaneously rolling 5
 dice. 
 
 * \[P\{\text{two pair}\}\]
-  * \[\frac{ {5 \choose 2} {6 \choose 1} {3 \choose 2} {5 \choose 1} {4 \choose 1}}{ 6^5}\]
+  * \[\frac{ {6 \choose 2} {5 \choose 2} {3 \choose 2} {4 \choose 1}}{ 6^5}\]
+
+
+### Problem 25
+
+A pair of dice is rolled until a sum of either 5 or 7 appears. 
+Find the probability that a 5 occurs first.
+
+\[P( 5) = \{ (1,4), (2,3), (3,2), (4,1)\} = \frac{ 4}{ 36} = \frac{ 1}{ 9}\]
+\[P( 7) = \{ (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\} = \frac{ 6}{ 36} = \frac{ 1}{ 6}\]
+\[P( (7 \cup 5)^c) = \frac{ 13}{ 18}\]
+Let \[E\] be the even that a 5 occurs before a 7.
+\[P(E_n) = \left(\frac{ 13}{ 18}\right)^{n-1} \frac{ 1}{ 9} =  \]
+
