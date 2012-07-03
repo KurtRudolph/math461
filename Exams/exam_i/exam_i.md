@@ -53,4 +53,10 @@ nonoverlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 
 # Problems
 
+## Chapter 1: Combinitorial Analysis
 
+### Problem 3
+Twenty workers are to be assigned to 20 different jobs, 
+one to each job. How many different assignments are possible?
+
+* 20 unique jobs and 20 unique workers \[\Rightarrow 20!\]
