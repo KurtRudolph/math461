@@ -60,6 +60,9 @@ non-overlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 
 \[P\left(\bigcup\limits_{i = 1}^{\infty}{ A_i}\right) = \sum\limits_{i = 1}^{\infty}{ P( A_i)}\]
 
+### Union
+\[P(A \cup B) = P( A) + P( B) - P( AB)\]
+
 # Problems
 
 ## Chapter 1: Combinatorial Analysis
