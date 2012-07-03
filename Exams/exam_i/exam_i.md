@@ -1,3 +1,33 @@
+# Topics
+* Combinatorics including 
+  * Dice
+  * Card Hands
+* 
+  * _Binomial Expansion_
+  * Geometric Series
+  * Exponential Series
+  * Logrithmic Series
+* 
+  * Binomial coefficients
+  * Multinomial coefficients
+* 
+  * Axioms of probability
+  * Conditional probability
+* Baye's formula
+* Independence
+* Inclusion-exclusion
+* 
+  * Expectation
+  * Variance
+* 
+  * Binomial random variable \[(n,p)\]
+  * Poisson random variable \[(\lambda)\]
+  * Geometric random variable \[(p)\]
+* 
+  * Stirling's Formula 
+  * Integrals of probability theory
+
+
 # Formulas
 
 ## Chapter 1: Combinatorial Analysis
@@ -19,3 +49,5 @@ is the number of division of \[n\] items into \[r\] distinct
 nonoverlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 
 # Problems
+
+
