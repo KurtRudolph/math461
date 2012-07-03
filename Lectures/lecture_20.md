@@ -9,7 +9,7 @@
   * Geometric Series
   * Exponential Series
   * Logrithmic Series
-*
+* 
   * Binomial coefficients
   * Multinomial coefficients
 * 
