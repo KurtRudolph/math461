@@ -56,7 +56,19 @@ nonoverlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 ## Chapter 1: Combinitorial Analysis
 
 ### Problem 3
-Twenty workers are to be assigned to 20 different jobs, 
+\[20\] workers are to be assigned to \[20\] different jobs, 
 one to each job. How many different assignments are possible?
 
-* 20 unique jobs and 20 unique workers \[\Rightarrow 20!\]
+* \[20\] unique jobs and \[20\] unique workers \[\Rightarrow 20!\]
+
+### Problem 7
+In how many ways can 3 boys and 3 girls sit in a row?
+* \[6\] unique individuals \[\Rightarrow 6!\]
+
+In how many ways can \[3\] boys and \[3\] girls sit in a row
+if the boys and the girls are each to sit together?
+* \[2\] groups of \[3\] unique individuals \[\Rightarrow 3! 3!\]
+
+In how many ways if only the boys must sit together?  
+* \[3! {6 \choose 3}\]
+
