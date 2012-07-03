@@ -58,7 +58,7 @@ non-overlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 * \[P( S) = 1\]
 * For mutually exclusive events \[A_i, i \ge 1\]
 
-\[P\left(\bigcup\limits_{i = 1}^{\infty}{ A_i} = \sum\limits_{i = 1}^{\infty}{ P( A_i)}\]
+\[P\left(\bigcup\limits_{i = 1}^{\infty}{ A_i}\right) = \sum\limits_{i = 1}^{\infty}{ P( A_i)}\]
 
 # Problems
 
