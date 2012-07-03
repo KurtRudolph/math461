@@ -49,17 +49,18 @@ For nonnegative integers \[n_1, \dots, n_r\] summing to \[n\]
 \[{n \choose n_1, n_2, \dots, n_r} = \frac{ n!}{ n_1! n_2! \cdots n_r!}\]
 
 is the number of division of \[n\] items into \[r\] distinct 
-nonoverlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
+non-overlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 
 # Problems
 
-## Chapter 1: Combinitorial Analysis
+## Chapter 1: Combinatorial Analysis
 
 ### Problem 3
 \[20\] workers are to be assigned to \[20\] different jobs, 
 one to each job. How many different assignments are possible?
 
-* \[20\] unique jobs and \[20\] unique workers \[\Rightarrow 20!\]
+* \[ 20!\]
+  * \[20\] unique jobs and \[20\] unique workers 
 
 ### Problem 7
 In how many ways can 3 boys and 3 girls sit in a row?
@@ -70,16 +71,30 @@ In how many ways can \[3\] boys and \[3\] girls sit in a row
 if the boys and the girls are each to sit together?
 * \[(2) 3! 3!\]
   * \[2\] groups of \[3\] unique individuals filling \[3\] seats per group
-    with \[2\] posible arrangments of the groups
+    with \[2\] possible arrangements of the groups
 
 In how many ways if only the boys must sit together?  
-* \[3! {6 \choose 3}\]
+* \[(4) 3! 3!\]
   * \[2\] groups of \[3\] unique individuals filling \[3\] seats per group
-    with \[4\] posible arrangments of the groups as the groups, the group
+    with \[4\] possible arrangements of the groups as the groups, the group
     of boys having four positions between the girls.
 
 In how many ways if no two people of the same sex are allowed to sit together?
 * \[(2) 3! 3!\]
   * \[2\] groups of \[3\] unique individuals filling \[3\] seats per group
-    with \[2\] posible arrangments of the groups
+    with \[2\] possible arrangements of the groups
 
+### Problem 8
+How many different letter arrangements can be made from the letters
+
+* Fluke
+  * \[5!\]
+      * All unique letters
+* Propose
+  * \[\frac{ 7!}{ 2! 2!} \]
+      * \[7\] letters, \[5\] unique, \[2\] sets of \[2\] same latter
+
+### Problem 14
+How many 5-card poker hands are there?
+
+* \[{52 \choose 5}\]
