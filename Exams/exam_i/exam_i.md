@@ -79,6 +79,41 @@ non-overlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 
 \[P( F_j | E ) = \frac{ P( E|F_j)P( F_j)}{ \sum\limits_{i = 1}^{n}{ P( E|F_i) P( F_i)}\]
 
+## Chapter 4: Random Variables
+
+### Expected Value
+\[E[ X] = \sum\limits_{x:p( x) > 0}{ x p( x) }\]
+
+### Variance
+\[Var( X) = E[ (X - E[ X])^2] = E[ X^2] - (E[X])^2\]
+
+### Binomial Random Variable 
+pmf
+\[p( i) = {n \choose i} p^i (1 - p)^{n - i}\]
+
+\[E[ X] = n p\]
+
+\[Var( X) = np(1 - p)\]
+
+### Poisson Random Variable
+pmf
+\[p( i) = \frac{ e^{-\lambda} \lambda^i}{ i!}, i \ge 0\]
+
+E[ X] = \lambda
+
+Var( X) = \lambda
+
+### Geometric Random Variable
+pmf
+\[p( i) = p(1 - p)^{i - 1}, i = 1, 2, \dots\]
+
+\[E[ X] = \frac{ 1}{ p}\]
+
+\[Var( X) = \frac{ 1 - p}{ p^2}\]
+
+### Stirling's Approximation
+\[k! \sim k^{k + \frac{ 1}{ 2}} e^{-k} \sqrt{ 2 \pi}\]
+
 
 # Problems
 
@@ -180,3 +215,17 @@ Find the probability that a 5 occurs first.
 Let \[E\] be the even that a 5 occurs before a 7.
 \[P(E_n) = \left(\frac{ 13}{ 18}\right)^{n-1} \frac{ 1}{ 9} =  \]
 
+## Chapter 3: Conditional Probability and Independence
+A total of 46 percent of the voters in a certain city
+classify themselves as Independents, whereas 30 percent 
+classify themselves as Liberals and 24 percent say that 
+they are Conservatives. In a recent local election, 
+35 percent of the Independents, 62 percent of the Liberals, 
+and 58 percent of the Conservatives voted. 
+A voter is chosen at random. Given that this person voted in 
+the local election, what is the probability that he or she is
+
+Let \[L\] the event 
+Let \[V\] be the event this person voted
+
+\[P( V) = 
