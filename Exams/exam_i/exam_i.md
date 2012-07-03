@@ -51,6 +51,15 @@ For nonnegative integers \[n_1, \dots, n_r\] summing to \[n\]
 is the number of division of \[n\] items into \[r\] distinct 
 non-overlapping subgroups of sizes \[n_1, n_2, \dots, n_r\]
 
+## Chapter 2: Axioms of Probability
+
+### Union
+* \[0 \le P( A) \le 1\]
+* \[P( S) = 1\]
+* For mutually exclusive events \[A_i, i \ge 1\]
+
+\[P\left(\bigcup\limits_{i = 1}^{\infty}{ A_i} = \sum\limits_{i = 1}^{\infty}{ P( A_i)}\]
+
 # Problems
 
 ## Chapter 1: Combinatorial Analysis
