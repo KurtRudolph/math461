@@ -110,3 +110,11 @@ How many different letter arrangements can be made from the letters
 How many 5-card poker hands are there?
 
 * \[{52 \choose 5}\]
+
+## Chapter 2: Axioms of Probability
+Two dice are thrown. Let \[E\] be the event that 
+the sum of the dice is odd, let \[F\] be the event 
+that at least one of the dice lands on \[1\], and 
+let \[G\] be the event that the sum is \[5\]. Describe 
+the events.
+\[E F\],\[E \cup F\],\[F G\],\[E F^c\],and \[E F G\].
