@@ -63,12 +63,23 @@ one to each job. How many different assignments are possible?
 
 ### Problem 7
 In how many ways can 3 boys and 3 girls sit in a row?
-* \[6\] unique individuals \[\Rightarrow 6!\]
+* \[6!\]
+  * \[6\] unique individuals 
 
 In how many ways can \[3\] boys and \[3\] girls sit in a row
 if the boys and the girls are each to sit together?
-* \[2\] groups of \[3\] unique individuals \[\Rightarrow 3! 3!\]
+* \[(2) 3! 3!\]
+  * \[2\] groups of \[3\] unique individuals filling \[3\] seats per group
+    with \[2\] posible arrangments of the groups
 
 In how many ways if only the boys must sit together?  
 * \[3! {6 \choose 3}\]
+  * \[2\] groups of \[3\] unique individuals filling \[3\] seats per group
+    with \[4\] posible arrangments of the groups as the groups, the group
+    of boys having four positions between the girls.
+
+In how many ways if no two people of the same sex are allowed to sit together?
+* \[(2) 3! 3!\]
+  * \[2\] groups of \[3\] unique individuals filling \[3\] seats per group
+    with \[2\] posible arrangments of the groups
 
