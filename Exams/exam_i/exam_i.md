@@ -112,9 +112,41 @@ How many 5-card poker hands are there?
 * \[{52 \choose 5}\]
 
 ## Chapter 2: Axioms of Probability
-Two dice are thrown. Let \[E\] be the event that 
-the sum of the dice is odd, let \[F\] be the event 
-that at least one of the dice lands on \[1\], and 
-let \[G\] be the event that the sum is \[5\]. Describe 
-the events.
-\[E F\],\[E \cup F\],\[F G\],\[E F^c\],and \[E F G\].
+
+### Problem 3
+Two dice are thrown. 
+Let \[E\] be the event that the sum of the dice is odd, 
+Let \[F\] be the event that at least one of the dice lands on \[1\],
+Let \[G\] be the event that the sum is \[5\]. 
+
+Describe the events.
+
+* \[E F\]
+
+* \[E \cup F\]
+
+* \[F G\]
+
+* \[E F^c\]
+
+* \[E F G\].
+
+### Problem 8
+Suppose that \[A\] and \[B\] are mutually exclusive events 
+for which \[P( A) = .3\] and \[P( B) = .5\]. 
+
+What is the probability that
+
+
+* either \[A\] or \[B\] occurs?
+  * \[P( A \cup B) = .8\]
+
+* \[A\] occurs but \[B\] does not?
+  * \[P( A \cap B^c) = P( A)\]
+
+### Problem 16
+Poker dice is played by simultaneously rolling 5
+dice. 
+
+* \[P\{\text{two pair}\}\]
+  * \[\frac{ {5 \choose 2} {6 \choose 1} {3 \choose 2} {5 \choose 1} {4 \choose 1}}{ 6^5}\]
