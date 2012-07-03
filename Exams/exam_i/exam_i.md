@@ -99,9 +99,9 @@ pmf
 pmf
 \[p( i) = \frac{ e^{-\lambda} \lambda^i}{ i!}, i \ge 0\]
 
-E[ X] = \lambda
+\[E[ X] = \lambda\]
 
-Var( X) = \lambda
+\[Var( X) = \lambda\]
 
 ### Geometric Random Variable
 pmf
