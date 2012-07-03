@@ -2,14 +2,14 @@
 
 ## Ten topic
 * Combinatorics including 
-  * dice
-  * card hands
+  * Dice
+  * Card Hands
 * 
   * _Binomial Expansion_
   * Geometric Series
-  * exp. series
-  * log series
-* Coefficients
+  * Exponential Series
+  * Logrithmic Series
+*
   * Binomial coefficients
   * Multinomial coefficients
 * 
@@ -18,12 +18,16 @@
 * Baye's formula
 * Independence
 * Inclusion-exclusion
-* Expectation and Variance
-* Random Variable
-  * Binomial r.v \[(n,p)\]
-  * Poisson r.v. \[(\lambda)\]
-  * Geometric r.v \[(p)\]
-* Stirling's Formula and integrals of probability theory
+* 
+  * Expectation
+  * Variance
+* 
+  * Binomial random variable \[(n,p)\]
+  * Poisson random variable \[(\lambda)\]
+  * Geometric random variable \[(p)\]
+* 
+  * Stirling's Formula 
+  * Integrals of probability theory
 
 
 ## Practice Problems
