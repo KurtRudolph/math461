@@ -54,7 +54,7 @@ Also could have noticed it is an expectation of a gemetric random variable.
 
 so 
 
-P( B_1|A) = \frac{ P( A| B_1) \frac{ 1}{ 2}}{ P( A|B_1) \frac{ 1}{ 2} + P( A|B_2)\frac{ 1}{ 3} + P( A|B_3) \frac{ 1}{6} = \dots\]
+\[P( B_1|A) = \frac{ P( A| B_1) \frac{ 1}{ 2}}{ P( A|B_1) \frac{ 1}{ 2} + P( A|B_2)\frac{ 1}{ 3} + P( A|B_3) \frac{ 1}{6} = \dots\]
 
 
 ### 4
