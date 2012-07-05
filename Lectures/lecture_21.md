@@ -20,14 +20,14 @@ Use integration by parts to reduce
 \[\int\limits_{-\infty}^{\infty}{ x^2 e^{-x^2} dx}\] 
 to an integral we already know.
 
-* \[x^2 e^{-x^2} = \in
+* \[x^2 e^{-x^2} = \in\]
 
 
 ## Exam
 
 ### 1a)
 
-P( A \cup B \cup C) = P( A) + P( B) + P(C) - P( AB) - P( AC) - P( BC)
+P( A \cup B \cup C) = P( A) + P( B) + P(C) - P( AB) - P( AC) - P( BC)\]
 
 ### 1b) 
 
