@@ -85,3 +85,4 @@ For Binomial r.v. \[(100, \frac{ 1}{ 5}\]
 \[\frac{ 1}{ 3^{3n}} \frac{ (3n)!}{ (n!)^3} \sim \frac{ 1}{ 3^{ 3n}}}  \frac{ (3n)^{3n}}{ e^{3n}} \sqrt{ 2 \pi 3 n}\]
 
 \[ \rightarrow \frac{ e^n}{ n^n} \frac{ 1}{ (2 \pi n)^{\frac{ 3}{ 2}}} \sim \frac{ \sqrt{ 2 \pi n} \sqrt{ 3}}{ ( 2 \pi n)^{\frac{ 3}{ 2}}} = \frac{ \sqrt{ 3}}{ 2 \pi n}\]
+
