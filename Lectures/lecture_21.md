@@ -44,7 +44,7 @@ to an integral we already know.
 
 Also could have noticed it is an expectation of a gemetric random variable.
 
-### 3
+### 3)
 
 \[\bigcup\limits_{i = 1}^{3} B_i = S\] is a disjoint union
 
@@ -54,10 +54,10 @@ Also could have noticed it is an expectation of a gemetric random variable.
 
 so 
 
-\[P( B_1|A) = \frac{ P( A| B_1) \frac{ 1}{ 2}}{ P( A|B_1) \frac{ 1}{ 2} + P( A|B_2)\frac{ 1}{ 3} + P( A|B_3) \frac{ 1}{6} = \dots\]
+\[P( B_1|A) = \frac{ P( A| B_1) \frac{ 1}{ 2}}{ P( A|B_1) \frac{ 1}{ 2} + P( A|B_2)\frac{ 1}{ 3} + P( A|B_3) \frac{ 1}{6}} = \dots\]
 
 
-### 4
+### 4)
 
 \[\lambda = np = 100 \frac{ 20}{ 100} = 20\]
 
@@ -78,7 +78,7 @@ For Binomial r.v. \[(100, \frac{ 1}{ 5}\]
 
 
 
-### 7
+### 7)
 
 \[n! \sim \frac{ n^n}{ e^n \frac{ 2 \pi n}\]
 \[\frac{ 1}{ 3^{3n}} \frac{ (3n)!}{ (n!)^3 \sim \frac{ 1}{ 3^{ 3n}}}  \frac{ (3n)^{3n}}{ e^{3n}} \sqrt{ 2 \pi 3 n} \rightarrow \left(\frac{ e^n}{ n^n} \frac{ 1}{ (2 \pi n)^{\frac{ 3}{ 2}} \sim \frac{ \sqrt{ 2 \pi n} \sqrt{ 3}}{ ( 2 \pi n)^{\frac{ 3}{ 2}} = \frac{ \sqrt{ 3}{ 2 \pi n}\]
