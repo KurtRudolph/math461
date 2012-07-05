@@ -27,7 +27,7 @@ to an integral we already know.
 
 ### 1a)
 
-P( A \cup B \cup C) = P( A) + P( B) + P(C) - P( AB) - P( AC) - P( BC)\]
+\[P( A \cup B \cup C) = P( A) + P( B) + P(C) - P( AB) - P( AC) - P( BC)\]
 
 ### 1b) 
 
