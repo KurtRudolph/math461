@@ -29,4 +29,4 @@ with probability density function \[f(x) = C\].  Find \[C\],
 _*MEMORIZE*_
 \[X\] is normal \[(\mu, \sigma^2)\] if it's \[f(x)\] is 
 
-\[f(x) = \frac{ 1}{ \sigma \sqrt{ 2 \pi}} e^{\frac{ -(x -\mu)^2}}{ 2 \sigma^2}\]
+\[f(x) = \frac{ 1}{ \sigma \sqrt{ 2 \pi}} e^{\frac{ -(x -\mu)^2}{ 2 \sigma^2}}\]
