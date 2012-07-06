@@ -14,7 +14,7 @@ with probability density function \[f(x) = C\].  Find \[C\],
 * \[\int\limits_{\alpha}^{\beta} C dx = 1\]
       * \[C (\beta - \alpha) = 1\]
 * \[f(x) = \frac{ 1}{ \beta - \alpha}\]
-  * \[E[ X] = \int\limits_{\alpha}^{\beta} x \frac{ 1}{ \beta - \alpha} dx\]
+* \[E[ X] = \int\limits_{\alpha}^{\beta} x \frac{ 1}{ \beta - \alpha} dx\]
   * \[= \frac{ 1}{ \beta - \alpha \left( \frac{ \beta^2}{ 2} - \frac{ \alpha^2}{ 2}\right)\]
   * \[= \frac{ \beta + \alpha}{ 2}\]
 
