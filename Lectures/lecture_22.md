@@ -11,12 +11,12 @@ Say \[X\] is a random variable on \[S = [\alpha, \beta]\]
 with probability density function \[f(x) = C\].  Find \[C\],
 \[E[ X]\] and \[Var( X)\].
 
-* \[\int\limits_{\alpha}^{beta} C dx = 1\]
-  * \[C (\beta - \alpha) = 1
+* \[\int\limits_{\alpha}^{\beta} C dx = 1\]
+      * \[C (\beta - \alpha) = 1\]
 * \[f(x) = \frac{ 1}{ \beta - \alpha}\]
-* \[E[ X] = \int\limits_{\alpha}^{\beta} x \frac{ 1}{ \beta - \alpha} dx\]
-* \[= \frac{ 1}{ \beta - \alpha\] \left( \frac{ \beta^2}{ 2} - \frac{ \alpha^2}{ 2}\right)\]
-* \[= \frac{ \beta + \alpha}{ 2}\]
+  * \[E[ X] = \int\limits_{\alpha}^{\beta} x \frac{ 1}{ \beta - \alpha} dx\]
+  * \[= \frac{ 1}{ \beta - \alpha \left( \frac{ \beta^2}{ 2} - \frac{ \alpha^2}{ 2}\right)\]
+  * \[= \frac{ \beta + \alpha}{ 2}\]
 
 \[Var( X) = ?\]
 * \[E( X^2) = \int\limits_{ \alpha}^{\beta} x^2 \frac{ 1}{ \beta - \alpha} dx\]
