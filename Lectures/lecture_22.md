@@ -24,3 +24,9 @@ with probability density function \[f(x) = C\].  Find \[C\],
 * \[Var( X) = \frac{ \beta^2 + \alpha \beta + \alpha^2}{ 3} = \frac{ \beta^2 + 2 \alpha \beta + \alpha^2}{ 4}\]
   * \[\frac{ \beta^2}{ 12} + \frac{ \alpha^2}{ 12} - \alpha \beta \frac{ 2}{ 12} = \frac{ 1}{ 12} (\beta - \alpha)^2\]
 * \[\sqrt{ Var( X)} = \frac{ 1}{ \sqrt{ 12} (\beta - \alpha)\]
+
+## Normal Random Variable (Gaussian Random Variable)
+_*MEMORIZE*_
+\[X\] is normal \[(\mu, \sigma^2)\] if it's \[f(x)\] is 
+
+\[f(x) = \frac{ 1}{ \sigma \sqrt{ 2 \pi}} e^{\frac{ -(x -\mu)^2}}{ 2 \sigma^2}\]
