@@ -30,3 +30,7 @@ _*MEMORIZE*_
 \[X\] is normal \[(\mu, \sigma^2)\] if it's \[f(x)\] is 
 
 \[f(x) = \frac{ 1}{ \sigma \sqrt{ 2 \pi}} e^{\frac{ -(x -\mu)^2}{ 2 \sigma^2}}\]
+
+_Notes_: 
+* Sometimes we say \[X\] is \[n (\mu, \sigma^2)\] or \[N (\mu, \sigma^2)\]
+* For \[n(0,1)\] we have \[f(x) = \frac{ 1}{ \sqrt{ 2 \pi}} e^{\frac{ -x^2}{ 2}}\]
