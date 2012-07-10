@@ -22,3 +22,7 @@ for som fixed \[M > 0\]
 * Exponential \[\subseteq\] Gamma
 * Cauchy
   * \[f(x) = \frac{ 1}{ \pi (1 + x^2)}\]
+
+Also note:
+* Stirling's Formula
+  * \[k! \sim k^{k + \frac{ 1}{ 2}} e^{-k} \sqrt{ 2 \pi}\]
