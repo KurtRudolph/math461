@@ -76,7 +76,7 @@ For Binomial r.v. \[(100, \frac{ 1}{ 5})\]
 
 \[ = \int\limits_{0}^{\frac{ \pi}{ 2}}  \int\limits_{0}^{\infty} e^{-(r^2)} r dr d \theta = \frac{ \pi}{ 2} \int\limits_{0}^{\infty} r e^{-r^2} dr\]
 
-\[I = \sqrt{ = \frac{ \pi}{ 2} \int\limits_{0}^{\infty} r e^{-r^2} dr}\]
+\[I = \sqrt{ \frac{ \pi}{ 2} \int\limits_{0}^{\infty} r e^{-r^2} dr}\]
 
 
 
