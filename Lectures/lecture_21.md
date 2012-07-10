@@ -65,7 +65,7 @@ for poisson Distribution Approximation
 
 \[E( X) = \lambda = 20\]
 
-For Binomial r.v. \[(100, \frac{ 1}{ 5}\]
+For Binomial r.v. \[(100, \frac{ 1}{ 5})\]
 
 \[Var( X) = n p(1 - p) = 100 \frac{ 1}{ 5} \frac{ 4}{ 5} = 16\]
 
