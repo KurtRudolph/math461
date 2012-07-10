@@ -35,9 +35,10 @@ to an integral we already know.
 \[\sum\limits_{n = 1}^{\infty} n \left(\frac{ 3}{ 5}\right) \left(\frac{ 2}{ 5}\right)^{n-1}\]
 
 \[\sum_{n = 0}^{\infty}{ x^n = \frac{ 1}{ 1 -x}\]
+
 \[\sum_{n = x_1}^{\infty} n x^{n - 1} = \frac{ 1}{ (1 - x)^2}\]
 
-\[\sum_{n = 1}^{\infty}{ n \left(\frac{ 3}{ 5}\right)^{n - 1} = \frac{ 1}{ \left(1 - \frac{ 2}{ 5}\right)^2 = \frac{ 25}{ 9}\]
+\[\sum_{n = 1}^{\infty}{ n \left(\frac{ 3}{ 5}\right)^{n - 1} = \frac{ 1}{ \left(1 - \frac{ 2}{ 5}\right)^2} = \frac{ 25}{ 9}\]
 
 \[\frac{ 25}{ 9} \frac{ 3}{ 5}\]
 
