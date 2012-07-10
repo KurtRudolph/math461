@@ -72,7 +72,7 @@ For Binomial r.v. \[(100, \frac{ 1}{ 5})\]
 
 \[I^2 = \int\limits_{0}^{\infty} e^{-x^2} dx \int\limits_{0}^{\infty} e^{-y^2} dy\]
 
-\[I^2 = \int\limits_{0}^{\infty}  \int\limits_{0}^{\infty} e^{-(x^ +y^2)} dx dy\]
+\[I^2 = \int\limits_{0}^{\infty}  \int\limits_{0}^{\infty} e^{-(x^2 +y^2)} dx dy\]
 
 \[ = \int\limits_{0}^{\frac{ \pi}{ 2}}  \int\limits_{0}^{\infty} e^{-(r^2)} r dr d \theta = \frac{ \pi}{ 2} \int\limits_{0}^{\infty} r e^{-r^2} dr\]
 
