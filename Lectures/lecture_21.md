@@ -45,7 +45,6 @@ to an integral we already know.
 Also could have noticed it is an expectation of a gemetric random variable.
 
 ### 3)
-
 \[\bigcup\limits_{i = 1}^{3} B_i = S\] is a disjoint union
 
 \[P( B_1|A) = \frac{ P( B_1 A)}{ P( A)} = \frac{ P( A|B_1) P( B_1)}{ P( A)}\]
@@ -57,8 +56,7 @@ so
 \[P( B_1|A) = \frac{ P( A| B_1) \frac{ 1}{ 2}}{ P( A|B_1) \frac{ 1}{ 2} + P( A|B_2)\frac{ 1}{ 3} + P( A|B_3) \frac{ 1}{6}} = \dots\]
 
 
-### 4)
-
+### 4)a)
 \[\lambda = np = 100 \frac{ 20}{ 100} = 20\]
 
 for poisson Distribution Approximation
@@ -69,9 +67,13 @@ For Binomial r.v. \[(100, \frac{ 1}{ 5})\]
 
 \[Var( X) = n p(1 - p) = 100 \frac{ 1}{ 5} \frac{ 4}{ 5} = 16\]
 
+### 4) b)
 \[I = \int\limits_{0}^{\infty} e^{-x^2} dx\]
+
 \[I^2 = \int\limits_{0}^{\infty} e^{-x^2} dx \int\limits_{0}^{\infty} e^{-y^2} dy\]
+
 \[I^2 = \int\limits_{0}^{\infty}  \int\limits_{0}^{\infty} e^{-(x^ +y^2)} dx dy\]
+
 \[ = \int\limits_{0}^{\frac{ \pi}{ 2}}  \int\limits_{0}^{\infty} e^{-(r^2)} r dr d \theta = \frac{ \pi}{ 2} \int\limits_{0}^{\infty} r e^{-r^2} dr\]
 
 \[I = \sqrt{ = \frac{ \pi}{ 2} \int\limits_{0}^{\infty} r e^{-r^2} dr}\]
