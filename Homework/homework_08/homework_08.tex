@@ -3,6 +3,7 @@
 \usepackage{enumerate}
 \usepackage{graphicx}
 \usepackage{verbatim}
+\usepackage{amsmath}
 
 % Homework Specific Information
 \newcommand{\hmwkTitle}{Homework \#8}
@@ -27,7 +28,19 @@
   Let $X$ be a normal random variable with mean 12 and variance 4. 
   Find the value of $c$ such that $P\{X > c\} = 0.1$.
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      P\{X > c\} &= P\{\frac{ X - \mu}{ \sigma} > \frac{ c - \mu}{ \sigma}\}\\
+      &= 1 - P\{\frac{ X - \mu}{ \sigma} < \frac{ c - \mu}{ \sigma}\}\\
+      &= 1 - \Phi(\frac{ c - \mu}{ \sigma}) = 0.1\\
+    \end{align*}
+    Hence
+    \[\Phi(\frac{ c - \mu}{ \sigma}) = 0.9\]
+    Solving for $c$
+    \[\frac{ c - \mu}{ \sigma} = \Phi^{-1}( 0.9)\]
+    \begin{align*}
+      c &= \sigma \Phi^{-1}(0.9) + \mu\\
+        &= (2) (1.28) + (12) = 14.56
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -39,7 +52,16 @@
   proposed rise in school taxes, approximate the probability that a random 
   sample of 100 people will contain fewer than 75 in favor?
   \begin{homeworkSection}{Solution}
-    
+    Let $n = 100, p= 0.65$.  Using the normal approximation to a binomail we
+    find
+    \[\mu = np = 65\]
+    \[\sigma^2 = np(1 - p) = 22.75\]
+    \begin{align*}
+      P\{X < 75\} &= P\{X < 74.5\}\\
+                &= P\{ Z < \frac{ X - \mu}{ \sigma}\}\\
+                &= P\{ Z < \frac{ 74.5 - 65}{ 4.76}\}\\
+                &= \Phi( 1.99) \approx 0.97967
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -52,7 +74,21 @@
   What percentage of 25-year-old men are over 6 feet, 2 inches tall? 
   What percentage of men in the 6-footer club are over 6 feet, 5 inches?
   \begin{homeworkSection}{Solution}
-    
+    \[\mu = 71\]
+    \[\sigma^2 = 6.25\]
+    \begin{align*}
+      P\{ X > 74 \} &= P\{ Z > \frac{ X - \mu}{ \sigma}\}\\
+                    &= 1 - P\{ Z < \frac{ X - \mu}{ \sigma}\}\\
+                    &= 1 - P\{ Z < \frac{ 74 - 71}{ 2.5}\}\\
+                    &= 1 - \Phi( 1.2) \approx 0.1151
+    \end{align*}
+    Now to find the percentage of men in the 6-footer club who are over 6 feet, 5 inches
+    we look at the conditional probability
+    \begin{align*}
+      P\{ X > 77 | X > 72\} &= \frac{ P\{ X > 77\}}{ P\{ X > 72\}}\\
+                            &= \frac{ 1 - P\{ Z < \frac{ 77 - \mu}{ \sigma}\}}{ 1 - P\{ Z < \frac{ 72 - \mu}{ \sigma}\}}\\
+                            &= \frac{ 1 - \Phi( 2.4)}{ 1 - \Phi( 0.4)} \approx 0.0238
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -64,7 +100,26 @@
   compute the probability density function of the random variable $Y$ 
   defined by $Y = \log X$.
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      F_Y( a) &= P\{ Y \le a\} \\
+              &= P\{ \log( X) \le a\} \\
+              &= P\{ X \le e^a\} \\
+              &= F_X( e^a)
+    \end{align*}
+    Since $X$ is an exponential random variable
+    \begin{align*}
+      F_X( a) &= 1 - e^{-\lambda a} \\
+              &= 1 - e^{-a}
+    \end{align*}
+    Hence
+    \[F_Y( a) = 1 - e^{-e^a}\]
+    Therefore, the pdf of the random variable $Y$ is
+    \begin{align*}
+      f_Y( a) &= \frac{ d F_Y( a)}{ d a} \\
+              &= \frac{ d}{ da}( 1 - e^{-e^a}) \\
+              &= (-e^a) (e^{-e^a}) \\
+              &= e^{a + e^a}
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -75,7 +130,21 @@
   If $X$ is uniformly distributed over $(0, 1)$, find the density 
   function of $Y = e^X$ .
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      F_Y( a) &= P\{ Y \le a\}\\
+              &= P\{ e^X \le a\}\\
+              &= P\{ X \le \log( a)\}\\
+              &= F_X( \log( a))
+    \end{align*}
+    Since $X$ is unformly distributed, it's \emph{cdf} is linear 
+    \[F_X( a) = a\]
+    \[F_Y( a_ = \log( a)\]
+    Therefore the \emph{pdf} of $Y$ is
+    \begin{align*}
+      f_Y( a) &= \frac{ d F_Y( a)}{ d a}\\ 
+              &= \frac{ d}{ da} ( \log( a))\\
+              &= \frac{ 1}{ a} \text{ where } 1 \le a \le e
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -88,15 +157,16 @@
   \begin{enumerate}[(a)]
     \item $P\{ Z > x\} = P\{ Z < −x\}$
       \begin{homeworkSection}{Solution}
+          I don't know
         
       \end{homeworkSection}
     \item $P\{ |Z| > x\} = 2 P\{ Z > x\}$
       \begin{homeworkSection}{Solution}
-        
+       I don't know 
       \end{homeworkSection}
     \item $P\{ |Z| < x \} = 2 P\{ Z < x \} − 1$
       \begin{homeworkSection}{Solution}
-        
+        I don't know 
       \end{homeworkSection}
     \end{enumerate}
 \end{homeworkProblem}
@@ -107,9 +177,16 @@
   {\bf Chapter 5, Theoretical Exercise 11a}\\
   Let $Z$ be a standard normal random variable $Z$, and let 
   $g$ be a differentiable function with derivative $g'$.
-  Find $E[ Z^4]$.
+  Show that $E[ g'(Z)] = E[Zg(Z)]$.
   \begin{homeworkSection}{Solution}
-    
+    Using the identity
+      \[E[ g(x)] = \int\limits_{-\infty}^{\infty} g(x)f(x) dx \]
+    We find
+    \begin{align*}
+      E[Zg(Z)]  &= \int\limits_{-\infty}^{\infty} g'(Z)f(x) dx\\
+                &= g(Z)f(x) -  \int\limits_{-\infty}^{\infty} g(Z)f'(x) dx
+                &= \int\limits_{-\infty}^{\infty} Zg(Z)f(x) dx
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -120,17 +197,30 @@
   Use the identity of Theoretical Exercise 5 to derive $E[ X^2]$ when $X$ 
   is an exponential random variable with parameter $\lambda$.
   \begin{homeworkSection}{Solution}
+    From Theoretical Exercise 5
+      \[E[ X^n] = \int\limits_{0}^{\infty} n x^{n - 1 } P\{ X > x \} dx\]
+    Since $X$ is an exponential random variable 
+      \[P\{ X \le x\} = 1 - e^{-\lambda x}\]
+    is the \emph{cdf}.  Plugging into the formula for expectation from 
+    Theoretical Exercise 5, we find
+    \begin{align*}
+      E[ X^2] &= \int\limits_{0}^{\infty} 2 x e^{-\lambda x} dx\\
+              &= 2 \int\limits_{0}^{\infty} x e^{-\lambda x} dx\\
+              &= 2\left[ \left. x e^{-\lambda x} (-\lambda)^{-1} \right|_{0}^{\infty} + \lambda^{-1}\int\limits_0^{\infty} e^{-\lambda x} dx\right] \\
+              &= \frac{ 2}{ \lambda^2}
+    \end{align*}
     
   \end{homeworkSection}
 \end{homeworkProblem}
 
-%=============================p.228 #12==========================% 
+%=============================p.228 #27==========================% 
 \newpage
 \begin{homeworkProblem}
   {\bf Chapter 5, Theoretical Exercise 27}\\
   If $X$ is uniformly distributed over $(a, b)$, what random variable, 
   having a linear relation with $X$, is uniformly distributed over $(0, 1)$?
   \begin{homeworkSection}{Solution}
+    The binomial Random Variable, I'm not sure what this question is asking for. 
     
   \end{homeworkSection}
 \end{homeworkProblem}
