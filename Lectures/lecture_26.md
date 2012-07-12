@@ -17,3 +17,10 @@ Due Monday July 16
       * exp. significant
   * 30 
       * exp. significant
+
+
+## Memorize
+
+\[\Gamma( \alpha) = \int\limits_{0}^{\infty} e^{-t} t^{\alpha - 1} dt\]
+
+\[\Gamma( n + 1) = n \Gamma( n)\]
