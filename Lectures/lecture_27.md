@@ -8,7 +8,7 @@ Read p.388- p.402 of chapter 8
 Show that if \[X\] and \[Y\] are independent r.v.'s,
 then \[E( X Y) = E( X) E( Y)\] use integrals for this).
 
-## Homework Problem Work
+## Homework Problem Worked out
 
 \[E[ g'(Z)] = E[ Z g(Z)]\]
 
