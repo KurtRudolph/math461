@@ -28,11 +28,36 @@
   Verify that the gamma density function integrates to 1.
   
   \begin{homeworkSection}{Definitions}
-    
-    
+    A random variable is said to have a gamma distribution with parameters
+    $(\alpha, \lambda), \lambda > 0, \alpha > 0$, if it's densit function
+    is given by
+    \[
+      f( x) = \left\{
+        \frac{ \lambda e^{-\lambda x} (\lambda x)^{\alpha - 1}}
+             { \Gamma( \alpha)} ,x \ge 0
+        0 ,x < 0 \right.
+    \]
+    The quantity $\Gamma( \alpha)$ is call the \emph{gamma function}
+    and is defined by
+      \[\Gamma( \alpha) = \int\limits_0^\infty e^{-x} x^{\alpha - 1} dx\]
+    and it follows that
+      \[E[ X] = \frac{ \alpha}{ \lambda}\]
+      \[Var(X) = \frac{ \alpha}{ \lambda^2}\]
   \end{homeworkSection}
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      \int\limits_0^\infty \frac{ \lambda e^{-\lambda x} (\lambda x)^{\alpha - 1}}
+        { \Gamma( \alpha)} dx 
+      &= \int\limits_0^\infty \frac{ 1}{ \Gamma( \alpha)}
+        \lambda e^{-\lambda x} (\lambda x)^{\alpha - 1} dx\\
+      &= \frac{ 1}{ \Gamma( \alpha)} \int\limits_0^\infty
+        \lambda e^{-\lambda x} (\lambda x)^{\alpha - 1} dx\\
+      \text{ Let $y = \lambda x$ where $dy = \lambda dx$}\\
+      &= \frac{ 1}{ \Gamma( \alpha)} \int\limits_0^\infty
+        e^{-y} (y)^{\alpha - 1} dy\\
+      \text{Since $\Gamma( \alpha) = \int\limits_0^\infty e^{-y} y^{\alpha - 1} dy$}\\
+      &= 1
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
