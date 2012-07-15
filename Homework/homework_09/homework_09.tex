@@ -285,7 +285,7 @@
 \begin{homeworkProblem}
   {\bf Chapter 6, Exercise 9}\\
   The joint probability density function of $X$ and $Y$ is given by
-  \[f( x, y) = \frac{ 6}{ 7} \left( x^2 + \frac{ x y}{ 2}\right), 
+  \[f( x, y) = \frac{ 6}{ 7} \left(x^2 + \frac{ x y}{ 2}\right), 
     0 < x < 1, 0 < y < 2\]
 
   \begin{homeworkSection}{Definitions}
@@ -294,26 +294,104 @@
   \begin{enumerate}[(a)]
     \item Verify that this is indeed a joint density function.
       \begin{homeworkSection}{Solution}
-
+        \begin{align*}
+          \int\limits_0^2 \int\limits_0^1 f( x, y) dx dy &= 
+            \int\limits_0^2 \int\limits_0^1 \frac{ 6}{ 7} 
+              \left(x^2 + \frac{ x y}{ 2}\right) dx dy\\
+          &= \frac{ 6}{ 7} \int\limits_0^2 \int\limits_0^1 
+            \left(x^2 + \frac{ x y}{ 2}\right) dx dy\\
+          &= \frac{ 6}{ 7} \int\limits_0^2
+            \left.\left(\frac{ x^3}{ 3} + \frac{ x^2 y}{ 4}\right)\right|_0^1 dy\\
+          &= \frac{ 6}{ 7} \int\limits_0^2
+            \left(\frac{ 1}{ 3} + \frac{ y}{ 4}\right) dy\\
+          &= \frac{ 6}{ 7}
+            \left.\left(\frac{ y}{ 3} + \frac{ y^2}{ 8}\right)\right|_0^2\\
+          &= \frac{ 6}{ 7} \left(\frac{ 2}{ 3} + \frac{ 4}{ 8}\right)\\
+          &= \frac{ 6}{ 7} \left(\frac{ 7}{ 6}\right)\\
+          &= 1\\
+        \end{align*}
       \end{homeworkSection}
     \item Compute the density function of $X$.
       \begin{homeworkSection}{Solution}
-
+        \begin{align*}
+          f(x) &= \int\limits_0^2 f(x, y) dy\\
+          &= \int\limits_0^2 \frac{ 6}{ 7} \left(x^2 + \frac{ x y}{ 2}\right) dy\\
+          &= \left.\frac{ 6}{ 7} \left(y x^2 + \frac{ x y^2}{ 4}\right)\right|_0^2\\
+          &= \frac{ 6}{ 7} \left(2 x^2 + x \right)\\
+        \end{align*}
       \end{homeworkSection}
     \item Find $P\{ X > Y\}$.
       \begin{homeworkSection}{Solution}
-
+        \begin{align*}
+          \int\limits_0^1 \int\limits_0^x f( x, y) dy dx
+          &= \int\limits_0^1 \int\limits_0^x \frac{ 6}{ 7} \left(x^2 + \frac{ x y}{ 2}\right) dy dx\\
+          &= \int\limits_0^1 
+            \left.\frac{ 6}{ 7} \left( y x^2 + \frac{ x y^2}{ 4}\right)\right|_0^x dx\\
+          &= \int\limits_0^1 \frac{ 6}{ 7} \left( x^3 + \frac{ x^3}{ 4}\right) dx\\
+          &= \left.\frac{ 6}{ 7} \left( \frac{ x^4}{ 4} + \frac{ x^4}{ 16}\right)\right|_0^1\\
+          &= \frac{ 6}{ 7} \left(\frac{ 5}{ 16}\right)\\
+          &= \frac{ 30}{ 112} = \frac{ 15}{ 56}\\
+        \end{align*}
       \end{homeworkSection}
     \item Find $P\{ Y > \frac{ 1}{ 2}| X < \frac{ 1}{ 2}\}$.
       \begin{homeworkSection}{Solution}
-
+        \begin{align*}
+          \int\limits_\frac{ 1}{ 2}^2 \int\limits_0^\frac{ 1}{ 2} f( x, y) dx dy
+          &= \int\limits_\frac{ 1}{ 2}^2 \int\limits_0^\frac{ 1}{ 2} 
+            \frac{ 6}{ 7} \left(x^2 + \frac{ x y}{ 2}\right) dx dy\\
+          &= \int\limits_\frac{ 1}{ 2}^2 \frac{ 6}{ 7} 
+            \left.\left(\frac{ x^3}{ 3} + \frac{ x^2 y}{ 4}\right)\right|_0^\frac{ 1}{ 2} dy\\
+          &= \int\limits_\frac{ 1}{ 2}^2 
+            \frac{ 6}{ 7} \left(\frac{ 1}{ 24} + \frac{y}{ 16}\right) dy\\
+          &= \frac{ 6}{ 7} 
+            \left.\left(\frac{ y}{ 24} + \frac{y^2}{ 32}\right)\right|_\frac{ 1}{ 2}^2\\
+          &= \frac{ 6}{ 7} 
+            \left(\left(\frac{ 1}{ 12} + \frac{1}{ 16}\right) 
+            - \left(\frac{ 1}{ 48} + \frac{1}{ 128}\right)\right)\\
+          &= \frac{ 6}{ 7} 
+            \left(\left(\frac{ 5}{ 32}\right) 
+            - \left(\frac{19}{ 384}\right)\right)\\
+          &= \frac{ 6}{ 7}\left(\frac{ 41}{ 384}\right)\\
+          &= \frac{ 41}{ 448}\\
+        \end{align*}
       \end{homeworkSection}
     \item Find $E[ X]$
       \begin{homeworkSection}{Solution}
-
+        \begin{align*}
+          E[ X] &= \int\limits_0^2 \int\limits_0^1 x f( x, y) dx dy\\
+            &= \int\limits_0^2 \int\limits_0^1 x \frac{ 6}{ 7} 
+              \left(x^2 + \frac{ x y}{ 2}\right) dx dy\\
+            &= \int\limits_0^2 \int\limits_0^1 \frac{ 6}{ 7} 
+              \left(x^3 + \frac{ x^2 y}{ 2}\right) dx dy\\
+            &= \int\limits_0^2 \left.\frac{ 6}{ 7} 
+              \left(\frac{ x^4}{ 4} + \frac{ x^3 y}{ 6}\right)\right|_0^1 dy\\
+            &= \int\limits_0^2 \frac{ 6}{ 7} 
+              \left(\frac{ 1}{ 4} + \frac{ y}{ 6}\right) dy\\
+            &= \left.\frac{ 6}{ 7} 
+              \left(\frac{ y}{ 4} + \frac{ y^2}{ 12}\right)\right|_0^2 \\
+            &= \frac{ 6}{ 7} \left(\frac{ 1}{ 2} + \frac{ 1}{ 3}\right) \\
+            &= \frac{ 6}{ 7} \left(\frac{ 5}{ 6}\right) \\
+            &= \frac{ 5}{ 7} \\
+        \end{align*}
       \end{homeworkSection}
     \item Find $E[ Y]$
       \begin{homeworkSection}{Solution}
+        \begin{align*}
+          E[ X] &= \int\limits_0^2 \int\limits_0^1 y f( x, y) dx dy\\
+            &= \int\limits_0^2 \int\limits_0^1 y \frac{ 6}{ 7} 
+              \left(x^2 + \frac{ x y}{ 2}\right) dx dy\\
+            &= \int\limits_0^2 \int\limits_0^1 \frac{ 6}{ 7} 
+              \left( y x^2 + \frac{ x y^2}{ 2}\right) dx dy\\
+            &= \int\limits_0^2 \frac{ 6}{ 7} \left.
+              \left( \frac{ y x^3}{ 3} + \frac{ x^2 y^2}{ 4}\right)\right|_0^1 dy\\
+            &= \int\limits_0^2 \frac{ 6}{ 7}
+              \left( \frac{ y}{ 3} + \frac{ y^2}{ 4}\right) dy\\
+            &= \frac{ 6}{ 7} \left.
+              \left( \frac{ y^2}{ 6} + \frac{ y^3}{ 12}\right)\right|_0^2 \\
+            &= \frac{ 6}{ 7} \left( \frac{ 3}{ 4} + \frac{ 2}{ 3}\right)\\
+            &= \frac{ 6}{ 7} \left( \frac{ 17}{ 12}\right)\\
+            &= \frac{ 17}{ 14}\\
+        \end{align*}
 
       \end{homeworkSection}
   \end{enumerate}
@@ -329,11 +407,30 @@
   \begin{enumerate}[(a)]
     \item $P\{ X < Y\}$
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          P\{ X < Y\} 
+          &= \int\limits_0^\infty \int\limits_0^y f( x, y) dx dy\\
+          &= \int\limits_0^\infty \int\limits_0^y e^{-(x + y)} dx dy\\
+          &= \int\limits_0^\infty \int\limits_0^y e^{-x} e^{-y} dx dy\\
+          &= \int\limits_0^\infty \left. -e^{-x} e^{-y}\right|_0^y dy\\
+          &= \int\limits_0^\infty (1 - e^{-y}) e^{-y} dy\\
+          &= \int\limits_0^\infty e^{-y} - e^{-2y} dy\\
+          &= \left.\frac{ e^{-2y}}{ 2} - e^{-y}\right|_0^\infty\\
+          &= \frac{ 1}{ 2}\\
+        \end{align*}
       \end{homeworkSection}
     \item $P\{ X < a\}$
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          P\{ X < a\} 
+          &= \int\limits_0^\infty \int\limits_0^a f( x, y) dx dy\\
+          &= \int\limits_0^\infty \int\limits_0^a e^{-(x + y)} dx dy\\
+          &= \int\limits_0^\infty \int\limits_0^a e^{-x} e^{-y} dx dy\\
+          &= \int\limits_0^\infty \left. -e^{-x} e^{-y}\right|_0^a dy\\
+          &= \int\limits_0^\infty (1 - e^{-a}) e^{-y} dy\\
+          &= \left. (e^{-a} - 1) e^{-y} \right|_0^\infty\\
+          &= (1 - e^{-a})\\
+        \end{align*}
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
@@ -348,21 +445,120 @@
   \begin{enumerate}[(a)]
     \item Are $X$ and $Y$ independent?
       \begin{homeworkSection}{Solution}
-        
+          If $X$ and $Y$ are independent then
+          \[P\{ X \le a, Y \le b\} = P\{ X \le a \} P\{ Y \le b\}\]
+
+        \begin{align*}
+          P\{ X \le a, Y \le b\} &= \int\limits_0^b \int\limits_0^a f( x, y) dx dy\\
+          &= \int\limits_0^b \int\limits_0^a 12 x y (1 - x) dx dy\\
+          &= \int\limits_0^b \int\limits_0^a 12 x y - 12 x^2 y dx dy\\
+          &= \int\limits_0^b \left.6 x^2 y - 4 x^3 y\right|_0^a dy\\
+          &= \int\limits_0^b 6 a^2 y - 4 a^3 y dy\\
+          &= \left.3 a^2 y^2 - 2 a^3 y^2\right|_0^b\\
+          &= 3 a^2 b^2 - 2 a^3 b^2\\
+        \end{align*}
+        \begin{align*}
+          P\{ X \le a\} &= \int\limits_0^1 \int\limits_0^a f( x, y) dx dy\\
+          &= \int\limits_0^1 \int\limits_0^a 12 x y (1 - x) dx dy\\
+          &= \int\limits_0^1 \int\limits_0^a 12 x y - 12 x^2 y dx dy\\
+          &= \int\limits_0^1 \left.6 x^2 y - 4 x^3 y\right|_0^a dy\\
+          &= \int\limits_0^1 6 a^2 y - 4 a^3 y dy\\
+          &= \left.3 a^2 y^2 - 2 a^3 y^2\right|_0^1\\
+          &= 3 a^2 - 2 a^3\\
+        \end{align*}
+        \begin{align*}
+          P\{ Y \le b\} &= \int\limits_0^b \int\limits_0^1 f( x, y) dx dy\\
+          &= \int\limits_0^b \int\limits_0^1 12 x y (1 - x) dx dy\\
+          &= \int\limits_0^b \int\limits_0^1 12 x y - 12 x^2 y dx dy\\
+          &= \int\limits_0^b \left.6 x^2 y - 4 x^3 y\right|_0^1 dy\\
+          &= \int\limits_0^b 6 y - 4 y dy\\
+          &= \left.3 y^2 - 2 y^2\right|_0^1\\
+          &= 3 b^2 - 2 b^2\\
+        \end{align*}
+        Since
+        \[3 a^2 b^2 - 2 a^3 b^2 \neq (3 a^2 - 2 a^3) (3 b^2 - 2 b^2)\]
+       $X$ and $Y$ are \emph{not} independent.
       \end{homeworkSection}
     \item Find $E[ X]$
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          E[ X] &= \int\limits_0^1 \int\limits_0^1 x f( x, y) dx dy\\
+          &= \int\limits_0^1 \int\limits_0^1 x 12 x y (1 - x) dx dy\\
+          &= \int\limits_0^1 \int\limits_0^1 12 x^2 y - 12 x^3 y dx dy\\
+          &= \int\limits_0^1 \left.4 x^3 y - 3 x^4 y\right|_0^1 dy\\
+          &= \int\limits_0^1 4 y  - 3 y dy\\
+          &= \left.2 y^2 - \frac{3 y^2}{ 2}\right|_0^1\\
+          &= 2 - \frac{3}{ 2}\\
+          &= \frac{1}{ 2}\\
+        \end{align*}
       \end{homeworkSection}
     \item Find $E[ Y]$
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          E[ Y] &= \int\limits_0^1 \int\limits_0^1 y f( x, y) dx dy\\
+          &= \int\limits_0^1 \int\limits_0^1 y 12 x y (1 - x) dx dy\\
+          &= \int\limits_0^1 \int\limits_0^1 12 x y^2 - 12 x^2 y^2 dx dy\\
+          &= \int\limits_0^1 \left.6 x^2 y^2 - 4 x^3 y^2\right|_0^1 dy\\
+          &= \int\limits_0^1 6 y^2 - 4 y^2 dy\\
+          &= \left. 2 y^3 - \frac{ 4 y^3}{ 3}\right|_0^1\\
+          &= 2 - \frac{ 4}{ 3}\\
+          &= \frac{ 2}{ 3}\\
+        \end{align*}
       \end{homeworkSection}
     \item Find $Var( X)$
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          Var( X) &= E[ X^2] - (E[ X])^2\\
+          &= \int\limits_0^1 \int\limits_0^1 x^2 f( x, y) dx dy - (\frac{ 1}{ 2})^2\\
+          &= \int\limits_0^1 \int\limits_0^1 x^2 12 x y (1 - x) dx dy - \frac{ 1}{ 4}\\
+          &= \int\limits_0^1 \int\limits_0^1 12 x^3 y - 12 x^4 y dx dy - \frac{ 1}{ 4}\\
+          &= \int\limits_0^1 \left. 3 x^4 y 
+            - \frac{ 12 x^5 y}{ 5} \right|_0^1 dy - \frac{ 1}{ 4}\\
+          &= \int\limits_0^1  3 y - \frac{ 12 y}{ 5} dy - \frac{ 1}{ 4}\\
+          &= \left. \frac{ 3 y^2}{ 2} 
+            - \frac{ 6 y^2}{ 5} \right|_0^1 - \frac{ 1}{ 4}\\
+          &= \frac{ 3}{ 2} - \frac{ 6}{ 5} - \frac{ 1}{ 4}\\
+          &= \frac{ 1}{ 20}\\
+        \end{align*}
       \end{homeworkSection}
     \item Find $Var( Y)$
+      \begin{homeworkSection}{Solution}
+        \begin{align*}
+          Var( Y) &= E[ Y^2] - (E[ Y])^2\\
+          &= \int\limits_0^1 \int\limits_0^1 y^2 f( x, y) dx dy - (\frac{ 2}{ 3})^2\\
+          &= \int\limits_0^1 \int\limits_0^1 y^2 12 x y (1 - x) dx dy - \frac{ 4}{ 9}\\
+          &= \int\limits_0^1 \int\limits_0^1 12 x y^3 - 12 x^2 y^3 dx dy - \frac{ 4}{ 9}\\
+          &= \int\limits_0^1 \left.6 x^2 y^3 - 4 x^3 y^3 \right|_0^1 dy - \frac{ 4}{ 9}\\
+          &= \int\limits_0^1 6 y^3 - 4 y^3 dy - \frac{ 4}{ 9}\\
+          &= \int\limits_0^1 \left.6 y^3 - 4 y^3 \right|_0^1 dy - \frac{ 4}{ 9}\\
+          &= \left.\frac{ 3y^4}{ 2}  - y^4 \right|_0^1 - \frac{ 4}{ 9}\\
+          &= \frac{ 3}{ 2} - 1 - \frac{ 4}{ 9}\\
+          &= \frac{ 1}{ 18}\\
+        \end{align*}
+        
+      \end{homeworkSection}
+  \end{enumerate}
+\end{homeworkProblem}
+
+%=============================p.289 #28==========================% 
+\newpage
+\begin{homeworkProblem}
+  {\bf Chapter 6, Exercise 28}\\
+  The time that it takes to service a car is an exponential 
+  random variable with rate 1.
+  \begin{enumerate}[(a)]
+    \item If A.J. brings his car in at time 0 and M.J.
+    brings her car in at time t, what is the probability 
+    that M. J.'s car is ready before A. J.'s car? 
+    (Assume that service times are independent and service 
+    begins upon arrival of the car.)
+      \begin{homeworkSection}{Solution}
+        
+      \end{homeworkSection}
+    \item If both cars are brought in at time 0, with work 
+    starting on M. J.'s car only when A. J.'s car has been 
+    completely serviced, what is the probability that M. J.'s 
+    car is ready before time 2?
       \begin{homeworkSection}{Solution}
         
       \end{homeworkSection}
