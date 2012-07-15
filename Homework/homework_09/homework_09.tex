@@ -535,7 +535,6 @@
           &= \frac{ 3}{ 2} - 1 - \frac{ 4}{ 9}\\
           &= \frac{ 1}{ 18}\\
         \end{align*}
-        
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
@@ -546,6 +545,35 @@
   {\bf Chapter 6, Exercise 28}\\
   The time that it takes to service a car is an exponential 
   random variable with rate 1.
+  \begin{homeworkSection}{Definitions}
+    {\bf Exponential Random Variable}\\
+    A continuous random variable whose probability density 
+    function is given, for some $\lambda > 0$, by
+      \[
+        f(x) = \left\{
+          \begin{array}{l l}
+            \lambda e^{-\lambda x} &\text{if } x \ge 0\\
+            0 &\text{if } x < 0
+          \end{array} \right.
+      \]
+    is said to be an \emph{exponential random variable} (or, more simply, 
+    is said to be exponentially distributed) with parameter $\lambda$. 
+    The cumulative distribution function $F( a)$ of an exponential 
+    random variable is given by
+      \begin{align*}
+        F(a) &= P\{ X \le a \}\\
+        &= \int\limits_0^a \lambda e^{-\lambda x} dx\\
+        &= \left.-e^{-\lambda x}\right|_0^a\\
+        &= 1 - e^{-\lambda a},  a \ge 0
+      \end{align*}
+    Where
+      \begin{align*}
+        E[ X] &= \frac{ 1}{ \lambda}\\
+        Var( X) &= \frac{ 1}{ \lambda^2}
+      \end{align*}
+    \emph{Note}: $F(q) = \int\limits_0^\infty \lambda e^{-\lambda x} dx = 1$, 
+    as, of course, it must.
+  \end{homeworkSection}
   \begin{enumerate}[(a)]
     \item If A.J. brings his car in at time 0 and M.J.
     brings her car in at time t, what is the probability 
@@ -553,7 +581,8 @@
     (Assume that service times are independent and service 
     begins upon arrival of the car.)
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+        \end{align*}
       \end{homeworkSection}
     \item If both cars are brought in at time 0, with work 
     starting on M. J.'s car only when A. J.'s car has been 
