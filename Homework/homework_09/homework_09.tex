@@ -600,7 +600,11 @@
         Putting everything together, we find that the probability M.J.'s car is serviced before
         A.J's car is
         \begin{align*}
-          P\{ \text{ M.J's care is serviced before A.J.'s car} \} &= \left(\frac{ 1}{ 2}\right) (1 - e^{-t})\\
+          P\{ \text{ M.J's care is serviced before A.J.'s car} \} 
+            &= P\{\text{A.J. waits at least time} t \cap \text{A.J. gets service first after time} t\}\\
+            &= P\{\text{A.J. waits at least time} t\} P\{\text{A.J. gets service first after time} t\}\\
+            &= \left(\frac{ 1}{ 2}\right) (1 - (1 - e^{-t}))\\
+            &= \left(\frac{ 1}{ 2}\right) ( e^{-t})\\
         \end{align*}
       \end{homeworkSection}
     \item If both cars are brought in at time 0, with work 
