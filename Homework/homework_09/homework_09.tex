@@ -585,13 +585,13 @@
         of an epoential.
         
         Applying this to the problem, we first find the probabilty that
-        A.J.'s car is finished at a time $\le t$.  During this the probability 
-        that M.J's care will be serviced is $0$.  Hence
+        A.J.'s car is finished at a time $\le t$.  During this time period, 
+        the probability that M.J's care will be serviced is $0$.  Hence
           \begin{align*}
             P\{ \text{A.J.'s gets service} \le t\} &= \lambda \int\limits_0^t e^{-\lambda x} dx\\
-            \text{ Letting $\lambda = 1$ to reflect our rate}
-            &= \left. -e^{-x} \right|_0^t
-            &= 1 - e^{-t}
+            \text{ Letting $\lambda = 1$ to reflect our rate}\\
+            &= \left. -e^{-x} \right|_0^t\\
+            &= 1 - e^{-t}\\
           \end{align*}
 
         Now considering the probability that M.J.'s car will be serviced at a time $> t$,
@@ -600,8 +600,7 @@
         Putting everything together, we find that the probability M.J.'s car is serviced before
         A.J's car is
         \begin{align*}
-          P\{ \text{ M.J's care is serviced before A.J.'s car} \} &= \frac{ 1}{ 2} - (1 - e^{-t})\\
-          &= e^{-t} - \frac{ 1}{ 2}
+          P\{ \text{ M.J's care is serviced before A.J.'s car} \} &= \left(\frac{ 1}{ 2}\right) (1 - e^{-t})\\
         \end{align*}
       \end{homeworkSection}
     \item If both cars are brought in at time 0, with work 
@@ -619,8 +618,8 @@
           &= \int\limits_0^2 e^{-2y} - e^{-2} e^{-y} dy\\
           &= \left.\frac{ e^{-2y}}{ -2} + e^{-2} e^{-y}\right|_0^2\\
           &= \left(\frac{ e^{-4}}{ -2} + e^{-2} e^{-2}\right) 
-            - \left(\frac{ 1}{ -2} + e^{-2}\right)\\
-          &\approx 0.37382253
+            - \left(\frac{ 1}{ -2} + e^{-2}\right)
+        \approx 0.37382253
         \end{align*}
       \end{homeworkSection}
   \end{enumerate}
@@ -639,11 +638,47 @@
   \begin{enumerate}[(a)]
     \item Jack's score is higher
       \begin{homeworkSection}{Solution}
-        
+        Let $X$ be the random variable of Jack's score and
+        $Y$ be the random variable of Jills score.
+        \begin{align*}
+          X &\sim n( 170, 20^2)\\
+          Y &\sim n( 160, 15^2)\\
+        \end{align*}
+          Since the distrobution of the normal
+          is symetric around it's mean
+        \begin{align*}
+          Y - X &\sim n( 160 - 170, 20^2 + 15^2)\\
+          &\sim( -10, 25^2)\\
+          \text{Computing the probability}\\
+          P\left\{ Y - X \ge \frac{ 1}{ 2}\right\} 
+          &= P\left\{ \frac{ (Y - X) - \mu_{Y - X}}{ \sigma_{Y - X}}
+            > \frac{ -\frac{ 1}{ 2} - \mu_{Y - X}}{ \sigma_{Y - X}}\right\}\\
+          &= P\{ Z > .42 \}\\
+          &= 1 - \Phi(.42)\\
+          &\simeq .3372\\
+        \end{align*}
       \end{homeworkSection}
     \item The total of their scores is above 350
       \begin{homeworkSection}{Solution}
-        
+        Let $X$ be the random variable of Jack's score and
+        $Y$ be the random variable of Jills score.
+        \begin{align*}
+          X &\sim n( 170, 20^2)\\
+          Y &\sim n( 160, 15^2)\\
+        \end{align*}
+          Since the distrobution of the normal
+          is symetric around it's mean
+        \begin{align*}
+          Y + X &\sim n( 160 + 170, 20^2 + 15^2)\\
+          &\sim( 330, 25^2)\\
+          \text{Computing the probability}\\
+          P\left\{ Y + X \ge 350.5\right\} 
+          &= P\left\{ \frac{ (Y + X) - \mu_{Y + X}}{ \sigma_{Y + X}}
+            > \frac{ 350.5 - \mu_{Y + X}}{ \sigma_{Y + X}}\right\}\\
+          &= P\{ Z > .82 \}\\
+          &= 1 - \Phi(.82)\\
+          &\simeq .2061\\
+        \end{align*}
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
