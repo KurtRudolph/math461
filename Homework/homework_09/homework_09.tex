@@ -576,12 +576,32 @@
   \end{homeworkSection}
   \begin{enumerate}[(a)]
     \item If A.J. brings his car in at time 0 and M.J.
-    brings her car in at time t, what is the probability 
+    brings her car in at time $t$, what is the probability 
     that M. J.'s car is ready before A. J.'s car? 
     (Assume that service times are independent and service 
     begins upon arrival of the car.)
       \begin{homeworkSection}{Solution}
+        Since $t \ge 0$ we are dealing the memoryless function of
+        of an epoential.
+        
+        Applying this to the problem, we first find the probabilty that
+        A.J.'s car is finished at a time $\le t$.  During this the probability 
+        that M.J's care will be serviced is $0$.  Hence
+          \begin{align*}
+            P\{ \text{A.J.'s gets service} \le t\} &= \lambda \int\limits_0^t e^{-\lambda x} dx\\
+            \text{ Letting $\lambda = 1$ to reflect our rate}
+            &= \left. -e^{-x} \right|_0^t
+            &= 1 - e^{-t}
+          \end{align*}
+
+        Now considering the probability that M.J.'s car will be serviced at a time $> t$,
+        by the memorylessness of the exponential we find the the probability is $\frac{ 1}{2}$
+
+        Putting everything together, we find that the probability M.J.'s car is serviced before
+        A.J's car is
         \begin{align*}
+          P\{ \text{ M.J's care is serviced before A.J.'s car} \} &= \frac{ 1}{ 2} - (1 - e^{-t})\\
+          &= e^{-t} - \frac{ 1}{ 2}
         \end{align*}
       \end{homeworkSection}
     \item If both cars are brought in at time 0, with work 
@@ -589,7 +609,19 @@
     completely serviced, what is the probability that M. J.'s 
     car is ready before time 2?
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          P\{ \text{ M.J's before time 2}\} 
+          &= \int\limits_0^2 \int\limits_y^2 \lambda^2 e^{-\lambda x} e^{-\lambda y} dx dy\\
+            \text{ Letting $\lambda = 1$ to reflect our rate}\\
+          &= \int\limits_0^2 \int\limits_y^2 e^{-x} e^{-y} dx dy\\
+          &= \int\limits_0^2 \left.-e^{-x} e^{-y}\right|_y^2 dy\\
+          &= \int\limits_0^2 (e^{-y} - e^{-2}) e^{-y} dy\\
+          &= \int\limits_0^2 e^{-2y} - e^{-2} e^{-y} dy\\
+          &= \left.\frac{ e^{-2y}}{ -2} + e^{-2} e^{-y}\right|_0^2\\
+          &= \left(\frac{ e^{-4}}{ -2} + e^{-2} e^{-2}\right) 
+            - \left(\frac{ 1}{ -2} + e^{-2}\right)\\
+          &\approx 0.37382253
+        \end{align*}
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
