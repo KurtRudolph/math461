@@ -9,3 +9,6 @@ Due Friday
 * p.380
   * 7.4
 * Read 7.7, moment generating functions.
+
+
+## Moment Generatig Functions
