@@ -3,6 +3,8 @@
 \usepackage{enumerate}
 \usepackage{graphicx}
 \usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{mathtools}
 
 % Homework Specific Information
 \newcommand{\hmwkTitle}{Homework \#10}
@@ -26,8 +28,27 @@
   {\bf Chapter 8, Exercise 1}\\
   Suppose that $X$ is a random variable with mean and variance 
   both equal to 20. What can be said about $P\{ 0 < X < 40\}$?
+  \begin{homeworkSection}{Definitions}
+    {\bf Chebyshev's Inequality}\\
+      \[P\{ |X - \mu| \ge k\} \le \frac{ \sigma^2}{ k^2}\]
+  \end{homeworkSection}
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      \text{Given}\\
+      \mu &= 20\\
+      \sigma^2 &= 20\\
+      \text{we find}\\
+      P\{ 0 < X < 40\} &= P\{ -20 < X - 20 < 20\}\\
+      &= 1 - P\{|X - 20| > 20\} \\
+      \text{by Chebyshev's Inequality}\\
+      P\{|X - 20| > 20\} &\le \frac{ 20}{ 20^2}\\
+      &= 0.05\\
+      \text{hence}\\
+      1 - P\{|X - 20| > 20\} &> 1 - 0.05\\
+      &= 0.95\\
+      \text{Therefore}\\
+      P\{ 0 < X < 40\} &> 0.95\\
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -38,24 +59,56 @@
   From past experience, a professor knows that the test score of a 
   student taking her final examination is a random variable with 
   mean 75.
+  \begin{homeworkSection}{Definitions}
+    {\bf Markov's inequality}
+    If $X$ is a random variable that takes only nonnegative values, 
+    then, for any value $a > 0$,
+      \[P\{ X \ge a\} \le \frac{ E[ X]}{ a}\]
+    {\bf Chebyshev inequality}
+    If $X$ is a random variable that takes only nonnegative values, 
+    then, for any value
+      \[P\{ |X - \mu| \ge k \sigma \} \le \frac{ 1}{ k^2}\]
+    {\bf One-sided Chebyshev Corollary}
+      \[P\{ X \ge \mu + a\} \le \frac{ \sigma^2}{ \sigma^2 + a^2}\]
+  \end{homeworkSection}
   \begin{enumerate}[(a)]
     \item Give an upper bound for the probability that a student's 
     test score will exceed 85. 
     Suppose, in addition, that the professor knows that the variance 
     of a student's test score is equal to 25.
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          \text{Given}\\
+          \mu &= 75\\
+          \sigma^2 &= 25\\
+          \text{by one-sided Chebyshev Corollary}\\
+          P\{ X \ge 85\} &= P\{ X \ge 75 + 10\}\\
+          &\le \frac{ 25}{ 125}\\
+          &= \frac{ 1}{ 5}\\
+        \end{align*}
       \end{homeworkSection}
     \item What can be said about the probability that a student 
     will score between 65 and 85?
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          \text{Given}\\
+          \mu &= 75\\
+          \sigma = 5\\
+          \text{by Chebyshev Inequality}\\
+          k &= 2\\
+          P\{ |X - 75| \ge (2)(5)\} &\le \frac{ 1}{ 4}\\
+          &= 0.25\\
+          \text{Therefore}\\
+          P\{ |X - 75| \le 10\} &= 1 - P\{ |X - 75| \ge 10\}\\
+          &= 1 - 0.25\\
+          &= 0.75\\
+        \end{align*}
       \end{homeworkSection}
     \item How many students would have to take the examination to 
     ensure, with probability at least .9, that the class average 
     would be within 5 of 75? Do not use the central limit theorem.
       \begin{homeworkSection}{Solution}
-        
+        I don't know.
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
@@ -67,7 +120,18 @@
   {\bf Chapter 8, Exercise 3}\\
   Use the central limit theorem to solve part (c) of Problem 2.
   \begin{homeworkSection}{Solution}
-    
+     \begin{align*}
+        P\{ \left|\frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}}\right| \le \frac{ 5}{ \frac{ 5}{ \sqrt{ n}}}\} &\ge 0.9\\
+        \text{solving for $n$}\\
+        P\{ \left|\frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}}\right| \le \frac{ 5}{ \frac{ 5}{ \sqrt{ n}}}\}\\
+        &= P\{ \left|\frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}}\right| \le \sqrt{ n}\}\\
+        &= 1 - 2P\{ \frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}} \le \sqrt{ n}\}\\
+        &= 1 - 2 \Phi(-sqrt{n})\\
+        \text{hence}\\
+        1 - 2 \Phi(-sqrt{n}) &\ge 0.9
+        \text{therefore}\\
+        n > (-\Phi^{-1}(0.05))^2 = 2.7055
+      \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -81,12 +145,27 @@
     \item Use the Markov inequality to obtain a bound on
       \[P\left\{ \sum\limits_1^{20} X_i > 15 \right\}\]
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          \text{Let}\\
+          X &= \sum\limits_{i = 1}^{20} X_i\\
+          \text{hence}\\
+          E[X] &= \sum\limits_{i = 1}^{20} E[ X_i]\\ 
+          &= 20
+          \text{Therefore}
+          P\{ X \ge 15\} \le \frac{ 4}{ 3}\\
+        \end{align*}
       \end{homeworkSection}
     \item Use the central limit theorem to approximate
       \[P\left\{ \sum\limits_1^{20} X_i > 15 \right\}\]
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          \text{Given}\\
+          \mu &= 1\\
+          \text{applying the central limit theorem}\\
+          P\{ \frac{ \sum\limits_{i = 1}^{20} X_i - 20}{ \sqrt{ 20}} \ge \frac{ 15 - 20}{ \sqrt{20}}\}\\
+          &= 1 - P\{ Z < -\frac{ 5}{ \sqrt{ 20}}\}\\
+          &= 0.8682
+        \end{align*}
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
@@ -100,7 +179,19 @@
   $(−.5, .5)$, approximate the probability that the resultant sum differs 
   from the exact sum by more than 3.
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      \text{Let $R$ be the rounded sum.}\\
+      \text{Let $X$ be the exact sum.}\\
+      P\{ |X - R| > 3 \} &= P\{ \left|\sum\limits_{i = 1}^{50} (X_i - R_i)\right| > 3\}\\
+      \text{Applying the central limit theorem}\\
+      \sigma^2 &= \frac{ (0.5 - (- 0.5))^2}{ 12} \\
+      &= \frac{ 1}{ 12}\\
+      P\{ \left|\sum\limits_{i = 1}^{50} (X_i - R_i)\right| > 3\}
+      &= P\{ \left|\frac{ \sum\limits_{i = 1}^{50} (X_i - R_i)}{ \frac{ 50}{ \sqrt{12}}}\right| > \frac{ 3}{ \frac{ 50}{ \sqrt{12}}}\\
+      &= 2P\{ \left|\frac{ \sum\limits_{i = 1}^{50} (X_i - R_i)}{ \frac{ 50}{ \sqrt{12}}}\right| < \frac{ -3}{ \frac{ 50}{ \sqrt{12}}}\\
+      &= 2 \phi\left( \frac{ -3}{ \frac{ 50}{ \sqrt{12}}}\right)\\
+      &= 0.8353\\
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
