@@ -123,14 +123,14 @@
      \begin{align*}
         P\{ \left|\frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}}\right| \le \frac{ 5}{ \frac{ 5}{ \sqrt{ n}}}\} &\ge 0.9\\
         \text{solving for $n$}\\
-        P\{ \left|\frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}}\right| \le \frac{ 5}{ \frac{ 5}{ \sqrt{ n}}}\}\\
+        P\{ \left|\frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}}\right| \le \frac{ 5}{ \frac{ 5}{ \sqrt{ n}}}\}
         &= P\{ \left|\frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}}\right| \le \sqrt{ n}\}\\
         &= 1 - 2P\{ \frac{ \frac{ 1}{ n}\sum\limits_{i = 1}^{n} X_i - 75}{ \frac{ 5}{ \sqrt{ n}}} \le \sqrt{ n}\}\\
         &= 1 - 2 \Phi(-sqrt{n})\\
         \text{hence}\\
-        1 - 2 \Phi(-sqrt{n}) &\ge 0.9
+        1 - 2 \Phi(-sqrt{n}) &\ge 0.9\\
         \text{therefore}\\
-        n > (-\Phi^{-1}(0.05))^2 = 2.7055
+        n &> (-\Phi^{-1}(0.05))^2 = 2.7055
       \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
@@ -203,7 +203,31 @@
   exceeds 300. Approximate the probability that at least 80 rolls 
   are necessary.
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      \text{Given}\\
+      p(x) &= \frac{ 1}{ 6}\\
+      \text{since the sum of $n$ die rolls is}\\
+      X &= \sum\limits_{i = 1}^n X_i\\
+      \text{where $X_i \in \{1,2,3,4,5,6\}$}\\
+      \text{then}\\
+      \mu &= E[ X] \\
+        &= E\left[ \sum\limits_{i = 1}^n E[ X_i]\right] \\
+        &= n \frac{ 1}{ 6} (1 + 2 + 3 + 4 + 5 + 6)\\
+        &= \frac{ 7n}{ 2}\\
+      \text{and it follows that}\\
+      Var( X) &= n Var(X_i) \\
+        &= n (E[X_i^2] - E[X_i]^2\\
+        &= n \left(\frac{ 1}{ 6} (1 + 2 + 3 + 4 + 5 + 6) - \left(\frac{ 7}{ 2}\right)^2\right)\\
+        &= 2.916 n\\
+      \text{Applying the central limit theorm to our desired probability}\\
+      P\{ X > 300\} 
+        &= P\left\{ \frac{ X - \frac{ 7 n}{ 2}}{ \sqrt{ 2.916} \sqrt{ n}} 
+          > \frac{ 300 - \frac{ 7 n}{ 2}}{ \sqrt{2.916} \sqrt{ n}}\right\}\\
+      \text{letting $n = 80$}\\
+        &= P\left\{ \frac{ X - 280}{ \sqrt{ 2.916} \sqrt{ 80}} 
+          > \frac{ 300 - 280}{ \sqrt{2.916} \sqrt{ 80}}\right\}\\
+        &= 1 - P\{Z < 1.309\} = 1 - \Phi(1.309) = 0.0953
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -216,17 +240,18 @@
   and standard deviation $\sigma$, show that
     \[P\{ |X - \mu| \ge k \sigma \} \le \frac{ 1}{ k^2}\]
   \begin{homeworkSection}{Definitions}
-    {\bf Markov's inequality}
-    If $Y$ is a random variable that takes only nonnegative values, 
-    then, for any value $a > 0$,
-      \[P\{ Y \ge a\} \le \frac{ E[ Y]}{ a}\]
+    {\bf Chebyshev's inequality}
+      If $X$ is a random variable with finite mean $\mu$ and variance $\sigma^2$, 
+      then, for any value $k > 0$,
+      \[P\{ |X - \mu| \ge k\} \le \frac{ \sigma^2}{ k^2}\]
   \end{homeworkSection}
   \begin{homeworkSection}{Solution}
-    Building off Markov's inequality, let $Y = (X - \mu)^2$
-    and $a = (\sigma k)^2$
     \begin{align*}
-    P\{ Y \ge a\} \le \frac{ E[ Y]}{ a}
-    & = 
+      \text{Building off Chebyshev's inequality, let}\\
+      k &= \sigma \hat k\\
+      \text{which gives us}\\
+      P\{ |X - \mu| \ge \sigma \hat k\} &\le \frac{ \sigma^2}{ (\sigma \hat k)^2}\\
+      &= \frac{ 1}{\hat k^2}
     \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
@@ -239,11 +264,26 @@
   $r \equiv |\mu|/\sigma$ is called the measurement \emph{signal-to-noise ratio} 
   of $X$. The idea is that $X$ can be expressed as $X = \mu + (X − \mu)$, with $\mu$ 
   representing the signal and $X − \mu$ the noise. If we define 
-  $|(X − \mu)/|\mu| \equiv D$ as the relative deviation of $X$ from its signal 
+  $|(X − \mu)/\mu| \equiv D$ as the relative deviation of $X$ from its signal 
   (or mean) $\mu$, show that, for $\alpha > 0$,
     \[P\{ D \le \alpha\} \ge 1 - \frac{ 1}{ r^2 \alpha^2}\]
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      \text{Substituing for $D$ and $\alpha$}\\
+      P\left\{ \left|\frac{ X \mu}{ \mu}\right| \le \alpha\right\} &\\
+      P\left\{ \left| X\right| \le \alpha\right\} 
+        &\ge 1 - \frac{ 1}{ \left(\frac{ |\mu|}{ \sigma}\right)^2 \alpha^2}\\
+        &= 1 - \frac{ \sigma^2}{ \mu^2 \alpha^2}\\
+      \text{Letting k = $\mu \alpha$}\\
+      P\left\{ \left| X\right| \le \frac{ k}{ \mu}\right\} 
+        &\ge 1 - \frac{ \sigma^2}{ k^2}\\ 
+      P\left\{ \left|X \mu\right| \le k\right\} 
+        &\ge 1 - \frac{ \sigma^2}{ k^2}\\ 
+      \text{Since $X = \mu + (X \mu) \Rightarrow X - \mu = X\mu$}\\
+      P\left\{ \left|X - \mu\right| \le k\right\} 
+        &\ge 1 - \frac{ \sigma^2}{ k^2}\\ 
+      \text{Which is the follows the Chebyshev's inequality}
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -257,14 +297,20 @@
   \begin{enumerate}[(a)]
     \item Poisson with mean $\lambda$
       \begin{homeworkSection}{Solution}
-      
+        \[\frac{ |\mu|}{ \sigma} = \frac{ |\lambda|}{ \sqrt{\lambda}} = \sqrt{ |\lambda|}\]
       \end{homeworkSection}
     \item Binomial with parameters $n$ and $p$
       \begin{homeworkSection}{Solution}
-      
+        \[\frac{ |\mu|}{ \sigma} 
+          = \frac{ |np|}{ \sqrt{ n p (1 - p)}} 
+          = \frac{ \sqrt{ n p (1 - p)}}{ 1 - p}\]
       \end{homeworkSection}
     \item Geometric with mean $1/p$
       \begin{homeworkSection}{Solution}
+        \[\frac{ |\mu|}{ \sigma} 
+          = \frac{ \left|\frac{ 1}{ p}\right|}{ \sqrt{ \frac{ 1 - p}{ p^2}}} 
+          = \frac{ \sqrt{ p^2}}{ |p| \sqrt{ 1 - p}} 
+          = (1 - p)^{-1/2}\]
       
       \end{homeworkSection}
   \end{enumerate}
@@ -276,7 +322,31 @@
   {\bf Chapter 8, Theoretical Exercise 8}\\
   Explain why a gamma random variable with parameters $(t, \lambda)$ has 
   an approximately normal distribution when $t$ is large.
+  \begin{homeworkSection}{Definitions}
+    {\bf Gamma Random Variable}\\
+    A random variable is said to have a gamma distribution with parameters 
+    $(\alpha, \lambda), \lambda > 0, \alpha > 0$, if its density function 
+    is given by
+      \[f(x) = 
+        \left\{ \begin{array}{l l}
+          \frac{ \lambda e^{-\lambda x}(\lambda x)^{\alpha - 1}}{ \Gamma( \alpha)} & x \ge 0\\
+          0 & x < 0
+        \end{array}\right.
+      \]
+    where $\Gamma( \alpha)$, called the \emph{gamma function}, is defined as
+      \[\Gamma( \alpha) 
+        = \int\limits_0^\infty e^{-y} y^{\alpha - 1} dy 
+        = (\alpha - 1)\Gamma( \alpha -1)\]
+    {\bf Normal Random Variable}\\
+    We say that $X$ is a normal random variable, or simply that $X$ is normally 
+    distributed, with parameters $\mu$ and $\sigma^2$ if the density of $X$ is given by
+      \[\begin{array}{l l} f( x) = \frac{ 1}{ \sqrt{ 2 \pi} \sigma} e^{-(x - \mu)^2/ 2 \sigma^2} & -\infty < x < \infty \end{array}\]
+  \end{homeworkSection}
   \begin{homeworkSection}{Solution}
+    The skewness of the \emph{gamma distrobution} depends only on the 
+    first perameter, in the context of this problem $t$.  Hence, as 
+    $t \rightarrow \infty$ we see the \emph{gamma distrobution} approaches 
+    a \emph{normal distrobution}.
     
   \end{homeworkSection}
 \end{homeworkProblem}
