@@ -27,8 +27,38 @@
   Calculate the $M(t)$ for the uniform distribution (i.e. verfy this 
   item of the p.359 table) and use it to find the mean, variance 
   and 3rd moment.
+  \begin{homeworkSection}{Definitions}
+    {\bf Moment Generating Function}\\
+      The moment generating function $M(t)$ of the random variable $X$ 
+      is defined for all real values of $t$ by
+      \[
+        M(t) = E[ e^{tx}] = \left\{ \begin{array}{l l}
+          \sum\limits_x e^{tx} p(x) &\text{if $X$ is discrete with mass function $p( x)$}\\
+          \int\limits_{-\infty}^\infty e^{tx} f( x) dx 
+              &\text{if $X$ is continuous with density $f( x)$}
+        \end{array}\right.
+      \]
+    {\bf Uniform Distrobution}\\
+    Uniform over $(a,b)$
+      \[
+        f( x) = \left\{ \begin{array}{l l}
+          \frac{ 1}{ b - a} & a < x < b\\
+          0 & otherwise
+        \end{array} \right.
+      \]
+    \[M(t) = \frac{ e^{tb} - e^{ta}}{ t(b - a)}\]
+  \end{homeworkSection}
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      M( t) &= \int\limits_a^b e^{t x} f(x) dx\\
+      &= \int\limits_a^b e^{t x} \frac{ 1}{ b - a} dx\\
+      &= \left. e^{t x} \frac{ 1}{ t(b - a)} \right|_a^b\\
+      &= \frac{ e^{t b} - e^{t a}1}{ t(b - a)}\\
+    \end{align*}
+    \begin{align*}
+      \[M'(0) = E[X] = t\frac{ e^{t b} - e^{t a}1}{ t(b - a)}\]
+      \[M'''(t) = t^3\frac{ e^{t b} - e^{t a}1}{ t(b - a)}\]
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
