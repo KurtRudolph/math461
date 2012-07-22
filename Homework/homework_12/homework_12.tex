@@ -95,41 +95,42 @@
           M''( t) &= n (n - 1) (p e^t + 1 - p)^{n - 2} (p e^t)^2 + n (p e^t + 1 - p)^{n - 1} p e^t\\
           \text{Differntiating again}
           M'''( t) 
-          & = (n-1) n p^2 (frac{ d}{ dt}(e^{(2 t)}  (p e^t-p+1)^{n-2} ))+n p (\frac{ d}{ dt} (e^t (p e^t-p+1)^{n-1} ))
-  | Use the product rule, \frac{ d}{ dt} (u v) = v ( du)/( dt)+u ( dv)/( dt), where u = e^{2 t}  and v = (p e^t-p+1)^{n-2} :
-= | (n-1) n p^2 ((p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (e^{2 t} ))+e^{2 t}  (\frac{ d}{ dt} ((p e^t-p+1)^{n-2} )))+n p (\frac{ d}{ dt} (e^t (p e^t-p+1)^{n-1} ))
-  | Use the product rule, \frac{ d}{ dt} (u v) = v ( du)/( dt)+u ( dv)/( dt), where u = e^t and v = (p e^t-p+1)^{n-1} :
-= | (n-1) n p^2 ((p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (e^{2 t} ))+e^{2 t}  (\frac{ d}{ dt} ((p e^t-p+1)^{n-2} )))+n p ((p e^t-p+1)^{n-1}  (\frac{ d}{ dt} (e^t))+e^t (\frac{ d}{ dt} ((p e^t-p+1)^{n-1} )))
+          & = (n-1) n p^2 (frac{ d}{ dt}(e^{(2 t)} (p e^t - p+1)^{n - 2})) 
+            + n p (\frac{ d}{ dt} (e^t (p e^t - p+1)^{n - 1} ))
+  | Use the product rule, \frac{ d}{ dt} (u v) = v ( du)/( dt) + u ( dv)/( dt), where u = e^{2 t}  and v = (p e^t - p+1)^{n - 2} :
+= | (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (e^{2 t} )) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p (\frac{ d}{ dt} (e^t (p e^t - p+1)^{n - 1} ))
+  | Use the product rule, \frac{ d}{ dt} (u v) = v ( du)/( dt) + u ( dv)/( dt), where u = e^t and v = (p e^t - p+1)^{n - 1} :
+= | (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (e^{2 t} )) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p ((p e^t - p+1)^{n - 1}  (\frac{ d}{ dt} (e^t)) + e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )))
   | Use the chain rule, \frac{ d}{ dt} (e^{2 t} ) = ( de^u)/( du) ( du)/( dt), where u = 2 t and ( de^u)/( du) = e^u:
-= | (n-1) n p^2 ((p e^t-p+1)^{n-2}  (e^{2 t}  (\frac{ d}{ dt} (2 t)))+e^{2 t}  (\frac{ d}{ dt} ((p e^t-p+1)^{n-2} )))+n p ((p e^t-p+1)^{n-1}  (\frac{ d}{ dt} (e^t))+e^t (\frac{ d}{ dt} ((p e^t-p+1)^{n-1} )))
+= | (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (e^{2 t}  (\frac{ d}{ dt} (2 t))) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p ((p e^t - p+1)^{n - 1}  (\frac{ d}{ dt} (e^t)) + e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )))
   | The derivative of e^t is e^t:
-= | (n-1) n p^2 (e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t))+e^{2 t}  (\frac{ d}{ dt} ((p e^t-p+1)^{n-2} )))+n p (e^t (\frac{ d}{ dt} ((p e^t-p+1)^{n-1} ))+e^t (p e^t-p+1)^{n-1} )
-  | Use the chain rule, \frac{ d}{ dt} ((p e^t-p+1)^{n-2} ) = ( du^{-2+n} )/( du) ( du)/( dt), where u = p e^t-p+1 and ( du^{-2+n} )/( du) = (-2+n) u^{-3+n} :
-= | (n-1) n p^2 (e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t))+e^{2 t}  ((n-2) (p e^t-p+1)^{n-3}  (\frac{ d}{ dt} (p e^t-p+1))))+n p (e^t (\frac{ d}{ dt} ((p e^t-p+1)^{n-1} ))+e^t (p e^t-p+1)^{n-1} )
-  | Use the chain rule, \frac{ d}{ dt} ((p e^t-p+1)^{n-1} ) = ( du^{-1+n} )/( du) ( du)/( dt), where u = p e^t-p+1 and ( du^{-1+n} )/( du) = (-1+n) u^{-2+n} :
-= | (n-1) n p^2 ((n-2) e^{2 t}  (p e^t-p+1)^{n-3}  (\frac{ d}{ dt} (p e^t-p+1))+e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t)))+n p (e^t ((n-1) (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (p e^t-p+1)))+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p (e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )) + e^t (p e^t - p+1)^{n - 1} )
+  | Use the chain rule, \frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ) = ( du^{ - 2+n} )/( du) ( du)/( dt), where u = p e^t - p+1 and ( du^{ - 2+n} )/( du) = ( - 2+n) u^{ - 3+n} :
+= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + e^{2 t}  ((n - 2) (p e^t - p+1)^{n - 3}  (\frac{ d}{ dt} (p e^t - p+1)))) + n p (e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )) + e^t (p e^t - p+1)^{n - 1} )
+  | Use the chain rule, \frac{ d}{ dt} ((p e^t - p+1)^{n - 1} ) = ( du^{ - 1+n} )/( du) ( du)/( dt), where u = p e^t - p+1 and ( du^{ - 1+n} )/( du) = ( - 1+n) u^{ - 2+n} :
+= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (\frac{ d}{ dt} (p e^t - p+1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p (e^t ((n - 1) (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (p e^t - p+1))) + e^t (p e^t - p+1)^{n - 1} )
   | Differentiate the sum term by term and factor out constants:
-= | (n-1) n p^2 ((n-2) e^{2 t}  (p e^t-p+1)^{n-3}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p)+\frac{ d}{ dt} (1))+e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t)))+n p ((n-1) e^t (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (p e^t-p+1))+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (p e^t - p+1)) + e^t (p e^t - p+1)^{n - 1} )
   | Differentiate the sum term by term and factor out constants:
-= | (n-1) n p^2 ((n-2) e^{2 t}  (p e^t-p+1)^{n-3}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p)+\frac{ d}{ dt} (1))+e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t)))+n p ((n-1) e^t (p e^t-p+1)^{n-2}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p)+\frac{ d}{ dt} (1))+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^t (p e^t - p+1)^{n - 1} )
   | The derivative of 1 is zero:
-= | (n-1) n p^2 ((n-2) e^{2 t}  (p e^t-p+1)^{n-3}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p)+0)+e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t)))+n p ((n-1) e^t (p e^t-p+1)^{n-2}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p)+\frac{ d}{ dt} (1))+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + 0) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^t (p e^t - p+1)^{n - 1} )
   | The derivative of 1 is zero:
-= | (n-1) n p^2 ((n-2) e^{2 t}  (p e^t-p+1)^{n-3}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p))+e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t)))+n p ((n-1) e^t (p e^t-p+1)^{n-2}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p)+0)+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + 0) + e^t (p e^t - p+1)^{n - 1} )
   | The derivative of e^t is e^t:
-= | (n-1) n p^2 ((n-2) e^{2 t}  (p e^t-p+1)^{n-3}  (p e^t-\frac{ d}{ dt} (p))+e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t)))+n p ((n-1) e^t (p e^t-p+1)^{n-2}  (p (\frac{ d}{ dt} (e^t))-\frac{ d}{ dt} (p))+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p e^t - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )
   | The derivative of e^t is e^t:
-= | (n-1) n p^2 ((n-2) e^{2 t}  (p e^t-p+1)^{n-3}  (p e^t-\frac{ d}{ dt} (p))+e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t)))+n p ((n-1) e^t (p e^t-p+1)^{n-2}  (p e^t-\frac{ d}{ dt} (p))+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p e^t - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p e^t - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )
   | The derivative of p is zero:
-= | (n-1) n p^2 (e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t))+(n-2) e^{2 t}  (p e^t-0) (p e^t-p+1)^{n-3} )+n p ((n-1) e^t (p e^t-p+1)^{n-2}  (p e^t-\frac{ d}{ dt} (p))+e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + (n - 2) e^{2 t}  (p e^t - 0) (p e^t - p+1)^{n - 3} ) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p e^t - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )
   | The derivative of p is zero:
-= | (n-1) n p^2 (e^{2 t}  (p e^t-p+1)^{n-2}  (\frac{ d}{ dt} (2 t))+(n-2) p e^{3 t}  (p e^t-p+1)^{n-3} )+n p ((n-1) e^t (p e^t-0) (p e^t-p+1)^{n-2} +e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + (n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3} ) + n p ((n - 1) e^t (p e^t - 0) (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )
   | Factor out constants:
-= | (n-1) n p^2 (e^{2 t}  (p e^t-p+1)^{n-2}  (2 (\frac{ d}{ dt} (t)))+(n-2) p e^{3 t}  (p e^t-p+1)^{n-3} )+n p ((n-1) p e^{2 t}  (p e^t-p+1)^{n-2} +e^t (p e^t-p+1)^{n-1} )
+= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (2 (\frac{ d}{ dt} (t))) + (n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3} ) + n p ((n - 1) p e^{2 t}  (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )
   | The derivative of t is 1:
-= | (n-1) n p^2 ((n-2) p e^{3 t}  (p e^t-p+1)^{n-3} +2 e^{2 t}  (p e^t-p+1)^{n-2} )+n p ((n-1) p e^{2 t}  (p e^t-p+1)^{n-2} +e^t (p e^t-p+1)^{n-1} )
-            &= n p e^t (p (e^t - 1) + 1)^{n - 3} (p^2 (n^2 e^2t + (1 - 3 n) e^t + 1) 
-            + p ((3n - 1) e^t -2) + 1)\\
+= | (n - 1) n p^2 ((n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3}  + 2 e^{2 t}  (p e^t - p+1)^{n - 2} ) + n p ((n - 1) p e^{2 t}  (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )
+            &= n p e^t (p (e^t  -  1)  +  1)^{n  -  3} (p^2 (n^2 e^2t  +  (1  -  3 n) e^t  +  1) 
+             +  p ((3n  -  1) e^t  - 2)  +  1)\\
           \text{Hence}\\
           M'''(0) &=
       \end{align*}
