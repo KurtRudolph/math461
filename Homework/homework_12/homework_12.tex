@@ -210,8 +210,21 @@
 \begin{homeworkProblem}
   Use 4 to verify the formulas for mean and variance given on p.385 
   (last row of the table).
+  \begin{homeworkSection}{Definitions}
+    {\bf The Negative Binomial Random Variable}
+    \[\begin{array}{l l} P\{X = n\} = {n - 1 \choose r - 1} p^r (1 - p)^{n - r} & n = r, r + 1, \dots \end{array}\]
+    \[E[X] = \frac{ r}{ p}\]
+    \[Var(X) = \frac{ r(1 - p)}{ p^2}\]
+  \end{homeworkSection}
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      Var(X) &= E[ X^2] - (E[x])^2\\
+      &= M''(0) - (M'(0))^2\\
+      &= \frac{ d^2}{ dt^2} (p^r e^{t r}( (p - 1) e^t + 1)^{-r}) - \left(\frac{ d}{ dt}(p^r e^{t r}( (p - 1) e^t + 1)^{-r})\right)^2\\
+      &= \frac{ d}{ dt} (p^r(1 - p) r ( 1- (1 - p) e^t)^{-r - 1} e^t) - \left(p^r(1 - p) r ( 1- (1 - p) e^t)^{-r - 1} e^t\right)^2\\
+      &=  r p^r e^{r t} ((p-1) e^t+1)^{-r-2} (r-(p-1) e^t) - \left(p^r(1 - p) r ( 1- (1 - p) e^t)^{-r - 1} e^t\right)^2\\
+      &= \frac{ r - pr}{ p^2}\\
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
   
