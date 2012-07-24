@@ -93,51 +93,78 @@
           \text{as shown in the text}
           M'( t) &= n (p e^t + 1 - p)^{n - 1} p e^t\\
           M''( t) &= n (n - 1) (p e^t + 1 - p)^{n - 2} (p e^t)^2 + n (p e^t + 1 - p)^{n - 1} p e^t\\
-          \text{Differntiating again}
+        \end{align*}
+        Using Mathematica to differentiate again we find
+        \begin{align*}
           M'''( t) 
-          & = (n-1) n p^2 (frac{ d}{ dt}(e^{(2 t)} (p e^t - p+1)^{n - 2})) 
-            + n p (\frac{ d}{ dt} (e^t (p e^t - p+1)^{n - 1} ))
-  | Use the product rule, \frac{ d}{ dt} (u v) = v ( du)/( dt) + u ( dv)/( dt), where u = e^{2 t}  and v = (p e^t - p+1)^{n - 2} :
-= | (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (e^{2 t} )) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p (\frac{ d}{ dt} (e^t (p e^t - p+1)^{n - 1} ))
-  | Use the product rule, \frac{ d}{ dt} (u v) = v ( du)/( dt) + u ( dv)/( dt), where u = e^t and v = (p e^t - p+1)^{n - 1} :
-= | (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (e^{2 t} )) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p ((p e^t - p+1)^{n - 1}  (\frac{ d}{ dt} (e^t)) + e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )))
-  | Use the chain rule, \frac{ d}{ dt} (e^{2 t} ) = ( de^u)/( du) ( du)/( dt), where u = 2 t and ( de^u)/( du) = e^u:
-= | (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (e^{2 t}  (\frac{ d}{ dt} (2 t))) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p ((p e^t - p+1)^{n - 1}  (\frac{ d}{ dt} (e^t)) + e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )))
-  | The derivative of e^t is e^t:
-= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p (e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )) + e^t (p e^t - p+1)^{n - 1} )
-  | Use the chain rule, \frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ) = ( du^{ - 2+n} )/( du) ( du)/( dt), where u = p e^t - p+1 and ( du^{ - 2+n} )/( du) = ( - 2+n) u^{ - 3+n} :
-= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + e^{2 t}  ((n - 2) (p e^t - p+1)^{n - 3}  (\frac{ d}{ dt} (p e^t - p+1)))) + n p (e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )) + e^t (p e^t - p+1)^{n - 1} )
-  | Use the chain rule, \frac{ d}{ dt} ((p e^t - p+1)^{n - 1} ) = ( du^{ - 1+n} )/( du) ( du)/( dt), where u = p e^t - p+1 and ( du^{ - 1+n} )/( du) = ( - 1+n) u^{ - 2+n} :
-= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (\frac{ d}{ dt} (p e^t - p+1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p (e^t ((n - 1) (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (p e^t - p+1))) + e^t (p e^t - p+1)^{n - 1} )
-  | Differentiate the sum term by term and factor out constants:
-= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (p e^t - p+1)) + e^t (p e^t - p+1)^{n - 1} )
-  | Differentiate the sum term by term and factor out constants:
-= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^t (p e^t - p+1)^{n - 1} )
-  | The derivative of 1 is zero:
-= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + 0) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^t (p e^t - p+1)^{n - 1} )
-  | The derivative of 1 is zero:
-= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + 0) + e^t (p e^t - p+1)^{n - 1} )
-  | The derivative of e^t is e^t:
-= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p e^t - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )
-  | The derivative of e^t is e^t:
-= | (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p e^t - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p e^t - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )
-  | The derivative of p is zero:
-= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + (n - 2) e^{2 t}  (p e^t - 0) (p e^t - p+1)^{n - 3} ) + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p e^t - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )
-  | The derivative of p is zero:
-= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + (n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3} ) + n p ((n - 1) e^t (p e^t - 0) (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )
-  | Factor out constants:
-= | (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (2 (\frac{ d}{ dt} (t))) + (n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3} ) + n p ((n - 1) p e^{2 t}  (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )
-  | The derivative of t is 1:
-= | (n - 1) n p^2 ((n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3}  + 2 e^{2 t}  (p e^t - p+1)^{n - 2} ) + n p ((n - 1) p e^{2 t}  (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )
-            &= n p e^t (p (e^t  -  1)  +  1)^{n  -  3} (p^2 (n^2 e^2t  +  (1  -  3 n) e^t  +  1) 
-             +  p ((3n  -  1) e^t  - 2)  +  1)\\
-          \text{Hence}\\
-          M'''(0) &=
-      \end{align*}
+            &= n p e^t (p (e^t  -  1)  +  1)^{n  -  3} (p^2 (n^2 e^2t  +  (1  -  3 n) e^t  +  1) +  p ((3n  -  1) e^t  - 2)  +  1)\\
+          \text{hence}\\
+          M'''( 0)
+            &= np (p^2 (n^2 + (1 - 3n) + 1) + p (( 3n - 1) - 2) +1 )\\
+            &= np (p^2 (n^2 + 2 - 3n ) + p (3n - 3) + 1 )\\
+        \end{align*}
+        The generated work is as follows:
+        \begin{align*}
+          M'''( t) & = (n-1) n p^2 (frac{ d}{ dt}(e^{(2 t)} (p e^t - p+1)^{n - 2})) 
+            + n p (\frac{ d}{ dt} (e^t (p e^t - p+1)^{n - 1} ))\\
+            &=  (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (e^{2 t} )) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p (\frac{ d}{ dt} (e^t (p e^t - p+1)^{n - 1} ))\\
+          &= (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (e^{2 t} )) + e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) 
+            \\&+ n p ((p e^t - p+1)^{n - 1}  (\frac{ d}{ dt} (e^t)) + e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )))\\
+          &= (n - 1) n p^2 ((p e^t - p+1)^{n - 2}  (e^{2 t}  (\frac{ d}{ dt} (2 t))) 
+            \\&+ e^{2 t}  (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) + n p ((p e^t - p+1)^{n - 1}  (\frac{ d}{ dt} (e^t)) + e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )))\\
+          &= (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + e^{2 t}  
+            (\frac{ d}{ dt} ((p e^t - p+1)^{n - 2} ))) \\&+ n p (e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )) + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) 
+            \\&+ e^{2 t}  ((n - 2) (p e^t - p+1)^{n - 3}  (\frac{ d}{ dt} (p e^t - p+1)))) 
+            + n p (e^t (\frac{ d}{ dt} ((p e^t - p+1)^{n - 1} )) + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (\frac{ d}{ dt} (p e^t - p+1)) 
+            \\&+ e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) 
+            \\&+ n p (e^t ((n - 1) (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (p e^t - p+1))) + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) 
+              \\&+ \frac{ d}{ dt} (1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) 
+              + n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (p e^t - p+1)) + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) 
+            - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) 
+            \\&+ n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^t (p e^t - p+1)^{n - 1} )
+          &= (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) 
+            - \frac{ d}{ dt} (p) + 0) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) 
+            \\&+ n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + \frac{ d}{ dt} (1)) + e^t (p e^t - p+1)^{n - 1} )\\
+          &=  (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p (\frac{ d}{ dt} (e^t)) 
+            - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) 
+            \\&+ n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p) + 0) + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p e^t 
+            - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) 
+            \\&+ n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p (\frac{ d}{ dt} (e^t)) - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )\\
+          \end{align*}
+          \begin{align*}
+          &= (n - 1) n p^2 ((n - 2) e^{2 t}  (p e^t - p+1)^{n - 3}  (p e^t 
+            - \frac{ d}{ dt} (p)) + e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t))) 
+            \\&+ n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p e^t - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + (n - 2) e^{2 t}  (p e^t - 0) (p e^t - p+1)^{n - 3} ) 
+            \\&+ n p ((n - 1) e^t (p e^t - p+1)^{n - 2}  (p e^t - \frac{ d}{ dt} (p)) + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (\frac{ d}{ dt} (2 t)) + (n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3} ) 
+            \\&+ n p ((n - 1) e^t (p e^t - 0) (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 (e^{2 t}  (p e^t - p+1)^{n - 2}  (2 (\frac{ d}{ dt} (t))) + (n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3} ) 
+            \\&+ n p ((n - 1) p e^{2 t}  (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )\\
+          &= (n - 1) n p^2 ((n - 2) p e^{3 t}  (p e^t - p+1)^{n - 3}  + 2 e^{2 t}  (p e^t - p+1)^{n - 2} ) 
+            \\&+ n p ((n - 1) p e^{2 t}  (p e^t - p+1)^{n - 2}  + e^t (p e^t - p+1)^{n - 1} )\\
+\end{align*}
       \end{homeworkSection}
     \item An exponential $(\lambda)$ random variable
+      \begin{homeworkSection}{Definitions}
+        {\bf Exponential Random Variable}
+          \[p(x) = \lambda e^{\lambda x}\]
+      \end{homeworkSection}
       \begin{homeworkSection}{Solution}
-        
+        \begin{align*}
+          \text{As shown in the text}\\
+          M(t) &= \frac{ \lambda}{ \lambda - t}\\
+          M'(t) &= \frac{ \lambda}{ (\lambda - t)^2}\\
+          M''(t) &= \frac{ 2\lambda}{ (\lambda - t)^3}\\
+          \text{and we find}\\
+          M'''(t) &= \frac{ 6\lambda}{ (\lambda - t)^4}\\
+          M'''(0) &= \frac{ 6}{ \lambda^3}\\
+        \end{align*}
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
@@ -149,7 +176,12 @@
   for an $n(\mu, \sigma^2)$ random variable, where here the $m_4$ is the
   4th power moment.
   \begin{homeworkSection}{Solution}
-    
+    Using Mathematica we find
+      \[M''''(t) = e^{\frac{ \sigma^2 t^2}{ 2} + \mu t} (3 \sigma^4 + 6 \sigma^2 (\mu + \sigma^2 t)^2 + (\mu + \sigma^2 t)^4\]
+    hence
+      \[M''''(0) = 3 \sigma^4 + 6 \sigma^2 \mu^2 + \mu^4\]
+    therefore
+      \[\left(\frac{ M''''(0) }{ \sigma^4}\right) - 3 = \frac{6 \sigma^2 \mu^2 + \mu^4}{ \sigma^4}\]
   \end{homeworkSection}
 \end{homeworkProblem}
 
@@ -158,8 +190,19 @@
 \begin{homeworkProblem}
   Use the \emph{binomial expansion} to derive the $M(t)$ for a negagtive
   binomial $(r, p)$ random variable.
+  \begin{homeworkSection}{Definitions}
+    {\bf The Negative Binomial Random Variable}
+    \[\begin{array}{l l} P\{X = n\} = {n - 1 \choose r - 1} p^r (1 - p)^{n - r} & n = r, r + 1, \dots \end{array}\]
+  \end{homeworkSection}
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      M(t) &= E[ e^{tx}]\\
+      &= \sum\limits_{x = 0}^{\infty} e^{t x} {x + r - 1 \choose r - 1} p^r (1 - p)^{x}\\
+      &= p^r \sum\limits_{x = 0}^{\infty} e^{t x} {x + r - 1 \choose r - 1} (1 - p)^{x}\\
+      \text{Since ${N \choose n} = {N \choose N - n}$}\\
+      &= p^r \sum\limits_{x = 0}^{\infty} e^{t x} {x + r - 1 \choose x} (1 - p)^{x}\\
+      &= p^r e^{t r}( (p - 1) e^t + 1)^{-r}\\
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 %=============================Problem5==========================% 
