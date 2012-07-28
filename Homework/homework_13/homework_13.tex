@@ -25,6 +25,7 @@
 %=============================p.373 #3==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 7, Problem 3}
   Gambles are independent, and each one results in
   the player being equally likely to win or lose 1 unit. 
   Let $W$ denote the net winnings of a gambler whose strategy 
@@ -32,12 +33,38 @@
   \begin{enumerate}[(a)]
     \item $P\{ W > 0 \}$
       \begin{homeworkSection}{Solution}
+        Given, the gambler stops immediately after his
+        first win, we only need to look at one trial to determine $P\{ W > 0 \}$.
+        Since $P\{ W\} = \frac{ 1}{ 2}$, therefore $P\{ W > 0\} = \frac{ 1}{ 2}$ and 
       \end{homeworkSection}
     \item $P\{ W < 0 \}$
       \begin{homeworkSection}{Solution}
+        Since our gambler will gamble until he receives a win, where he will gain
+        one unit, hence must receive at least two consecutive initial losses in
+        oder for $W$ to be negative, therefore
+        $P\{ W < 0 \} = \left(\frac{ 1}{ 2}\right)\left(\frac{ 1}{ 2}\right) = \frac{ 1}{ 4}$.
       \end{homeworkSection}
     \item $E[ W]$
       \begin{homeworkSection}{Solution}
+        Let $W$ be the amount of \emph{winnings} and let $X$ be the number of trials until the
+        first positive earning win is received.
+        \begin{align*}
+          W &= 1 - (X - 1)\\
+          &= 2 - X\\
+        \end{align*}
+        Since the probability of receiving a positive earning win is $\frac{ 1}{ 2}$ and the
+        random variable $X$ is a geometric random variable we find
+        \begin{align*}
+          E[ X] &= \frac{ 1}{ p}\\ 
+          &= \frac{ 1}{ 1/2} \\
+          &= 2
+        \end{align*}
+        Therefore
+        \begin{align*}
+          E[ W] &= E[ 2 - X]\\
+          &= 2 - E[ X]\\
+          &= 0
+        \end{align*}
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
