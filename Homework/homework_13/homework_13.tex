@@ -72,6 +72,7 @@
 %=============================p.373 #4==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 7, Problem 4}
   Given $X$ and $Y$ have joint density function
   \[
     f_{X, Y}( x, y) = \left\{ \begin{array}{l l}
@@ -83,12 +84,29 @@
   \begin{enumerate}[(a)]
     \item $E[XY]$
       \begin{homeworkSection}{Solution}
+        \begin{align*}
+          E[ XY] &=  \int\limits_0^1 \int\limits_0^y xy\frac{ 1}{ y} dx dy\\
+          E[ XY] &=  \int\limits_0^1 \int\limits_0^y x dx dy\\
+          &= \int\limits_0^1 \frac{ y^2}{ 2} dy\\
+          &= \frac{ 1}{ 6}\\
+        \end{align*}
       \end{homeworkSection}
     \item $E[X]$
       \begin{homeworkSection}{Solution}
+        \begin{align*}
+          E[ X] &=  \int\limits_0^1 \int\limits_0^y x\frac{ 1}{ y} dx dy\\
+          &= \int\limits_0^1 \frac{ y}{ 2} dy\\
+          &= \frac{ 1}{ 4}\\
+        \end{align*}
       \end{homeworkSection}
     \item $E[Y]$
       \begin{homeworkSection}{Solution}
+        \begin{align*}
+          E[ Y] &=  \int\limits_0^1 \int\limits_0^y y\frac{ 1}{ y} dx dy\\
+          &=  \int\limits_0^1 \int\limits_0^y 1 dx dy\\
+          &=  \int\limits_0^1 y dy\\
+          &=  \frac{ 1}{ 2}\\
+        \end{align*}
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
