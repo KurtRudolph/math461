@@ -114,40 +114,69 @@
 %=============================p.376 #40==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 7, Problem 40}\\
   Given $X$ and $Y$ have joint density function
   \[
     f_{X, Y}( x, y) = \begin{array}{l l}
       \frac{ 1}{ y} e^{-(y + \frac{ x}{ y})} & x < 0 < y\\
     \end{array}
   \]
-  \begin{enumerate}[(a)]
-    \item Find $E[X]$
-      \begin{homeworkSection}{Solution}
-      \end{homeworkSection}
-    \item Find $E[Y]$
-      \begin{homeworkSection}{Solution}
-      \end{homeworkSection}
-    \item Show $Cov( X, Y) = 1$
-      \begin{homeworkSection}{Solution}
-      \end{homeworkSection}
-  \end{enumerate}
+  \begin{homeworkSection}{Solution}
+    \begin{align*}
+      E[ X] &= \int\limits_{x = 0}^\infty x \int_{y = 0}^\infty f( x, y) dy dx\\
+      &= \int\limits_{x = 0}^\infty \int_{y = 0}^\infty \frac{ x}{ y} e^{-(y + x / y)} dy dx\\
+      &= \int\limits_{y = 0}^\infty \int_{x = 0}^\infty \frac{ x}{ y} e^{-(y + x / y)} dx dy\\
+      \text{Let $ v = \frac{ x}{ y}$ where $dv = \frac{ dx}{ y}$}\\
+      &= \int\limits_{y = 0}^\infty \int_{v = 0}^\infty v e^{-(y + v)} y dv dy\\
+      &= \int\limits_{y = 0}^\infty \int_{v = 0}^\infty v e^{-y} e^{-v} y dv dy\\
+      &= \int\limits_{y = 0}^\infty e^{-y} y dy\\
+      &= 1
+    \end{align*}
+    \begin{align*}
+      E[ Y] &= \int\limits_{y = 0}^\infty y \int_{x = 0}^\infty y f( x, y) dx dy\\
+      &= \int\limits_{y = 0}^\infty \int_{x = 0}^\infty e^{-(y + x / y)} dx dy\\
+      \text{Let $ v = \frac{ x}{ y}$ where $dv = \frac{ dx}{ y}$}\\
+      &= \int\limits_{y = 0}^\infty \int_{v = 0}^\infty e^{-(y + v)} y dv dy\\
+      &= \int\limits_{y = 0}^\infty \int_{v = 0}^\infty e^{-y} e^{-v} y dv dy\\
+      &= \int\limits_{y = 0}^\infty  e^{-y} y dy\\
+      &= 1
+    \end{align*}
+    \begin{align*}
+      E[ XY] &= \int\limits_{y = 0}^\infty y \int_{x = 0}^\infty xy f( x, y) dx dy\\
+      &= \int\limits_{y = 0}^\infty \int_{x = 0}^\infty xe^{-(y + x / y)} dx dy\\
+      \text{Let $ v = \frac{ x}{ y}$ where $dv = \frac{ dx}{ y}$}\\
+      &= \int\limits_{y = 0}^\infty \int_{v = 0}^\infty v e^{-(y + v)} y^2 dv dy\\
+      &= \int\limits_{y = 0}^\infty \int_{v = 0}^\infty e^{-y} e^{-v} y^2 dv dy\\
+      &= \int\limits_{y = 0}^\infty  e^{-y} y^2 dy\\
+      &= 2
+    \end{align*}
+    Therefore, \[Cov(X, Y) = E[XY] - E[X]E[Y] = 2 - 1 = 1\]
+  \end{homeworkSection}
 \end{homeworkProblem}
 
 %=============================p.376 #48==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 7 Problem 48}\\
   A fair die is successively rolled. Let $X$ and $Y$ denote, 
   respectively, the number of rolls necessary to obtain a 
   6 and a 5. Find
   \begin{enumerate}[(a)]
     \item Find $E[X]$
       \begin{homeworkSection}{Solution}
+        Since $p = \frac{ 1}{ 5}$ and $X$ is a gemetric random variable we find
+        \[E[ X] = \frac{ 1}{ p} = 6\]
       \end{homeworkSection}
     \item Find $E[X|Y = 1]$
       \begin{homeworkSection}{Solution}
+        The expectation of the number of roles to recieve a 6 given that first
+        role is a 5, building off our result from (a), is as follows
+        \[E[ X|Y = 1] = 1 + E[ X] = 1 + \frac{ 1}{ p} = 1 + 6 = 7\]
       \end{homeworkSection}
     \item Show $E[X|Y = 5]$
       \begin{homeworkSection}{Solution}
+        The expectation of the number of roles to recieve a 6 given that the 5th role is a 5
+        I don't know...
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
@@ -155,6 +184,7 @@
 %=============================p.376 #50==========================% 
 \newpage
 \begin{homeworkProblem}
+  {\bf Chapter 7 Problem 50}\\
   Given $X$ and $Y$ have joint density function
   \[
     f_( x, y) = \begin{array}{l l}
@@ -163,7 +193,32 @@
   \]
   Find $E[ X^2|Y = y]$
   \begin{homeworkSection}{Solution}
-    
+    \begin{align*}
+      E[ X^2|Y = y]
+        &= \int\limits_0^\infty x^2 f(x | Y = y) dx\\
+      \text{Solving for $f(x | Y = y)$}\\
+      f(x | Y = y) 
+        &= \frac{ f( x, y)}{ f( y)}\\
+        \text{where}\\
+        f( y) &= \int\limits_0^\infty f( x, y) dx\\
+        &= \int\limits_0^\infty \frac{ e^{-x/y} e^{-y}}{ y} dx\\
+        &= e^{-y}\\
+        \text{hence}\\
+      \frac{ f( x, y)}{ f( y)}
+        &= \frac{ \frac{ e^{-x/y} e^{-y}}{ y}}{ e^{-y}}\\
+        &= \frac{ e^{-x/y}}{ y}\\
+    \end{align*}
+    \begin{align*}
+      \text{pluggin into our expectation}\\
+      \int\limits_0^\infty x^2 f(x | Y = y) dx\\
+      &= \int\limits_0^\infty x^2 \frac{ e^{-x/y}}{ y} dx\\
+      &= \frac{ 1}{ y} \int\limits_0^\infty x^2 e^{-x/y} dx\\
+      \text{integrating by parts}\\
+      &= \frac{ 1}{ y}\left( \left.x^2(-y)e^{-x/y}\right|_0^\infty - \int\limits_0^\infty 2x e^{-x/y} dx\right)\\
+      &= 2 \int\limits_0^\infty x e^{-x/y} dx\\
+      &= 2y \int\limits_0^\infty e^{-x/y} dx\\
+      &= 2y^2
+    \end{align*}
   \end{homeworkSection}
 \end{homeworkProblem}
 
