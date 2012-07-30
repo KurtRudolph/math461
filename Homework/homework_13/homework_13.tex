@@ -175,8 +175,18 @@
       \end{homeworkSection}
     \item Show $E[X|Y = 5]$
       \begin{homeworkSection}{Solution}
-        The expectation of the number of roles to recieve a 6 given that the 5th role is a 5
-        I don't know...
+        Approaching the problem generally we find
+        \begin{align*}
+          E[ X|Y = y] 
+          &= \sum\limits_{x} x P\{ X = x | Y = y\} \\
+          &= \sum\limits_{x = 1}^{y - 1} x (\frac{ 4}{ 5})^{(x - 1)}\frac{ 1}{ 5} + 0 + 
+            \sum\limits_{x = y + 1}^\infty x (\frac{ 4}{ 5})^{y - 1} 
+            (\frac{ 5}{ 6})^{(x - y - 1)} \frac{ 1}{ 6}\\
+          &=\frac{1}{5}\sum\limits_{x=1}^{y-1}x(\frac{4}{5})^{(x-1)}+\frac{1}{6}(\frac{4}{5})^{y-1}\sum\limits_{x=y+1}^\infty x(\frac{5}{6})^{(x-y-1)}\\
+          &=\frac{1}{5}[5^{1-y} (-5(4^y)+5^{1+y}-4^yy)-y(\frac{4}{5})^{y-1}]+\frac{1}{6}(\frac{4}{5})^{y-1}6(y+6)\\
+          &=\frac{5}{4}(4-(\frac{4}{5})^y(y+4))+(\frac{4}{5})^{y-1}(y+6)
+        \end{align*}
+        Letting $y = 5$ we find $E[X|Y = 5] = 5.8192$.
       \end{homeworkSection}
   \end{enumerate}
 \end{homeworkProblem}
