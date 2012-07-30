@@ -233,7 +233,28 @@
   \]
   Find $E[ X^3|Y = y]$
   \begin{homeworkSection}{Solution}
-
+    \begin{align*}
+      E[ X^3|Y = y]
+        &= \int\limits_0^\infty x^3 f(x | Y = y) dx\\
+      \text{Solving for $f(x | Y = y)$}\\
+      f(x | Y = y) 
+        &= \frac{ f( x, y)}{ f( y)}\\
+        \text{where}\\
+        f( y) &= \int\limits_0^y f( x, y) dx\\
+        &= \int\limits_0^y \frac{ e^{-y}}{ y} dx\\
+        &= e^{-y}\\
+        \text{hence}\\
+      \frac{ f( x, y)}{ f( y)}
+        &= \frac{ e^{y}}{ y e^{y}}\\
+        &= \frac{ 1}{ y}\\
+    \end{align*}
+    \begin{align*}
+      \text{pluggin into our expectation}\\
+      \int\limits_0^\infty x^3 f(x | Y = y) dx\\
+      &= \int\limits_0^\infty x^3 \frac{ 1}{ y} dx\\
+      &= \frac{ y^3}{ 4}
+    \end{align*}
+  \end{homeworkSection}
   \end{homeworkSection}
 \end{homeworkProblem}
   
